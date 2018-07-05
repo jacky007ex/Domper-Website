@@ -27,6 +27,30 @@ app.controller('myCtrl', function($scope) {
     var currentLocation = window.location;
     window.location.href = currentLocation.pathname + '?lang=' + $scope.item;
 	};
+	//Handling Flight Offers Promote
+  $scope.flightOffers = [
+        {
+            "mainText1" : "Tokyo (HKG to NRT/HND) Econ $2880+",
+            "logo1A" : "images/cx.png",
+            "logo1B" : "images/jal.png",
+            "mainText2" : "Tokyo (HKG to NRT/HND) Business $4980+",
+            "logo2A" : "images/cx.png",
+            "logo2B" : "images/jal.png",
+            "mainText3" : "Tokyo (HKG to NRT) First $7980+",
+            "logo3A" : "images/cx.png",
+            "logo3B" : ""
+        },{
+            "mainText1" : "Tokyo (HKG to NRT/HND) Econ $2880+",
+            "logo1A" : "images/cx.png",
+            "logo1B" : "images/jal.png",
+            "mainText2" : "Tokyo (HKG to NRT/HND) Business $4980+",
+            "logo2A" : "images/cx.png",
+            "logo2B" : "images/jal.png",
+            "mainText3" : "Tokyo (HKG to NRT) First $7980+",
+            "logo3A" : "images/cx.png",
+            "logo3B" : ""
+        }
+  ]
 });
 
 function updateHyperLink(userLang){

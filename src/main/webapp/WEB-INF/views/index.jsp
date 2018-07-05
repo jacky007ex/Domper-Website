@@ -637,36 +637,37 @@
                         
                         <div class="row">
                         
-                            <div class="col-sm-6 col-md-4">
+                            <div ng-repeat="offers in flightOffers" class="col-sm-6 col-md-4">
                                 <div class="main-block flight-block view-more">
-                                        <div class="flight-img">
+                                        <div class="main-img">
                                             <img src="images/tokyo_flight.jpg" class="img-responsive" />
                                         </div><!-- end flight-img -->
                                         <div class="flight-info">
                                             <div class="flight-title" style="display:flex;">
                                             	<div style="width:85%;">
-                                         			<span class="flight-type">Tokyo (HKG to NRT/HND) Econ $2880+ </span>
+                                         			<span class="flight-type">{{offers.mainText1}}</span>
                                         		</div>
                                         		<div style="width:15%; text-align:right;">
-	                                         	 	<img src="images/cx.png" style="vertical-align:top;text-align:right" width=20px height=16px/>
-	                                         	 	<img src="images/jal.png" style="vertical-align:top;text-align:right" width=20px height=16px/>
+	                                         	 	<img ng-if="offers.logo1A!=''" src="{{offers.logo1A}}" style="vertical-align:top;text-align:right" width=20px height=16px/>
+	                                         	 	<img ng-if="offers.logo1B!=''" src="{{offers.logo1B}}" style="vertical-align:top;text-align:right" width=20px height=16px/>
                                                 </div>        
                                             </div><!-- end flight-title -->
                                             <div class="flight-title" style="display:flex;">
                                             	<div style="width:85%;">
-                                         			<span class="flight-type">Tokyo (HKG to NRT/HND) Business $4980+</span>
+                                         			<span class="flight-type">{{offers.mainText2}}</span>
                                         		</div>
                                         		<div style="width:15%; text-align:right;">
-	                                         	 	<img src="images/cx.png" style="vertical-align:top;text-align:right" width=20px height=16px/>
-	                                         	 	<img src="images/jal.png" style="vertical-align:top;text-align:right" width=20px height=16px/>
+	                                         	 	<img ng-if="offers.logo2A!=''" src="{{offers.logo2A}}" style="vertical-align:top;text-align:right" width=20px height=16px/>
+                                                    <img ng-if="offers.logo2B!=''" src="{{offers.logo2B}}" style="vertical-align:top;text-align:right" width=20px height=16px/>
                                                 </div>        
                                             </div><!-- end flight-title -->
                                               <div class="flight-title" style="display:flex;">
                                             	<div style="width:85%;">
-                                         			<span class="flight-type">Tokyo (HKG to NRT) First $7980+ </span>
+                                         			<span class="flight-type">{{offers.mainText3}}</span>
                                         		</div>
                                         		<div style="width:15%; text-align:right;">
-	                                         	 	<img src="images/cx.png" style="vertical-align:top;text-align:right" width=20px height=16px/>
+	                                         	 	<img ng-if="offers.logo3A!=''" src="{{offers.logo3A}}" style="vertical-align:top;text-align:right" width=20px height=16px/>
+                                                    <img ng-if="offers.logo3B!=''" src="{{offers.logo3B}}" style="vertical-align:top;text-align:right" width=20px height=16px/>
                                                 </div>        
                                             </div><!-- end flight-title -->
                                         </div><!-- end flight-info -->
