@@ -159,164 +159,22 @@
                     <div class="row">        	                 
                         <div class="col-xs-12 col-sm-12 col-md-12 content-side">
                         
-                            <div class="list-block main-block f-list-block">
+                            <div ng-repeat="sample in flightSample" class="list-block main-block f-list-block">
                                 <div class="list-content">
                                     <div class="main-img list-img f-list-img">
                                         <a href="flight">
                                             <div class="f-img">
-                                                <img src="images/flight-1.jpg" class="img-responsive" alt="flight-img" />
+                                                <img ng-src="{{sample.airline}}" class="img-responsive" alt="flight-img" />
                                             </div><!-- end f-list-img -->
                                         </a>
-                                        <ul class="list-unstyled list-inline offer-price-1">
-                                            <li class="duration"><i class="fa fa-clock-o"></i><span>6 hours - 30 minutes</span></li>
-                                            <li class="price">$1589.00<span class="divider">|</span><span class="pkg">2 Stay</span></li>
-                                        </ul>
-                                        <ul class="list-unstyled flight-timing">
-                                            <li><span><i class="fa fa-plane"></i></span><span class="date">Aug, 02-2017 </span>(8:40 PM)</li>
-                                            <li><span><i class="fa fa-plane"></i></span><span class="date">Aug, 03-2017 </span>(8:40 PM)</li>
-                                        </ul>
                                     </div><!-- end f-list-img -->
                                     
                                     <div class="list-info f-list-info">
-                                        <h3 class="block-title"><a href="flight">Toyko to Hong Kong</a></h3>
-                                        <p class="block-minor"><span>Fr 5379,</span> Oneway Flight</p>
-                                        <p>Coming Soon</p>
-                                        <button class="btn btn-orange view-more">View More</button>
-                                     </div><!-- end f-list-info -->
-                                </div><!-- end list-content -->
-                            </div><!-- end f-list-block -->
-                            
-                            <div class="list-block main-block f-list-block">
-                                <div class="list-content">
-                                    <div class="main-img list-img f-list-img">
-                                        <a href="flight">
-                                            <div class="f-img">
-                                                <img src="images/flight-2.jpg" class="img-responsive" alt="flight-img" />
-                                            </div><!-- end f-list-img -->
-                                        </a>
-                                        <ul class="list-unstyled list-inline offer-price-1">
-                                            <li class="duration"><i class="fa fa-clock-o"></i><span>6 hours - 30 minutes</span></li>
-                                            <li class="price">$1289.00<span class="divider">|</span><span class="pkg">2 Stay</span></li>
-                                        </ul>
-                                        <ul class="list-unstyled flight-timing">
-                                            <li><span><i class="fa fa-plane"></i></span><span class="date">Aug, 02-2017 </span>(8:40 PM)</li>
-                                            <li><span><i class="fa fa-plane"></i></span><span class="date">Aug, 03-2017 </span>(8:40 PM)</li>
-                                        </ul>
-                                    </div><!-- end f-list-img -->
-                                    
-                                    <div class="list-info f-list-info">
-                                        <h3 class="block-title"><a href="flight">Singapore to Hong Kong</a></h3>
-                                        <p class="block-minor"><span>Fr 5379,</span> Oneway Flight</p>
-                                        <p>Coming Soon</p>
-                                        <button class="btn btn-orange view-more">View More</button>
-                                     </div><!-- end f-list-info -->
-                                </div><!-- end list-content -->
-                            </div><!-- end f-list-block -->
-                            
-                            <div class="list-block main-block f-list-block">
-                                <div class="list-content">
-                                    <div class="main-img list-img f-list-img">
-                                        <a href="flight">
-                                            <div class="f-img">
-                                                <img src="images/flight-3.jpg" class="img-responsive" alt="flight-img" />
-                                            </div><!-- end f-list-img -->
-                                        </a>
-                                        <ul class="list-unstyled list-inline offer-price-1">
-                                            <li class="duration"><i class="fa fa-clock-o"></i><span>6 hours - 30 minutes</span></li>
-                                            <li class="price">$1198.00<span class="divider">|</span><span class="pkg">2 Stay</span></li>
-                                        </ul>
-                                        <ul class="list-unstyled flight-timing">
-                                            <li><span><i class="fa fa-plane"></i></span><span class="date">Aug, 02-2017 </span>(8:40 PM)</li>
-                                            <li><span><i class="fa fa-plane"></i></span><span class="date">Aug, 03-2017 </span>(8:40 PM)</li>
-                                        </ul>
-                                    </div><!-- end f-list-img -->
-                                    
-                                    <div class="list-info f-list-info">
-                                        <h3 class="block-title"><a href="flight">Bangkok to Hong Kong</a></h3>
-                                        <p class="block-minor"><span>Fr 5379,</span> Oneway Flight</p>
-                                        <p>Coming Soon</p>
-                                        <button class="btn btn-orange view-more">View More</button>
-                                     </div><!-- end f-list-info -->
-                                </div><!-- end list-content -->
-                            </div><!-- end f-list-block -->
-                            
-                            <div class="list-block main-block f-list-block">
-                                <div class="list-content">
-                                    <div class="main-img list-img f-list-img">
-                                        <a href="flight">
-                                            <div class="f-img">
-                                                <img src="images/flight-4.jpg" class="img-responsive" alt="flight-img" />
-                                            </div><!-- end f-list-img -->
-                                        </a>
-                                        <ul class="list-unstyled list-inline offer-price-1">
-                                            <li class="duration"><i class="fa fa-clock-o"></i><span>6 hours - 30 minutes</span></li>
-                                            <li class="price">$5988.00<span class="divider">|</span><span class="pkg">2 Stay</span></li>
-                                        </ul>
-                                        <ul class="list-unstyled flight-timing">
-                                            <li><span><i class="fa fa-plane"></i></span><span class="date">Aug, 02-2017 </span>(8:40 PM)</li>
-                                            <li><span><i class="fa fa-plane"></i></span><span class="date">Aug, 03-2017 </span>(8:40 PM)</li>
-                                        </ul>
-                                    </div><!-- end f-list-img -->
-                                    
-                                    <div class="list-info f-list-info">
-                                        <h3 class="block-title"><a href="flight">Los Angeles to Hong Kong</a></h3>
-                                        <p class="block-minor"><span>Fr 5379,</span> Oneway Flight</p>
-                                        <p>Coming Soon</p>
-                                        <button class="btn btn-orange view-more">View More</button>
-                                     </div><!-- end f-list-info -->
-                                </div><!-- end list-content -->
-                            </div><!-- end f-list-block -->
-                            
-                            <div class="list-block main-block f-list-block">
-                                <div class="list-content">
-                                    <div class="main-img list-img f-list-img">
-                                        <a href="flight">
-                                            <div class="f-img">
-                                                <img src="images/flight-5.jpg" class="img-responsive" alt="flight-img" />
-                                            </div><!-- end f-list-img -->
-                                        </a>
-                                        <ul class="list-unstyled list-inline offer-price-1">
-                                            <li class="duration"><i class="fa fa-clock-o"></i><span>6 hours - 30 minutes</span></li>
-                                            <li class="price">$1368.00<span class="divider">|</span><span class="pkg">2 Stay</span></li>
-                                        </ul>
-                                        <ul class="list-unstyled flight-timing">
-                                            <li><span><i class="fa fa-plane"></i></span><span class="date">Aug, 02-2017 </span>(8:40 PM)</li>
-                                            <li><span><i class="fa fa-plane"></i></span><span class="date">Aug, 03-2017 </span>(8:40 PM)</li>
-                                        </ul>
-                                    </div><!-- end f-list-img -->
-                                    
-                                    <div class="list-info f-list-info">
-                                        <h3 class="block-title"><a href="flight">Osaka to Hong Kong</a></h3>
-                                        <p class="block-minor"><span>Fr 5379,</span> Oneway Flight</p>
-                                        <p>Coming Soon</p>
-                                        <button class="btn btn-orange view-more">View More</button>
-                                     </div><!-- end f-list-info -->
-                                </div><!-- end list-content -->
-                            </div><!-- end f-list-block -->
-                            
-                            <div class="list-block main-block f-list-block">
-                                <div class="list-content">
-                                    <div class="main-img list-img f-list-img">
-                                        <a href="flight">
-                                            <div class="f-img">
-                                                <img src="images/flight-6.jpg" class="img-responsive" alt="flight-img" />
-                                            </div><!-- end f-list-img -->
-                                        </a>
-                                        <ul class="list-unstyled list-inline offer-price-1">
-                                            <li class="duration"><i class="fa fa-clock-o"></i><span>6 hours - 30 minutes</span></li>
-                                            <li class="price">$1289.00<span class="divider">|</span><span class="pkg">2 Stay</span></li>
-                                        </ul>
-                                        <ul class="list-unstyled flight-timing">
-                                            <li><span><i class="fa fa-plane"></i></span><span class="date">Aug, 02-2017 </span>(8:40 PM)</li>
-                                            <li><span><i class="fa fa-plane"></i></span><span class="date">Aug, 03-2017 </span>(8:40 PM)</li>
-                                        </ul>
-                                    </div><!-- end f-list-img -->
-                                    
-                                    <div class="list-info f-list-info">
-                                        <h3 class="block-title"><a href="flight">Shanghai to Hong Kong</a></h3>
-                                        <p class="block-minor"><span>Fr 5379,</span> Oneway Flight</p>
-                                        <p>Coming Soon</p>
-                                        <button class="btn btn-orange view-more">View More</button>
+                                        <h3 class="block-title"><a href="flight">{{sample.mainText}}</a></h3>
+                                        <p></p>
+                                        <p class="block-minor"><span>{{sample.class1}}</span>{{sample.price1}}</p>
+                                        <p class="block-minor"><span>{{sample.class2}}</span>{{sample.price2}}</p>
+                                        <p class="block-minor"><span>{{sample.class3}}</span>{{sample.price3}}</p>
                                      </div><!-- end f-list-info -->
                                 </div><!-- end list-content -->
                             </div><!-- end f-list-block -->

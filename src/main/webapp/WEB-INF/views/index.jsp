@@ -640,7 +640,7 @@
                             <div ng-repeat="offers in flightOffers" class="col-sm-6 col-md-4">
                                 <div class="main-block flight-block view-more">
                                         <div class="main-img">
-                                            <img src="images/tokyo_flight.jpg" class="img-responsive" />
+                                            <img ng-src="{{offers.mainImage}}" class="img-responsive" />
                                         </div><!-- end flight-img -->
                                         <div class="flight-info">
                                             <div class="flight-title" style="display:flex;">
@@ -648,8 +648,8 @@
                                          			<span class="flight-type">{{offers.mainText1}}</span>
                                         		</div>
                                         		<div style="width:15%; text-align:right;">
-	                                         	 	<img ng-if="offers.logo1A!=''" src="{{offers.logo1A}}" style="vertical-align:top;text-align:right" width=20px height=16px/>
-	                                         	 	<img ng-if="offers.logo1B!=''" src="{{offers.logo1B}}" style="vertical-align:top;text-align:right" width=20px height=16px/>
+	                                         	 	<img ng-if="offers.logo1A!=''" ng-src="{{offers.logo1A}}" style="vertical-align:top;text-align:right" width=20px height=16px/>
+	                                         	 	<img ng-if="offers.logo1B!=''" ng-src="{{offers.logo1B}}" style="vertical-align:top;text-align:right" width=20px height=16px/>
                                                 </div>        
                                             </div><!-- end flight-title -->
                                             <div class="flight-title" style="display:flex;">
@@ -657,8 +657,8 @@
                                          			<span class="flight-type">{{offers.mainText2}}</span>
                                         		</div>
                                         		<div style="width:15%; text-align:right;">
-	                                         	 	<img ng-if="offers.logo2A!=''" src="{{offers.logo2A}}" style="vertical-align:top;text-align:right" width=20px height=16px/>
-                                                    <img ng-if="offers.logo2B!=''" src="{{offers.logo2B}}" style="vertical-align:top;text-align:right" width=20px height=16px/>
+	                                         	 	<img ng-if="offers.logo2A!=''" ng-src="{{offers.logo2A}}" style="vertical-align:top;text-align:right" width=20px height=16px/>
+                                                    <img ng-if="offers.logo2B!=''" ng-src="{{offers.logo2B}}" style="vertical-align:top;text-align:right" width=20px height=16px/>
                                                 </div>        
                                             </div><!-- end flight-title -->
                                               <div class="flight-title" style="display:flex;">
@@ -666,157 +666,13 @@
                                          			<span class="flight-type">{{offers.mainText3}}</span>
                                         		</div>
                                         		<div style="width:15%; text-align:right;">
-	                                         	 	<img ng-if="offers.logo3A!=''" src="{{offers.logo3A}}" style="vertical-align:top;text-align:right" width=20px height=16px/>
-                                                    <img ng-if="offers.logo3B!=''" src="{{offers.logo3B}}" style="vertical-align:top;text-align:right" width=20px height=16px/>
+	                                         	 	<img ng-if="offers.logo3A!=''" ng-src="{{offers.logo3A}}" style="vertical-align:top;text-align:right" width=20px height=16px/>
+                                                    <img ng-if="offers.logo3B!=''" ng-src="{{offers.logo3B}}" style="vertical-align:top;text-align:right" width=20px height=16px/>
                                                 </div>        
                                             </div><!-- end flight-title -->
                                         </div><!-- end flight-info -->
                                 </div><!-- end flight-block -->
                             </div><!-- end columns -->
-                            
-                            <div class="col-sm-6 col-md-4">
-                                <div class="main-block flight-block view-more">
-                                        <div class="flight-img">
-                                            <img src="images/flight-1.jpg" class="img-responsive" alt="flight-img" />
-                                        </div><!-- end flight-img -->
-                                        
-                                        <div class="flight-info">
-                                            <div class="flight-title" style="text-align:left;">
-                                            <div width=99%>
-												<span class="flight-type">Tokyo (HKG to NRT/HND) Econ $2880+ </span>
-											</div>
-											<div>
-												<img src="images/cx.png" style="vertical-align:top;text-align:right" width=20px height=16px/></span>
-											</div>
-                                            </div><!-- end flight-title -->
-                                            <div class="flight-title" style="text-align:middle;">                   
-                                                <span class="flight-type">Tokyo (HKG to NRT/HND) Business $4980+ </span>
-                                                <img src="images/cx.png" style="vertical-align:top;" width=20px height=16px/></span>
-                                            </div><!-- end flight-title -->
-                                            <div class="flight-title" style="text-align:middle;">                   
-                                                <span class="flight-type">Tokyo (NRT) First $7980+ </span>
-                                                <img src="images/cx.png" style="vertical-align:top;" width=20px height=16px/></span>
-                                            </div><!-- end flight-title -->
-                                        </div><!-- end flight-info -->
-                                </div><!-- end flight-block -->
-                            </div><!-- end columns -->
-                            
-                          <div class="col-sm-6 col-md-4">
-                                <div class="main-block flight-block view-more">
-                                        <div class="flight-img">
-                                            <img src="images/flight-1.jpg" class="img-responsive" alt="flight-img" />
-                                        </div><!-- end flight-img -->
-                                        
-                                        <div class="flight-info">
-                                            <div class="flight-title">                   
-                                                <h3><span class="flight-type">Tokyo (HKG to NRT/HND) Econ $2880+ Cathay</span></h3>
-                                            </div><!-- end flight-title -->
-                                            <div class="flight-title"> 
-                                            <h3><span class="flight-type">Tokyo (HKG to NRT/HND) Business $4980+ Cathay</span></h3>
-                                            </div><!-- end flight-title -->
-                                            <div class="flight-title"> 
-                                            <h3><span class="flight-type">Tokyo (HKG to NRT/HND) Business $4980+ Cathay</span></h3>
-                                            </div><!-- end flight-title -->
-                                        </div><!-- end flight-info -->
-                                </div><!-- end flight-block -->
-                            </div><!-- end columns -->
-                            
-                            <div class="col-sm-6 col-md-4">
-                                <div class="main-block flight-block view-more">
-                                        <div class="flight-img">
-                                            <img src="images/flight-4.jpg" class="img-responsive" alt="flight-img" />
-                                        </div><!-- end flight-img -->
-                                        
-                                        <div class="flight-info">
-                                            <div class="flight-title">
-                                                <h3><span class="flight-destination">Los Angeles</span>|<span class="flight-type">OneWay Flight</span></h3>
-                                            </div><!-- end flight-title -->
-                                            
-                                            <div class=" flight-timing">
-                                                <ul class="list-unstyled">
-                                                    <li><span><i class="fa fa-plane"></i></span><span class="date">Aug, 02-2017 </span>(8:40 PM)</li>
-                                                    <li><span><i class="fa fa-plane"></i></span><span class="date">Aug, 03-2017 </span>(8:40 PM)</li>
-                                                </ul>
-                                            </div><!-- end flight-timing -->
-                                            
-                                            <ul class="list-unstyled list-inline offer-price-1">
-                                                <li class="price">$5988.00<span class="pkg">{{flight_avg_price}}</span></li>
-                                                <li class="rating">
-                                                    <span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star lightgrey"></i></span>
-                                                </li>
-                                            </ul>
-                                        </div><!-- end flight-info -->
-                                </div><!-- end flight-block -->
-                            </div><!-- end columns -->
-                            
-                            <div class="col-sm-6 col-md-4">
-                                <div class="main-block flight-block view-more">
-                                        <div class="flight-img">
-                                            <img src="images/flight-5.jpg" class="img-responsive" alt="flight-img" />
-                                        </div><!-- end flight-img -->
-                                        
-                                        <div class="flight-info">
-                                            <div class="flight-title">
-                                                <h3><span class="flight-destination">Osaka</span>|<span class="flight-type">OneWay Flight</span></h3>
-                                            </div><!-- end flight-title -->
-                                            
-                                            <div class=" flight-timing">
-                                                <ul class="list-unstyled">
-                                                    <li><span><i class="fa fa-plane"></i></span><span class="date">Aug, 02-2017 </span>(8:40 PM)</li>
-                                                    <li><span><i class="fa fa-plane"></i></span><span class="date">Aug, 03-2017 </span>(8:40 PM)</li>
-                                                </ul>
-                                            </div><!-- end flight-timing -->
-                                            
-                                            <ul class="list-unstyled list-inline offer-price-1">
-                                                <li class="price">$1368.00<span class="pkg">{{flight_avg_price}}</span></li>
-                                                <li class="rating">
-                                                    <span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star lightgrey"></i></span>
-                                                </li>
-                                            </ul>
-                                        </div><!-- end flight-info -->
-                                </div><!-- end flight-block -->
-                            </div><!-- end columns -->
-                            
-                            <div class="col-sm-6 col-md-4">
-                                <div class="main-block flight-block view-more">
-                                        <div class="flight-img">
-                                            <img src="images/flight-6.jpg" class="img-responsive" alt="flight-img" />
-                                        </div><!-- end flight-img -->
-                                        
-                                        <div class="flight-info">
-                                            <div class="flight-title">
-                                                <h3><span class="flight-destination">Shanghai</span>|<span class="flight-type">OneWay Flight</span></h3>
-                                            </div><!-- end flight-title -->
-                                            
-                                            <div class=" flight-timing">
-                                                <ul class="list-unstyled">
-                                                    <li><span><i class="fa fa-plane"></i></span><span class="date">Aug, 02-2017 </span>(8:40 PM)</li>
-                                                    <li><span><i class="fa fa-plane"></i></span><span class="date">Aug, 03-2017 </span>(8:40 PM)</li>
-                                                </ul>
-                                            </div><!-- end flight-timing -->
-                                            
-                                            <ul class="list-unstyled list-inline offer-price-1">
-                                                <li class="price">$1289.00<span class="pkg">{{flight_avg_price}}</span></li>
-                                                <li class="rating">
-                                                    <span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star lightgrey"></i></span>
-                                                </li>
-                                            </ul>
-                                        </div><!-- end flight-info -->
-                                </div><!-- end flight-block -->
-                            </div><!-- end columns -->
-                            
                         </div><!-- end row -->
                         
                         <div class="view-all text-center">
