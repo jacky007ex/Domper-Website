@@ -8,8 +8,9 @@
                         <div id="info">
                             <ul class="list-unstyled list-inline">
                                 <!--<li><span><i class="fa fa-map-marker"></i></span>21A Southtex Building, Kwun Tong, HK</li>-->
-                                <li><span><i class="fa fa-phone"></i></span><a href="tel:+852 2628 0168" style="color:white;">+852 2628 0168</a></li>
-                                <li><span><i class="fa fa-envelope"></i></span>info@valaxing.com</li>
+                                <li><span><i class="fa fa-phone"></i></span><a href="tel:+852 3590 4465" style="color:white;">+852 3590 4465</a></li>
+                                <li><span><i class="fa fa-envelope"></i></span>
+                                    <a href="mailto:info@valaxing.com" style="color:white;" target="_top">info@valaxing.com</a></li>
                             </ul>
                         </div><!-- end info -->
                     </div><!-- end columns -->

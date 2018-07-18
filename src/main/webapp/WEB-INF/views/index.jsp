@@ -51,7 +51,7 @@
                         <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
                             {{fastquote_call}}
                             <p> </p>
-                            <h3>+852 26280168</h3>
+                            <h3>+852 35904465</h3>
                         </div>
                     </div><!-- end modal-bpdy -->
                     <hr style="margin-bottom:5px" width="80%"/>
@@ -638,33 +638,42 @@
                         <div class="row">
                         
                             <div ng-repeat="offers in flightOffers" class="col-sm-6 col-md-4">
-                                <div class="main-block flight-block view-more">
+                                <div class="main-block flight-block view-more" on-finish-render="ngRepeatFinished">
                                         <div class="main-img">
                                             <img ng-src="{{offers.mainImage}}" class="img-responsive" />
                                         </div><!-- end flight-img -->
                                         <div class="flight-info">
                                             <div class="flight-title" style="display:flex;">
-                                            	<div style="width:85%;">
+                                            	<div style="width:70%;">
                                          			<span class="flight-type">{{offers.mainText1}}</span>
                                         		</div>
+                                                <div style="width:15%; text-align:left;">
+                                                    {{offers.price1}}
+                                                </div>   
                                         		<div style="width:15%; text-align:right;">
 	                                         	 	<img ng-if="offers.logo1A!=''" ng-src="{{offers.logo1A}}" style="vertical-align:top;text-align:right" width=20px height=16px/>
 	                                         	 	<img ng-if="offers.logo1B!=''" ng-src="{{offers.logo1B}}" style="vertical-align:top;text-align:right" width=20px height=16px/>
                                                 </div>        
                                             </div><!-- end flight-title -->
                                             <div class="flight-title" style="display:flex;">
-                                            	<div style="width:85%;">
+                                            	<div style="width:70%;">
                                          			<span class="flight-type">{{offers.mainText2}}</span>
                                         		</div>
+                                                <div style="width:15%; text-align:left;">
+                                                    {{offers.price2}}
+                                                </div>   
                                         		<div style="width:15%; text-align:right;">
 	                                         	 	<img ng-if="offers.logo2A!=''" ng-src="{{offers.logo2A}}" style="vertical-align:top;text-align:right" width=20px height=16px/>
                                                     <img ng-if="offers.logo2B!=''" ng-src="{{offers.logo2B}}" style="vertical-align:top;text-align:right" width=20px height=16px/>
                                                 </div>        
                                             </div><!-- end flight-title -->
                                               <div class="flight-title" style="display:flex;">
-                                            	<div style="width:85%;">
+                                            	<div style="width:70%;">
                                          			<span class="flight-type">{{offers.mainText3}}</span>
                                         		</div>
+                                                <div style="width:15%; text-align:left;">
+                                                    {{offers.price3}}
+                                                </div>   
                                         		<div style="width:15%; text-align:right;">
 	                                         	 	<img ng-if="offers.logo3A!=''" ng-src="{{offers.logo3A}}" style="vertical-align:top;text-align:right" width=20px height=16px/>
                                                     <img ng-if="offers.logo3B!=''" ng-src="{{offers.logo3B}}" style="vertical-align:top;text-align:right" width=20px height=16px/>
@@ -697,29 +706,29 @@
                             <div class="item">
                                 <div class="main-block hotel-block view-more">
                                     <div class="main-img">
-                                        <img src="images/hotel-1.jpg" class="img-responsive" alt="hotel-img" />
+                                        <img src="images/hotel_3.jpg" class="img-responsive" alt="hotel-img" />
                                         <div class="main-mask">
                                             <ul class="list-unstyled list-inline offer-price-1">
-                                                <li class="price">$780.00<span class="divider">|</span><span class="pkg">Avg/Night</span></li>
+                                                <li class="price">{{hotel_offer_price3}}<span class="divider">|</span><span class="pkg">{{avg_night}}</span></li>
                                                 <li class="rating">
                                                     <span><i class="fa fa-star orange"></i></span>
                                                     <span><i class="fa fa-star orange"></i></span>
                                                     <span><i class="fa fa-star orange"></i></span>
                                                     <span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star lightgrey"></i></span>
+                                                    <span><i class="fa fa-star orange"></i></span>
                                                 </li>
                                             </ul>
                                         </div><!-- end main-mask -->
                                     </div><!-- end offer-img -->
                                     
                                     <div class="main-info hotel-info">
-                                        <div class="arrow">
+                                        <!-- <div class="arrow">
                                             <a href="hotel"><span><i class="fa fa-angle-right"></i></span></a>
                                         </div><!-- end arrow -->
                                         
                                         <div class="main-title hotel-title">
-                                            <a href="hotel">Herta Berlin Hotel</a>
-                                            <p>From: Scotland</p>
+                                            <a href="hotel">{{hotel_offer_name3}}</a>
+                                            <p>{{hotel_offer_location3}}</p>
                                         </div><!-- end hotel-title -->
                                     </div><!-- end hotel-info -->
                                 </div><!-- end hotel-block -->
@@ -728,29 +737,29 @@
                             <div class="item">
                                 <div class="main-block hotel-block view-more">
                                     <div class="main-img">
-                                            <img src="images/hotel-2.jpg" class="img-responsive" alt="hotel-img" />
+                                            <img src="images/hotel_5.jpg" class="img-responsive" alt="hotel-img" />
                                         <div class="main-mask">
                                             <ul class="list-unstyled list-inline offer-price-1">
-                                                <li class="price">$568.00<span class="divider">|</span><span class="pkg">Avg/Night</span></li>
+                                                <li class="price">{{hotel_offer_price5}}<span class="divider">|</span><span class="pkg">{{avg_night}}</span></li>
                                                 <li class="rating">
                                                     <span><i class="fa fa-star orange"></i></span>
                                                     <span><i class="fa fa-star orange"></i></span>
                                                     <span><i class="fa fa-star orange"></i></span>
                                                     <span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star lightgrey"></i></span>
+                                                    <span><i class="fa fa-star orange"></i></span>
                                                 </li>
                                             </ul>
                                         </div><!-- end main-mask -->
                                     </div><!-- end offer-img -->
                                     
                                     <div class="main-info hotel-info">
-                                        <div class="arrow">
+                                        <!-- <div class="arrow">
                                             <a href="hotel"><span><i class="fa fa-angle-right"></i></span></a>
                                         </div><!-- end arrow -->
                                         
                                         <div class="main-title hotel-title">
-                                            <a href="hotel">Roosevelt Hotel</a>
-                                            <p>From: Germany</p>
+                                            <a href="hotel">{{hotel_offer_name5}}</a>
+                                            <p>{{hotel_offer_location5}}</p>
                                         </div><!-- end hotel-title -->
                                     </div><!-- end hotel-info -->
                                 </div><!-- end hotel-block -->
@@ -759,29 +768,29 @@
                             <div class="item">
                                 <div class="main-block hotel-block view-more">
                                     <div class="main-img">
-                                            <img src="images/hotel-3.jpg" class="img-responsive" alt="hotel-img" />
+                                            <img src="images/hotel_2.jpg" class="img-responsive" alt="hotel-img" />
                                         <div class="main-mask">
                                             <ul class="list-unstyled list-inline offer-price-1">
-                                                <li class="price">$1080.00<span class="divider">|</span><span class="pkg">Avg/Night</span></li>
+                                                <li class="price">{{hotel_offer_price2}}<span class="divider">|</span><span class="pkg">{{avg_night}}</span></li>
                                                 <li class="rating">
                                                     <span><i class="fa fa-star orange"></i></span>
                                                     <span><i class="fa fa-star orange"></i></span>
                                                     <span><i class="fa fa-star orange"></i></span>
                                                     <span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star lightgrey"></i></span>
+                                                    <span><i class="fa fa-star orange"></i></span>
                                                 </li>
                                             </ul>
                                         </div><!-- end main-mask -->
                                     </div><!-- end offer-img -->
                                     
                                     <div class="main-info hotel-info">
-                                        <div class="arrow">
+                                        <!-- <div class="arrow">
                                             <a href="hotel"><span><i class="fa fa-angle-right"></i></span></a>
                                         </div><!-- end arrow -->
                                         
                                         <div class="main-title hotel-title">
-                                            <a href="hotel">Hotel Fort De</a>
-                                            <p>From: Austria</p>
+                                            <a href="hotel">{{hotel_offer_name2}}</a>
+                                            <p>{{hotel_offer_location2}}</p>
                                         </div><!-- end hotel-title -->
                                     </div><!-- end hotel-info -->
                                 </div><!-- end hotel-block -->
@@ -790,29 +799,60 @@
                             <div class="item">
                                 <div class="main-block hotel-block view-more">
                                     <div class="main-img">
-                                            <img src="images/hotel-4.jpg" class="img-responsive" alt="hotel-img" />
+                                            <img src="images/hotel_1.jpg" class="img-responsive" alt="hotel-img" />
                                         <div class="main-mask">
                                             <ul class="list-unstyled list-inline offer-price-1">
-                                                <li class="price">$658.00<span class="divider">|</span><span class="pkg">Avg/Night</span></li>
+                                                <li class="price">{{hotel_offer_price1}}<span class="divider">|</span><span class="pkg">{{avg_night}}</span></li>
                                                 <li class="rating">
                                                     <span><i class="fa fa-star orange"></i></span>
                                                     <span><i class="fa fa-star orange"></i></span>
                                                     <span><i class="fa fa-star orange"></i></span>
                                                     <span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star lightgrey"></i></span>
+                                                    <span><i class="fa fa-star orange"></i></span>
                                                 </li>
                                             </ul>
                                         </div><!-- end main-mask -->
                                     </div><!-- end offer-img -->
                                     
                                     <div class="main-info hotel-info">
-                                        <div class="arrow">
+                                        <!-- <div class="arrow">
                                             <a href="hotel"><span><i class="fa fa-angle-right"></i></span></a>
                                         </div><!-- end arrow -->
                                         
                                         <div class="main-title hotel-title">
-                                            <a href="hotel">Roosevelt Hotel</a>
-                                            <p>From: Germany</p>
+                                            <a href="hotel">{{hotel_offer_name1}}</a>
+                                            <p>{{hotel_offer_location1}}</p>
+                                        </div><!-- end hotel-title -->
+                                    </div><!-- end hotel-info -->
+                                </div><!-- end hotel-block -->
+                            </div><!-- end item -->
+
+                            <div class="item">
+                                <div class="main-block hotel-block view-more">
+                                    <div class="main-img">
+                                            <img src="images/hotel_4.jpg" class="img-responsive" alt="hotel-img" />
+                                        <div class="main-mask">
+                                            <ul class="list-unstyled list-inline offer-price-1">
+                                                <li class="price">{{hotel_offer_price4}}<span class="divider">|</span><span class="pkg">{{avg_night}}</span></li>
+                                                <li class="rating">
+                                                    <span><i class="fa fa-star orange"></i></span>
+                                                    <span><i class="fa fa-star orange"></i></span>
+                                                    <span><i class="fa fa-star orange"></i></span>
+                                                    <span><i class="fa fa-star orange"></i></span>
+                                                    <span><i class="fa fa-star orange"></i></span>
+                                                </li>
+                                            </ul>
+                                        </div><!-- end main-mask -->
+                                    </div><!-- end offer-img -->
+                                    
+                                    <div class="main-info hotel-info">
+                                        <!-- <div class="arrow">
+                                            <a href="hotel"><span><i class="fa fa-angle-right"></i></span></a>
+                                        </div><!-- end arrow -->
+                                        
+                                        <div class="main-title hotel-title">
+                                            <a href="hotel">{{hotel_offer_name4}}</a>
+                                            <p>{{hotel_offer_location4}}</p>
                                         </div><!-- end hotel-title -->
                                     </div><!-- end hotel-info -->
                                 </div><!-- end hotel-block -->

@@ -160,176 +160,35 @@
                     <div class="row">        	                  
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 content-side">
 							
-                            <div class="list-block main-block h-list-block">
+                            <div ng-repeat="hotel in hotelSample" class="list-block main-block h-list-block">
                             	<div class="list-content">
                             		<div class="main-img list-img h-list-img">
                                         <a href="hotel">
-                                            <img src="images/hotel-1.jpg" class="img-responsive" alt="hotel-img" />
+                                            <img ng-src="{{hotel.img}}" class="img-responsive" alt="hotel-img" />
                                         </a>
                                         <div class="main-mask">
                                             <ul class="list-unstyled list-inline offer-price-1">
-                                                <li class="price">$780.00<span class="divider">|</span><span class="pkg">Avg/Night</span></li>
+                                                <li class="price">{{hotel.price}}<span class="divider">|</span><span class="pkg">{{avg_night}}</span></li>
                                                 <li class="rating">
                                                 	<span><i class="fa fa-star orange"></i></span>
                                                     <span><i class="fa fa-star orange"></i></span>
                                                     <span><i class="fa fa-star orange"></i></span>
                                                     <span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star lightgrey"></i></span>
+                                                    <span><i class="fa fa-star orange"></i></span>
                                                 </li>
                                             </ul>
                                         </div><!-- end main-mask -->
                                     </div><!-- end h-list-img -->
                                     
                                     <div class="list-info h-list-info">
-                                        <h3 class="block-title"><a href="hotel">Herta Berlin Hotel</a></h3>
-                                        <p class="block-minor">From: Scotland</p>
-                                        <p>Coming Soon</p>
-                                        <button class="btn btn-orange btn-lg view-more">View More</button></a>
-                                     </div><!-- end h-list-info -->
-                            	</div><!-- end list-content -->
-                            </div><!-- end h-list-block -->
-                            
-                            <div class="list-block main-block h-list-block">
-                            	<div class="list-content">
-                            		<div class="main-img list-img h-list-img">
-                                        <a href="hotel">
-                                            <img src="images/hotel-2.jpg" class="img-responsive" alt="hotel-img" />
-                                        </a>
-                                        <div class="main-mask">
-                                            <ul class="list-unstyled list-inline offer-price-1">
-                                                <li class="price">$568.00<span class="divider">|</span><span class="pkg">Avg/Night</span></li>
-                                                <li class="rating">
-                                                	<span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star lightgrey"></i></span>
-                                                </li>
-                                            </ul>
-                                        </div><!-- end main-mask -->
-                                    </div><!-- end h-list-img -->
-                                    
-                                    <div class="list-info h-list-info">
-                                        <h3 class="block-title"><a href="hotel">Roosevelt Hotel</a></h3>
-                                        <p class="block-minor">From: Germany</p>
-                                        <p>Coming Soon</p>
-                                        <button class="btn btn-orange btn-lg view-more">View More</button></a>
-                                     </div><!-- end h-list-info -->
-                            	</div><!-- end list-content -->
-                            </div><!-- end h-list-block -->
-                            
-							<div class="list-block main-block h-list-block">
-                            	<div class="list-content">
-                            		<div class="main-img list-img h-list-img">
-                                        <a href="hotel">
-                                            <img src="images/hotel-3.jpg" class="img-responsive" alt="hotel-img" />
-                                        </a>
-                                        <div class="main-mask">
-                                            <ul class="list-unstyled list-inline offer-price-1">
-                                                <li class="price">$1080.00<span class="divider">|</span><span class="pkg">Avg/Night</span></li>
-                                                <li class="rating">
-                                                	<span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star lightgrey"></i></span>
-                                                </li>
-                                            </ul>
-                                        </div><!-- end main-mask -->
-                                    </div><!-- end h-list-img -->
-                                    
-                                    <div class="list-info h-list-info">
-                                        <h3 class="block-title"><a href="hotel">Hotel Fort De</a></h3>
-                                        <p class="block-minor">From: Scotland</p>
-                                        <p>Coming Soon</p>
-                                        <button class="btn btn-orange btn-lg view-more">View More</button></a>
-                                     </div><!-- end h-list-info -->
-                            	</div><!-- end list-content -->
-                            </div><!-- end h-list-block -->
-                            
-                            <div class="list-block main-block h-list-block">
-                            	<div class="list-content">
-                            		<div class="main-img list-img h-list-img">
-                                        <a href="hotel">
-                                            <img src="images/hotel-4.jpg" class="img-responsive" alt="hotel-img" />
-                                        </a>
-                                        <div class="main-mask">
-                                            <ul class="list-unstyled list-inline offer-price-1">
-                                                <li class="price">$1080.00<span class="divider">|</span><span class="pkg">Avg/Night</span></li>
-                                                <li class="rating">
-                                                	<span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star lightgrey"></i></span>
-                                                </li>
-                                            </ul>
-                                        </div><!-- end main-mask -->
-                                    </div><!-- end h-list-img -->
-                                    
-                                    <div class="list-info h-list-info">
-                                        <h3 class="block-title"><a href="hotel">Herta Berlin Hotel</a></h3>
-                                        <p class="block-minor">From: Austria</p>
-                                        <p>Coming Soon</p>
-                                        <button class="btn btn-orange btn-lg view-more">View More</button></a>
-                                     </div><!-- end h-list-info -->
-                            	</div><!-- end list-content -->
-                            </div><!-- end h-list-block -->
-                            
-                            <div class="list-block main-block h-list-block">
-                            	<div class="list-content">
-                            		<div class="main-img list-img h-list-img">
-                                        <a href="hotel">
-                                            <img src="images/hotel-5.jpg" class="img-responsive" alt="hotel-img" />
-                                        </a>
-                                        <div class="main-mask">
-                                            <ul class="list-unstyled list-inline offer-price-1">
-                                                <li class="price">$988.00<span class="divider">|</span><span class="pkg">Avg/Night</span></li>
-                                                <li class="rating">
-                                                	<span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star lightgrey"></i></span>
-                                                </li>
-                                            </ul>
-                                        </div><!-- end main-mask -->
-                                    </div><!-- end h-list-img -->
-                                    
-                                    <div class="list-info h-list-info">
-                                        <h3 class="block-title"><a href="hotel">Royal Season Hotel</a></h3>
-                                        <p class="block-minor">From: Scotland</p>
-                                        <p>Coming Soon</p>
-                                        <button class="btn btn-orange btn-lg view-more">View More</button></a>
-                                     </div><!-- end h-list-info -->
-                            	</div><!-- end list-content -->
-                            </div><!-- end h-list-block -->
-                            
-                            <div class="list-block main-block h-list-block">
-                            	<div class="list-content">
-                            		<div class="main-img list-img h-list-img">
-                                        <a href="hotel">
-                                            <img src="images/hotel-6.jpg" class="img-responsive" alt="hotel-img" />
-                                        </a>
-                                        <div class="main-mask">
-                                            <ul class="list-unstyled list-inline offer-price-1">
-                                                <li class="price">$1280.00<span class="divider">|</span><span class="pkg">Avg/Night</span></li>
-                                                <li class="rating">
-                                                	<span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star lightgrey"></i></span>
-                                                </li>
-                                            </ul>
-                                        </div><!-- end main-mask -->
-                                    </div><!-- end h-list-img -->
-                                    
-                                    <div class="list-info h-list-info">
-                                        <h3 class="block-title"><a href="hotel">Ocean Mariner Hotel </a></h3>
-                                        <p class="block-minor">From: Spain</p>
-                                        <p>Coming Soon</p>
-                                        <button class="btn btn-orange btn-lg view-more">View More</button></a>
+                                        <h3 class="block-title"><a href="hotel">{{hotel.name}}</a></h3>
+                                        <p class="block-minor">{{hotel.location}}</p>
+                                        <br />
+                                        <p>{{hotel.text1}}</p>
+                                        <br />
+                                        <p>{{hotel.text2}}</p>
+                                        <!-- <p>Coming Soon</p>
+                                        <button class="btn btn-orange btn-lg view-more">View More</button> --></a>
                                      </div><!-- end h-list-info -->
                             	</div><!-- end list-content -->
                             </div><!-- end h-list-block -->
@@ -338,9 +197,6 @@
                                 <ol class="pagination">
                                     <li><a href="#" aria-label="Previous"><span aria-hidden="true"><i class="fa fa-angle-left"></i></span></a></li>
                                     <li class="active"><a href="#">1</a></li>
-                                    <li><a href="#">2</a></li>
-                                    <li><a href="#">3</a></li>
-                                    <li><a href="#">4</a></li>
                                     <li><a href="#" aria-label="Next"><span aria-hidden="true"><i class="fa fa-angle-right"></i></span></a></li>
                                 </ol>
                             </div><!-- end pages -->
