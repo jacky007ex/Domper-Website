@@ -172,9 +172,30 @@
                                     <div class="list-info f-list-info">
                                         <h3 class="block-title"><a href="flight">{{sample.mainText}}</a></h3>
                                         <p></p>
-                                        <p class="block-minor"><span>{{sample.class1}}</span>{{sample.price1}}</p>
-                                        <p class="block-minor"><span>{{sample.class2}}</span>{{sample.price2}}</p>
-                                        <p class="block-minor"><span>{{sample.class3}}</span>{{sample.price3}}</p>
+                                        <div class="block-minor" style="display:flex;">
+                                            <div style="width:40%;">
+                                                <span class="flight-type">{{sample.class1}}</span>
+                                            </div>
+                                            <div style="width:60%; text-align:right;">
+                                                {{sample.price1}}
+                                            </div> 
+                                        </div>
+                                        <div class="block-minor" style="display:flex;">
+                                            <div style="width:40%;">
+                                                <span class="flight-type">{{sample.class2}}</span>
+                                            </div>
+                                            <div style="width:60%; text-align:right;">
+                                                {{sample.price2}}
+                                            </div> 
+                                        </div>  
+                                        <div class="block-minor" style="display:flex;">
+                                            <div style="width:40%;">
+                                                <span class="flight-type">{{sample.class3}}</span>
+                                            </div>
+                                            <div style="width:60%; text-align:right;">
+                                                {{sample.price3}}
+                                            </div> 
+                                        </div>   
                                      </div><!-- end f-list-info -->
                                 </div><!-- end list-content -->
                             </div><!-- end f-list-block -->
