@@ -15,4 +15,12 @@ public class MainViewController {
 		}
 		return "index";
 	}
+	
+	@RequestMapping(value={"/projects"})
+	public String projects(Model model, @RequestParam(value = "lang", required = false) String language) {
+		if(language!=null && !language.isEmpty()){
+			model.addAttribute("lang", language);
+		}
+		return "projects";
+	}
 }

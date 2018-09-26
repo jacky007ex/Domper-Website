@@ -3,13 +3,13 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="author" content="Sumon Rahman">
+    <meta name="author" content="Ashekur Rahman">
     <meta name="description" content="">
     <meta name="keywords" content="HTML,CSS,XML,JavaScript">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Title -->
-    <title>Appe</title>
+    <title>Appy App Landing Template.</title>
     <!-- Place favicon.ico in the root directory -->
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
@@ -36,7 +36,7 @@
         <span><i class="lnr lnr-sun"></i></span>
     </div>
     <!-- MainMenu-Area -->
-    <nav class="mainmenu-area" data-spy="affix" data-offset-top="200">
+    <nav class="mainmenu-area" data-spy="affix" data-offset-top="0">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary_menu">
@@ -48,14 +48,14 @@
             </div>
             <div class="collapse navbar-collapse" id="primary_menu">
                 <ul class="nav navbar-nav mainmenu">
-                    <li class="active"><a href="#home_page">Home</a></li>
-                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="index.html#home_page">Home</a></li>
+                    <li class="active"><a href="index.html#about_page">Projects</a></li>
                     <li><a href="developers.html">Developers</a></li>
-                    <li><a href="#gallery_page">Profile</a></li>
-                    <li><a href="#price_page">Pricing</a></li>
-                    <li><a href="#questions_page">FAQ</a></li>
+                    <li><a href="index.html#gallery_page">Profile</a></li>
+                    <li><a href="index.html#price_page">Pricing</a></li>
+                    <li><a href="index.html#questions_page">FAQ</a></li>
                     <li><a href="blog.html">Blog</a></li>
-                    <li><a href="#contact_page">Contacts</a></li>
+                    <li><a href="index.html#contact_page">Contacts</a></li>
                 </ul>
                 <div class="right-button hidden-xs">
                     <a href="#">Sign Up</a>
@@ -64,533 +64,98 @@
         </div>
     </nav>
     <!-- MainMenu-Area-End -->
-    <!-- Home-Area -->
-    <section class="section-padding" id="about_page">
+     <!-- 
+    <header class="site-header">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-md-10 col-md-offset-1">
-                    <div class="page-title text-center">
-                        <img src="images/about-logo.png" alt="About Logo">
-                        <div class="space-20"></div>
-                        <h2 class="blue-color"> Software Development 配對平台</h2>
-                        <p>本平台致力引導 Project Owner 能夠提供足夠及清晰的項目要求</p>
-                        <p>為雙方根據以下因素作出配對： Quality - Price - Time</p>
-                        <p>價錢低 > 質素差 | 趕時間 > 價錢高</p>
-                        <p>此消彼長，各有所需</p>
-                    </div>
+                <div class="col-xs-12 text-center">
+                    <h1 class="white-color">Out Latest Blog</h1>
+                    <ul class="breadcrumb">
+                        <li><a href="index.html">Home</a></li>
+                        <li>Blog</li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </section>
-    <header class="home-area overlay" id="home_page">
+    </header> -->
+    <div class="section-padding">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 hidden-sm col-md-5">
-                    <figure class="mobile-image wow fadeInUp" data-wow-delay="0.2s">
-                        <img src="images/header-mobile.png" alt="">
-                    </figure>
-                </div>
-                <div class="col-xs-12 col-md-7">
-                    <h1 class="wow fadeInUp" data-wow-delay="0.4s">有 APP 想搵人做</h1>
-                    <div class="space-10"></div>
-                    <div class="desc wow fadeInUp" data-wow-delay="0.6s">
-                        <p>唔知要幾錢？ 唔識熟人？</p>
-                        <p>唔知有咩要準備？ 唔知質素係點？</p>
-                        <p>唔知行內程序係點？ 唔知有咩保障？</p>
-                        <a href="#" class="bttn-white wow fadeInUp" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp;">新手禁我啦</a>
-                        <a href="#" class="bttn-white wow fadeInUp" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp;">我係老手，帶我去報價</a>
-                    </div>
-                    <div class="space-10"></div>
-                    <h1 class="wow fadeInUp" data-wow-delay="0.4s">想接 Project 做</h1>
-                    <div class="space-10"></div>
-                    <div class="desc wow fadeInUp" data-wow-delay="0.6s">
-                        <p>唔知報價岩唔岩？ 無熟人彈job俾自己做？</p>
-                        <p>唔知邊度接Project？ 客戶咩都唔識？</p>
-                        <p>Project 要求空洞？ 分析完報價後什麼都沒有？</p>
-                        <a href="#" class="bttn-white wow fadeInUp" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp;">新手禁我啦</a>
-                        <a href="#" class="bttn-white wow fadeInUp" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp;">我係老手，我要登記</a>
-                    </div>
-                    <div class="space-20"></div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- Home-Area-End -->
-    <!-- About-Area -->
-    <section class="section-padding" id="about_page">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-md-10 col-md-offset-1">
-                    <div class="page-title text-center">
-                        <img src="images/about-logo.png" alt="About Logo">
-                        <div class="space-20"></div>
-                        <h2 class="blue-color"> Software Development 配對平台</h2>
-                        <p>本平台致力引導 Project Owner 能夠提供足夠及清晰的項目要求</p>
-                        <p>為雙方根據以下因素作出配對： Quality - Price - Time</p>
-                        <p>價錢低 > 質素差 | 趕時間 > 價錢高</p>
-                        <p>此消彼長，各有所需</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- About-Area-End -->
-    <!-- Progress-Area -->
-    <section class="progress-area gray-bg" id="progress_page">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-md-6">
-                    <div class="page-title section-padding">
-                        <h5 class="title wow fadeInUp" data-wow-delay="0.2s">我們的方向</h5>
-                        <div class="space-10"></div>
-                        <h3 class="dark-color wow fadeInUp" data-wow-delay="0.4s">從建立開始</h3>
-                        <div class="space-20"></div>
-                        <div class="desc wow fadeInUp" data-wow-delay="0.6s">
-                            <p>建立Project時，一步一步讓你輸入重要而且影響報價的資訊，亦會讓你明白到開發者要做的工序不是你想象中的簡單</p>
-                        </div>
-                        <div class="space-20"></div>
-                        <div class="desc wow fadeInUp" data-wow-delay="0.6s">
-                            <p>Developers 建立個人檔案時，會讓你輸入一些對你有利的資訊，讓客戶了解你的能力，你的經驗，及增加對你的信任</p>
-                        </div>
-                        <div class="space-20"></div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <figure class="mobile-image">
-                        <img src="images/progress-phone.png" alt="">
-                    </figure>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Progress-Area-End -->
-    <!-- Video-Area -->
-    <section class="video-area section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-md-6">
-                    <div class="video-photo">
-                        <img src="images/video-image.jpg" alt="">
-                        <a href="https://www.youtube.com/watch?v=ScrDhTsX0EQ" class="popup video-button">
-                            <img src="images/play-button.png" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-5 col-md-offset-1">
-                    <div class="space-60 hidden visible-xs"></div>
-                    <div class="page-title">
-                        <h5 class="title wow fadeInUp" data-wow-delay="0.2s">VIDEO FEATURES</h5>
-                        <div class="space-10"></div>
-                        <h3 class="dark-color wow fadeInUp" data-wow-delay="0.4s">Grat Application Ever</h3>
-                        <div class="space-20"></div>
-                        <div class="desc wow fadeInUp" data-wow-delay="0.6s">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiing elit, sed do eiusmod tempor incididunt ut labore et laborused sed do eiusmod tempor incididunt ut labore et laborused.</p>
-                        </div>
-                        <div class="space-50"></div>
-                        <a href="#" class="bttn-default wow fadeInUp" data-wow-delay="0.8s">Learn More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Video-Area-End -->
-    <!-- Feature-Area -->
-    <section class="feature-area section-padding-top" id="features_page">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-                    <div class="page-title text-center">
-                        <h5 class="title">Features</h5>
-                        <div class="space-10"></div>
-                        <h3>Pwoerful Features As Always</h3>
-                        <div class="space-60"></div>
-                    </div>
+                <div class="col-xs-12">
+                    <article class="post-single sticky">
+                        <figure class="post-media">
+                            <img src="images/sticky-image.jpg" alt="">
+                        </figure>
+                    </article>
+                    <div class="space-50"></div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="service-box wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="box-icon">
-                            <i class="lnr lnr-rocket"></i>
+                    <article class="post-single">
+                        <figure class="post-media">
+                            <img src="images/developer1.png" alt="">
+                        </figure>
+                        <div class="post-body">
+                            <div class="post-meta">
+                                <div class="post-tags">Jacky Lau</div>
+                                <div class="post-date">25/07/2018 3:00pm</div>
+                            </div>
+                            <h4 class="dark-color">網上商店</h4>
+                            <h5 class="dark-color">IOS Development, Android Development, Website Development</h5>
+                            <a href="single.html" class="read-more">View Details</a>
                         </div>
-                        <h4>Fast &amp; Powerful</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                    <div class="space-60"></div>
-                    <div class="service-box wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="box-icon">
-                            <i class="lnr lnr-paperclip"></i>
-                        </div>
-                        <h4>Easily Editable</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                    <div class="space-60"></div>
-                    <div class="service-box wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="box-icon">
-                            <i class="lnr lnr-cloud-download"></i>
-                        </div>
-                        <h4>Cloud Storage</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                    <div class="space-60"></div>
-                </div>
-                <div class="hidden-xs hidden-sm col-md-4">
-                    <figure class="mobile-image">
-                        <img src="images/feature-image.png" alt="Feature Photo">
-                    </figure>
+                    </article>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="service-box wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="box-icon">
-                            <i class="lnr lnr-clock"></i>
+                    <article class="post-single">
+                        <figure class="post-media">
+                            <img src="images/developer2.png" alt="">
+                        </figure>
+                        <div class="post-body">
+                            <div class="post-meta">
+                                <div class="post-tags">Jessie Lam</div>
+                                <div class="post-date">1 Job On Hand</div>
+                            </div>
+                            <h4 class="dark-color"><a href="single.html">Top destinations to escape from reality</a></h4>
+                            <a href="single.html" class="read-more">View Profile</a>
                         </div>
-                        <h4>Easy Notifications</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                    <div class="space-60"></div>
-                    <div class="service-box wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="box-icon">
-                            <i class="lnr lnr-laptop-phone"></i>
-                        </div>
-                        <h4>Fully Responsive</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                    <div class="space-60"></div>
-                    <div class="service-box wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="box-icon">
-                            <i class="lnr lnr-cog"></i>
-                        </div>
-                        <h4>Editable Layout</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                    <div class="space-60"></div>
+                    </article>
                 </div>
-            </div>
-        </div>
-    </section>
-    <!-- Feature-Area-End -->
-    <!-- Testimonial-Area -->
-    <section class="testimonial-area" id="testimonial_page">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="page-title text-center">
-                        <h5 class="title">Testimonials</h5>
-                        <h3 class="dark-color">Our Client Loves US</h3>
-                        <div class="space-60"></div>
-                    </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <article class="post-single">
+                        <figure class="post-media">
+                            <img src="images/developer2.png" alt="">
+                        </figure>
+                        <div class="post-body">
+                            <div class="post-meta">
+                                <div class="post-tags">IT Dog</div>
+                                <div class="post-date">Following 1 Job</div>
+                            </div>
+                            <h4 class="dark-color"><a href="single.html">Five ways to wear a shirt by Victoria Beckha</a></h4>
+                            <a href="single.html" class="read-more">View Profile</a>
+                        </div>
+                    </article>
                 </div>
             </div>
             <div class="row">
                 <div class="col-xs-12">
-                    <div class="team-slide">
-                        <div class="team-box">
-                            <div class="team-image">
-                                <img src="images/team-1.png" alt="">
-                            </div>
-                            <h4>Ashekur Rahman</h4>
-                            <h6 class="position">Art Dirrector</h6>
-                            <p>Lorem ipsum dolor sit amet, conseg sed do eiusmod temput laborelaborus ed sed do eiusmod tempo.</p>
-                        </div>
-                        <div class="team-box">
-                            <div class="team-image">
-                                <img src="images/team-2.jpg" alt="">
-                            </div>
-                            <h4>Ashekur Rahman</h4>
-                            <h6 class="position">Art Dirrector</h6>
-                            <p>Lorem ipsum dolor sit amet, conseg sed do eiusmod temput laborelaborus ed sed do eiusmod tempo.</p>
-                        </div>
-                        <div class="team-box">
-                            <div class="team-image">
-                                <img src="images/team-3.jpg" alt="">
-                            </div>
-                            <h4>Ashekur Rahman</h4>
-                            <h6 class="position">Art Dirrector</h6>
-                            <p>Lorem ipsum dolor sit amet, conseg sed do eiusmod temput laborelaborus ed sed do eiusmod tempo.</p>
-                        </div>
-                        <div class="team-box">
-                            <div class="team-image">
-                                <img src="images/team-1.png" alt="">
-                            </div>
-                            <h4>Ashekur Rahman</h4>
-                            <h6 class="position">Art Dirrector</h6>
-                            <p>Lorem ipsum dolor sit amet, conseg sed do eiusmod temput laborelaborus ed sed do eiusmod tempo.</p>
-                        </div>
-                        <div class="team-box">
-                            <div class="team-image">
-                                <img src="images/team-2.jpg" alt="">
-                            </div>
-                            <h4>Ashekur Rahman</h4>
-                            <h6 class="position">Art Dirrector</h6>
-                            <p>Lorem ipsum dolor sit amet, conseg sed do eiusmod temput laborelaborus ed sed do eiusmod tempo.</p>
-                        </div>
-                        <div class="team-box">
-                            <div class="team-image">
-                                <img src="images/team-3.jpg" alt="">
-                            </div>
-                            <h4>Ashekur Rahman</h4>
-                            <h6 class="position">Art Dirrector</h6>
-                            <p>Lorem ipsum dolor sit amet, conseg sed do eiusmod temput laborelaborus ed sed do eiusmod tempo.</p>
+                    <div class="pagination">
+                        <div class="nav-links">
+                            <a href="#" class="prev page-numbers"><i class="lnr lnr-chevron-left"></i></a>
+                            <a href="#" class="page-numbers">1</a>
+                            <span class="page-numbers current">2</span>
+                            <a href="#" class="page-numbers">3</a>
+                            <a href="#" class="page-numbers">4</a>
+                            <a href="#" class="page-numbers">5</a>
+                            <a href="#" class="page-numbers">6</a>
+                            <a href="#" class="next page-numbers"><i class="lnr lnr-chevron-right"></i></a>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Testimonial-Area-End -->
-    <!-- Gallery-Area -->
-    <section class="gallery-area section-padding" id="gallery_page">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 gallery-slider">
-                    <div class="gallery-slide">
-                        <div class="item"><img src="images/gallery-1.jpg" alt=""></div>
-                        <div class="item"><img src="images/gallery-2.jpg" alt=""></div>
-                        <div class="item"><img src="images/gallery-3.jpg" alt=""></div>
-                        <div class="item"><img src="images/gallery-4.jpg" alt=""></div>
-                        <div class="item"><img src="images/gallery-1.jpg" alt=""></div>
-                        <div class="item"><img src="images/gallery-2.jpg" alt=""></div>
-                        <div class="item"><img src="images/gallery-3.jpg" alt=""></div>
-                        <div class="item"><img src="images/gallery-1.jpg" alt=""></div>
-                        <div class="item"><img src="images/gallery-2.jpg" alt=""></div>
-                        <div class="item"><img src="images/gallery-3.jpg" alt=""></div>
-                        <div class="item"><img src="images/gallery-4.jpg" alt=""></div>
-                        <div class="item"><img src="images/gallery-1.jpg" alt=""></div>
-                        <div class="item"><img src="images/gallery-2.jpg" alt=""></div>
-                        <div class="item"><img src="images/gallery-3.jpg" alt=""></div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-5 col-lg-3">
-                    <div class="page-title">
-                        <h5 class="white-color title wow fadeInUp" data-wow-delay="0.2s">Screenshots</h5>
-                        <div class="space-10"></div>
-                        <h3 class="white-color wow fadeInUp" data-wow-delay="0.4s">Screenshot 01</h3>
-                    </div>
-                    <div class="space-20"></div>
-                    <div class="desc wow fadeInUp" data-wow-delay="0.6s">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiing elit, sed do eiusmod tempor incididunt ut labore et laborused sed do eiusmod tempor incididunt ut labore et laborused.</p>
-                    </div>
-                    <div class="space-50"></div>
-                    <a href="#" class="bttn-default wow fadeInUp" data-wow-delay="0.8s">Learn More</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Gallery-Area-End -->
-    <!-- How-To-Use -->
-    <section class="section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6">
-                    <div class="page-title">
-                        <h5 class="title wow fadeInUp" data-wow-delay="0.2s">Our features</h5>
-                        <div class="space-10"></div>
-                        <h3 class="dark-color wow fadeInUp" data-wow-delay="0.4s">Aour Approach of Design is Prety Simple and Clear</h3>
-                    </div>
-                    <div class="space-20"></div>
-                    <div class="desc wow fadeInUp" data-wow-delay="0.6s">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiing elit, sed do eiusmod tempor incididunt ut labore et laborused sed do eiusmod tempor incididunt ut labore et laborused.</p>
-                    </div>
-                    <div class="space-50"></div>
-                    <a href="#" class="bttn-default wow fadeInUp" data-wow-delay="0.8s">Learn More</a>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-1">
-                    <div class="space-60 hidden visible-xs"></div>
-                    <div class="service-box wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="box-icon">
-                            <i class="lnr lnr-clock"></i>
-                        </div>
-                        <h4>Easy Notifications</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-                    </div>
-                    <div class="space-50"></div>
-                    <div class="service-box wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="box-icon">
-                            <i class="lnr lnr-laptop-phone"></i>
-                        </div>
-                        <h4>Fully Responsive</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-                    </div>
-                    <div class="space-50"></div>
-                    <div class="service-box wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="box-icon">
-                            <i class="lnr lnr-cog"></i>
-                        </div>
-                        <h4>Editable Layout</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- How-To-Use-End -->
-    <!-- Download-Area -->
-    <div class="download-area overlay">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 hidden-sm">
-                    <figure class="mobile-image">
-                        <img src="images/download-image.png" alt="">
-                    </figure>
-                </div>
-                <div class="col-xs-12 col-md-6 section-padding">
-                    <h3 class="white-color">Download The App</h3>
-                    <div class="space-20"></div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam possimus eaque magnam eum praesentium unde.</p>
-                    <div class="space-60"></div>
-                    <a href="#" class="bttn-white sq"><img src="images/apple-icon.png" alt="apple icon"> Apple Store</a>
-                    <a href="#" class="bttn-white sq"><img src="images/play-store-icon.png" alt="Play Store Icon"> Play Store</a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Download-Area-End -->
-    <!--Price-Area -->
-    <section class="section-padding price-area" id="price_page">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="page-title text-center">
-                        <h5 class="title">Pricing Plan</h5>
-                        <h3 class="dark-color">Our Awesome Pricing Plan</h3>
-                        <div class="space-60"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-4">
-                    <div class="price-box">
-                        <div class="price-header">
-                            <div class="price-icon">
-                                <span class="lnr lnr-rocket"></span>
-                            </div>
-                            <h4 class="upper">Free</h4>
-                        </div>
-                        <div class="price-body">
-                            <ul>
-                                <li>Easy Installations</li>
-                                <li>Unlimited support</li>
-                                <li>Uniqe Elements</li>
-                            </ul>
-                        </div>
-                        <div class="price-rate">
-                            <sup>&#36;</sup> <span class="rate">0</span> <small>/Month</small>
-                        </div>
-                        <div class="price-footer">
-                            <a href="#" class="bttn-white">Purchase</a>
-                        </div>
-                    </div>
-                    <div class="space-30 hidden visible-xs"></div>
-                </div>
-                <div class="col-xs-12 col-sm-4">
-                    <div class="price-box">
-                        <div class="price-header">
-                            <div class="price-icon">
-                                <span class="lnr lnr-diamond"></span>
-                            </div>
-                            <h4 class="upper">Medium</h4>
-                        </div>
-                        <div class="price-body">
-                            <ul>
-                                <li>Easy Installations</li>
-                                <li>Unlimited support</li>
-                                <li>Free Forever</li>
-                            </ul>
-                        </div>
-                        <div class="price-rate">
-                            <sup>&#36;</sup> <span class="rate">49</span> <small>/Month</small>
-                        </div>
-                        <div class="price-footer">
-                            <a href="#" class="bttn-white">Purchase</a>
-                        </div>
-                    </div>
-                    <div class="space-30 hidden visible-xs"></div>
-                </div>
-                <div class="col-xs-12 col-sm-4">
-                    <div class="price-box">
-                        <div class="price-header">
-                            <div class="price-icon">
-                                <span class="lnr lnr-pie-chart"></span>
-                            </div>
-                            <h4 class="upper">Business</h4>
-                        </div>
-                        <div class="price-body">
-                            <ul>
-                                <li>Easy Installations</li>
-                                <li>Unlimited support</li>
-                                <li>Free Forever</li>
-                            </ul>
-                        </div>
-                        <div class="price-rate">
-                            <sup>&#36;</sup> <span class="rate">99</span> <small>/Month</small>
-                        </div>
-                        <div class="price-footer">
-                            <a href="#" class="bttn-white">Purchase</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--Price-Area-End -->
-    <!--Questions-Area -->
-    <section id="questions_page" class="questions-area section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="page-title text-center">
-                        <h5 class="title">FAQ</h5>
-                        <h3 class="dark-color">Frequently Asked Questions</h3>
-                        <div class="space-60"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-6">
-                    <div class="toggole-boxs">
-                        <h3>Faq first question goes here? </h3>
-                        <div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        </div>
-                        <h3>About freewuent question goes here? </h3>
-                        <div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        </div>
-                        <h3>Why more question goes here? </h3>
-                        <div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        </div>
-                        <h3>What question goes here? </h3>
-                        <div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6">
-                    <div class="space-20 hidden visible-xs"></div>
-                    <div class="toggole-boxs">
-                        <h3>Faq second question goes here? </h3>
-                        <div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        </div>
-                        <h3>Third faq question goes here? </h3>
-                        <div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        </div>
-                        <h3>Why more question goes here? </h3>
-                        <div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        </div>
-                        <h3>Seventh frequent question here? </h3>
-                        <div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--Questions-Area-End -->
     <!-- Subscribe-Form -->
     <div class="subscribe-area section-padding">
         <div class="container">
@@ -647,7 +212,7 @@
                             <div class="box-icon">
                                 <span class="lnr lnr-envelope"></span>
                             </div>
-                            <p>yourmail@gmail.com <br /> backpiper.com@gmail.com
+                            <p>yourmail@gmail.com <br /> anothermai@hotmail.com
                             </p>
                         </div>
                     </div>
@@ -659,6 +224,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-md-5">
+
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             <span>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="lnr lnr-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></span>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
@@ -667,12 +233,14 @@
                     <div class="col-xs-12 col-md-7">
                         <div class="footer-menu">
                             <ul>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Services</a></li>
-                                <li><a href="#">Features</a></li>
-                                <li><a href="#">Pricing</a></li>
-                                <li><a href="#">Testimonial</a></li>
-                                <li><a href="#">Contacts</a></li>
+                                <li class="active"><a href="index.html#home_page">Home</a></li>
+                                <li><a href="index.html#about_page">About</a></li>
+                                <li><a href="index.html#features_page">Features</a></li>
+                                <li><a href="index.html#gallery_page">Gallery</a></li>
+                                <li><a href="index.html#price_page">Pricing</a></li>
+                                <li><a href="index.html#questions_page">FAQ</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="index.html#contact_page">Contacts</a></li>
                             </ul>
                         </div>
                     </div>
