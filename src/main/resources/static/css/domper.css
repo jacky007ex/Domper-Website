@@ -1,0 +1,39 @@
+ .form-items {
+    padding: 35px 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 6px 15px rgba(0, 0, 0, 0.16);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.16);
+}
+
+.form-control {
+    border: 0;
+    background-color: #F7F7F7;
+    color: #000000;
+}
+
+.modal-dialog {
+    width: 600px;
+    margin: 200px auto;
+}
+
+.card{
+	position: relative;
+	background: white;
+	display: inline-block;
+	border-radius: 5px;
+	width: 150px;
+	height: 150px;
+	border: 1px solid lightgray;
+	margin: 10px 10px 10px 10px;
+	text-align: center;
+}
+
+.card-image{
+	position: relative;
+	width: 100px;
+	height: 100px;
+	border-radius: 10px;
+	margin: 10px 10px 10px 10px;
+	
+}

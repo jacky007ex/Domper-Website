@@ -1,484 +1,803 @@
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <!doctype html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="author" content="Sumon Rahman">
-    <meta name="description" content="">
-    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Title -->
-    <title>Appe</title>
-    <!-- Place favicon.ico in the root directory -->
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
-    <!-- Plugin-CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/linearicons.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <!-- Main-Stylesheets -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    <!--[if lt IE 9]>
-        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
+<html class="no-js" lang="zxx">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Domper</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<body data-spy="scroll" data-target=".mainmenu-area">
-    <!-- Preloader-content -->
-    <div class="preloader">
-        <span><i class="lnr lnr-sun"></i></span>
-    </div>
-    <!-- MainMenu-Area -->
-    <nav class="mainmenu-area" data-spy="affix" data-offset-top="200">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary_menu">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Logo"></a>
-            </div>
-            <div class="collapse navbar-collapse" id="primary_menu">
-                <ul class="nav navbar-nav mainmenu">
-                    <li class="active"><a href="#home_page">Home</a></li>
-                    <li><a href="projects">Projects</a></li>
-                    <li><a href="developers.html">Developers</a></li>
-                    <li><a href="#contact_page">Contacts</a></li>
-                </ul>
-                <div class="right-button hidden-xs">
-                    <a href="#">Sign Up</a>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <!-- MainMenu-Area-End -->
-    <!-- Home-Area -->
-    <section class="section-padding" id="about_page">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-md-10 col-md-offset-1">
-                    <div class="page-title text-center">
-                        <div class="space-20"></div>
-                        <h2 class="blue-color"> 網頁/APP開發 配對平台</h2>
-                        <p>本平台致力引導 Project Owner 能夠提供足夠及清晰的項目要求</p>
-                        <p>為雙方根據以下因素作出配對： Quality - Price - Time</p>
-                        <p>價錢低 > 質素差 | 趕時間 > 價錢高</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- <header class="home-area overlay" id="home_page">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 hidden-sm col-md-5">
-                    <figure class="mobile-image wow fadeInUp" data-wow-delay="0.2s">
-                        <img src="images/header-mobile.png" alt="">
-                    </figure>
-                </div>
-                <div class="col-xs-12 col-md-7">
-                    <h1 class="wow fadeInUp" data-wow-delay="0.4s">有 APP 想搵人做</h1>
-                    <div class="space-10"></div>
-                    <div class="desc wow fadeInUp" data-wow-delay="0.6s">
-                        <p>唔知要幾錢？ 唔識熟人？</p>
-                        <p>唔知有咩要準備？ 唔知質素係點？</p>
-                        <p>唔知行內程序係點？ 唔知有咩保障？</p>
-                        <a href="#" class="bttn-white wow fadeInUp" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp;">新手禁我啦</a>
-                        <a href="#" class="bttn-white wow fadeInUp" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp;">我係老手，帶我去報價</a>
-                    </div>
-                    <div class="space-10"></div>
-                    <h1 class="wow fadeInUp" data-wow-delay="0.4s">想接 Project 做</h1>
-                    <div class="space-10"></div>
-                    <div class="desc wow fadeInUp" data-wow-delay="0.6s">
-                        <p>唔知報價岩唔岩？ 無熟人彈job俾自己做？</p>
-                        <p>唔知邊度接Project？ 客戶咩都唔識？</p>
-                        <p>Project 要求空洞？ 分析完報價後什麼都沒有？</p>
-                        <a href="#" class="bttn-white wow fadeInUp" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp;">新手禁我啦</a>
-                        <a href="#" class="bttn-white wow fadeInUp" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp;">我係老手，我要登記</a>
-                    </div>
-                    <div class="space-20"></div>
-                </div>
-            </div>
-        </div>
-    </header> -->
-    <!-- Home-Area-End -->
-    <!-- About-Area -->
-    <!-- <section class="section-padding" id="about_page">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-md-10 col-md-offset-1">
-                    <div class="page-title text-center">
-                        <img src="images/about-logo.png" alt="About Logo">
-                        <div class="space-20"></div>
-                        <h2 class="blue-color"> Software Development 配對平台</h2>
-                        <p>本平台致力引導 Project Owner 能夠提供足夠及清晰的項目要求</p>
-                        <p>為雙方根據以下因素作出配對： Quality - Price - Time</p>
-                        <p>價錢低 > 質素差 | 趕時間 > 價錢高</p>
-                        <p>此消彼長，各有所需</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- About-Area-End -->
-    <!-- Progress-Area -->
-    <section class="progress-area gray-bg" id="progress_page">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-md-6">
-                    <div class="page-title section-padding">
-                        <h5 class="title wow fadeInUp" data-wow-delay="0.2s">我們的方向</h5>
-                        <div class="space-10"></div>
-                        <h3 class="dark-color wow fadeInUp" data-wow-delay="0.4s">從建立開始</h3>
-                        <div class="space-20"></div>
-                        <div class="desc wow fadeInUp" data-wow-delay="0.6s">
-                            <p>建立Project時，一步一步讓你輸入重要而且影響報價的資訊，亦會讓你明白到開發者要做的工序不是你想象中的簡單</p>
-                        </div>
-                        <div class="space-20"></div>
-                        <div class="desc wow fadeInUp" data-wow-delay="0.6s">
-                            <p>Developers 建立個人檔案時，會讓你輸入一些對你有利的資訊，讓客戶了解你的能力，你的經驗，及增加對你的信任</p>
-                        </div>
-                        <div class="space-20"></div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <figure class="mobile-image">
-                        <img src="images/progress-phone.png" alt="">
-                    </figure>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Progress-Area-End -->
-    <!-- Video-Area -->
-    <!-- <section class="video-area section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-md-6">
-                    <div class="video-photo">
-                        <img src="images/video-image.jpg" alt="">
-                        <a href="https://www.youtube.com/watch?v=ScrDhTsX0EQ" class="popup video-button">
-                            <img src="images/play-button.png" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-5 col-md-offset-1">
-                    <div class="space-60 hidden visible-xs"></div>
-                    <div class="page-title">
-                        <h5 class="title wow fadeInUp" data-wow-delay="0.2s">VIDEO FEATURES</h5>
-                        <div class="space-10"></div>
-                        <h3 class="dark-color wow fadeInUp" data-wow-delay="0.4s">Grat Application Ever</h3>
-                        <div class="space-20"></div>
-                        <div class="desc wow fadeInUp" data-wow-delay="0.6s">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiing elit, sed do eiusmod tempor incididunt ut labore et laborused sed do eiusmod tempor incididunt ut labore et laborused.</p>
-                        </div>
-                        <div class="space-50"></div>
-                        <a href="#" class="bttn-default wow fadeInUp" data-wow-delay="0.8s">Learn More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- Video-Area-End -->
-    <!-- How-To-Use -->
-    <section class="section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6">
-                    <div class="page-title">
-                        <h5 class="title wow fadeInUp" data-wow-delay="0.2s">Our features</h5>
-                        <div class="space-10"></div>
-                        <h3 class="dark-color wow fadeInUp" data-wow-delay="0.4s">Aour Approach of Design is Prety Simple and Clear</h3>
-                    </div>
-                    <div class="space-20"></div>
-                    <div class="desc wow fadeInUp" data-wow-delay="0.6s">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiing elit, sed do eiusmod tempor incididunt ut labore et laborused sed do eiusmod tempor incididunt ut labore et laborused.</p>
-                    </div>
-                    <div class="space-50"></div>
-                    <a href="#" class="bttn-default wow fadeInUp" data-wow-delay="0.8s">Learn More</a>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-1">
-                    <div class="space-60 hidden visible-xs"></div>
-                    <div class="service-box wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="box-icon">
-                            <i class="lnr lnr-clock"></i>
-                        </div>
-                        <h4>Easy Notifications</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-                    </div>
-                    <div class="space-50"></div>
-                    <div class="service-box wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="box-icon">
-                            <i class="lnr lnr-laptop-phone"></i>
-                        </div>
-                        <h4>Fully Responsive</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-                    </div>
-                    <div class="space-50"></div>
-                    <div class="service-box wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="box-icon">
-                            <i class="lnr lnr-cog"></i>
-                        </div>
-                        <h4>Editable Layout</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- How-To-Use-End -->
-    <!-- Download-Area -->
-    <div class="download-area overlay">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 hidden-sm">
-                    <figure class="mobile-image">
-                        <img src="images/download-image.png" alt="">
-                    </figure>
-                </div>
-                <div class="col-xs-12 col-md-6 section-padding">
-                    <h3 class="white-color">Download The App</h3>
-                    <div class="space-20"></div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam possimus eaque magnam eum praesentium unde.</p>
-                    <div class="space-60"></div>
-                    <a href="#" class="bttn-white sq"><img src="images/apple-icon.png" alt="apple icon"> Apple Store</a>
-                    <a href="#" class="bttn-white sq"><img src="images/play-store-icon.png" alt="Play Store Icon"> Play Store</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Download-Area-End -->
-    <!--Price-Area -->
-    <section class="section-padding price-area" id="price_page">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="page-title text-center">
-                        <h5 class="title">Pricing Plan</h5>
-                        <h3 class="dark-color">Our Awesome Pricing Plan</h3>
-                        <div class="space-60"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-4">
-                    <div class="price-box">
-                        <div class="price-header">
-                            <div class="price-icon">
-                                <span class="lnr lnr-rocket"></span>
-                            </div>
-                            <h4 class="upper">Free</h4>
-                        </div>
-                        <div class="price-body">
-                            <ul>
-                                <li>Easy Installations</li>
-                                <li>Unlimited support</li>
-                                <li>Uniqe Elements</li>
-                            </ul>
-                        </div>
-                        <div class="price-rate">
-                            <sup>&#36;</sup> <span class="rate">0</span> <small>/Month</small>
-                        </div>
-                        <div class="price-footer">
-                            <a href="#" class="bttn-white">Purchase</a>
-                        </div>
-                    </div>
-                    <div class="space-30 hidden visible-xs"></div>
-                </div>
-                <div class="col-xs-12 col-sm-4">
-                    <div class="price-box">
-                        <div class="price-header">
-                            <div class="price-icon">
-                                <span class="lnr lnr-diamond"></span>
-                            </div>
-                            <h4 class="upper">Medium</h4>
-                        </div>
-                        <div class="price-body">
-                            <ul>
-                                <li>Easy Installations</li>
-                                <li>Unlimited support</li>
-                                <li>Free Forever</li>
-                            </ul>
-                        </div>
-                        <div class="price-rate">
-                            <sup>&#36;</sup> <span class="rate">49</span> <small>/Month</small>
-                        </div>
-                        <div class="price-footer">
-                            <a href="#" class="bttn-white">Purchase</a>
-                        </div>
-                    </div>
-                    <div class="space-30 hidden visible-xs"></div>
-                </div>
-                <div class="col-xs-12 col-sm-4">
-                    <div class="price-box">
-                        <div class="price-header">
-                            <div class="price-icon">
-                                <span class="lnr lnr-pie-chart"></span>
-                            </div>
-                            <h4 class="upper">Business</h4>
-                        </div>
-                        <div class="price-body">
-                            <ul>
-                                <li>Easy Installations</li>
-                                <li>Unlimited support</li>
-                                <li>Free Forever</li>
-                            </ul>
-                        </div>
-                        <div class="price-rate">
-                            <sup>&#36;</sup> <span class="rate">99</span> <small>/Month</small>
-                        </div>
-                        <div class="price-footer">
-                            <a href="#" class="bttn-white">Purchase</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--Price-Area-End -->
-    <!--Questions-Area -->
-   <!--  <section id="questions_page" class="questions-area section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="page-title text-center">
-                        <h5 class="title">FAQ</h5>
-                        <h3 class="dark-color">Frequently Asked Questions</h3>
-                        <div class="space-60"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-6">
-                    <div class="toggole-boxs">
-                        <h3>Faq first question goes here? </h3>
-                        <div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        </div>
-                        <h3>About freewuent question goes here? </h3>
-                        <div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        </div>
-                        <h3>Why more question goes here? </h3>
-                        <div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        </div>
-                        <h3>What question goes here? </h3>
-                        <div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6">
-                    <div class="space-20 hidden visible-xs"></div>
-                    <div class="toggole-boxs">
-                        <h3>Faq second question goes here? </h3>
-                        <div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        </div>
-                        <h3>Third faq question goes here? </h3>
-                        <div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        </div>
-                        <h3>Why more question goes here? </h3>
-                        <div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        </div>
-                        <h3>Seventh frequent question here? </h3>
-                        <div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!--Questions-Area-End -->
-    <!-- Footer-Area -->
-    <footer class="footer-area" id="contact_page">
-        <div class="section-padding">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="page-title text-center">
-                            <h5 class="title">Contact US</h5>
-                            <h3 class="dark-color">Find Us By Bellow Details</h3>
-                            <div class="space-60"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-4">
-                        <div class="footer-box">
-                            <div class="box-icon">
-                                <span class="lnr lnr-map-marker"></span>
-                            </div>
-                            <p>8-54 Paya Lebar Square <br /> 60 Paya Lebar Roa SG, Singapore</p>
-                        </div>
-                        <div class="space-30 hidden visible-xs"></div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4">
-                        <div class="footer-box">
-                            <div class="box-icon">
-                                <span class="lnr lnr-phone-handset"></span>
-                            </div>
-                            <p>+65 93901336 <br /> +65 93901337</p>
-                        </div>
-                        <div class="space-30 hidden visible-xs"></div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4">
-                        <div class="footer-box">
-                            <div class="box-icon">
-                                <span class="lnr lnr-envelope"></span>
-                            </div>
-                            <p>yourmail@gmail.com <br /> backpiper.com@gmail.com
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Footer-Bootom -->
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-md-5">
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            <span>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="lnr lnr-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></span>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        <div class="space-30 hidden visible-xs"></div>
-                    </div>
-                    <div class="col-xs-12 col-md-7">
-                        <div class="footer-menu">
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Footer-Bootom-End -->
-    </footer>
-    <!-- Footer-Area-End -->
-    <!--Vendor-JS-->
-    <script src="js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="js/vendor/jquery-ui.js"></script>
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <!--Plugin-JS-->
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/contact-form.js"></script>
-    <script src="js/ajaxchimp.js"></script>
-    <script src="js/scrollUp.min.js"></script>
-    <script src="js/magnific-popup.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <!--Main-active-JS-->
-    <script src="js/main.js"></script>
-</body>
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="shortcut icon" type="image/ico" href="img/logo/favicon_.ico" />
+        <!-- Place favicon.ico in the root directory -->
+		
+		
+		<!-- all css here -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/flaticon.css">
+        <link rel="stylesheet" href="css/ionicons.min.css">
+        <link rel="stylesheet" href="css/headline.css">
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/material-design-iconic-font.min.css">
+        <link rel="stylesheet" href="css/meanmenu.css">
+        <link rel="stylesheet" href="css/Pe-icon-7-stroke.css">
+        <link rel="stylesheet" href="css/bundle.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/domper.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+		<header>
+			<!-- header-top-area-start -->
+			<div class="header-top-area">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 hidden-sm hidden-xs">
+							<div class="header-left">
+								<ul class="header-left-text">
+									<li id="welcome"></li>
+								</ul>
+								<ul class="header-left-text">
+									<li><a href="#">Contact Us</a> : 0 (500) 123-782</li> 
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-12 col-xs-12">
+							<div class="header-icon">
+								<a href="#"><i class="fa fa-facebook"></i></a>
+								<a href="#"><i class="fa fa-twitter"></i></a>
+								<a href="#"><i class="fa fa-instagram"></i></a>
+								<a href="#"><i class="fa fa-pinterest-p"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- header-top-area-end -->
+			<!-- main-menu-area-start -->
+			<div class="main-menu-area">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-2">
+							<div class="logo">
+								<a href="index.html"><img width="350px" src="img/logo/domper_logo.png" alt="" /></a>
+							</div>
+						</div>
+						<div class="col-md-10">
+						<div class="get-a-quote floatright hidden-sm hidden-xs">
+								<a id="login-link" style="display:none;" href="javascript:showLoginPage()">Log In</a>
+								<a id="logout-link" style="display:none;" href="javascript:logout()">Log Out</a>
+							</div>
+							<div class="main-menu floatright">
+								<nav>
+									<ul>
+										<li class="active"><a href="home">home</a>
+											<!-- <ul class="sub-menu">
+												<li><a href="index.html">Home 01</a></li>
+												<li><a href="index-2.html">Home 02</a></li>
+												<li><a href="index-3.html">Home 03</a></li>
+												<li><a href="index-box.html">Home Box</a></li>
+											</ul> -->
+										</li>
+										<li><a href="">service</a>
+											<ul class="sub-menu">
+												<li><a href="editCompany">Edit Company</a></li>
+												<li><a href="uploadMaids">Upload Maids</a></li>
+											</ul>
+										</li>
+										<li><a href="about.html">About Us</a></li>
+										<!-- <li><a href="#">pages</a>
+											<ul class="sub-menu">
+												<li><a href="gallery.html">gallery</a></li>
+												<li><a href="testimonial.html">testimonial</a></li>
+											</ul>
+										</li> -->
+										<!-- <li><a href="blog-3-column.html">blog</a>
+											<ul class="sub-menu">
+												<li><a href="blog-3-column.html">blog-3-column</a></li>
+												<li><a href="blog-left-sidebar.html">blog-left-sidebar</a></li>
+												<li><a href="blog-right-sidebar.html">blog-right-sidebar</a></li>
+												<li><a href="blog-no-sidebar.html">blog-no-sidebar</a></li>
+												<li><a href="blog-details.html">blog-details</a></li>
+												<li><a href="blog-details-no-sideber.html">blog-details-no-sideber</a></li>
+											</ul>
+										</li> -->
+										<li><a href="contact.html">contact</a></li>
+									</ul>
+								</nav>
+							</div>						
+						</div>	
+					<div class="col-xs-12"><div class="mobile-menu"></div></div>
+				</div>
+			</div>
+		</div>
+		<!-- main-menu-area-end -->
+		</header>
+		<!-- slider-area-start -->
+		<div class="slider-area">
+			<div class="slider-active owl-carousel">
+				<div class="slider-wrapper bg-opacity pt-50 pb-50" style="background-image:url(img/slider/slider1.jpg)">
+					<div class="container">
+						<div class="works-title mb-60">
+							<span>What we offer </span>
+							<h3>How It Works</h3>
+							<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born.</p>
+						</div>
+						<div class="works-wrapper" style="background-image:url(img/works/circle.png)">
+							<div class="works-content">
+								<h4>Choose Any Time for Delivery</h4>
+								<div class="works-img">
+									<img src="img/works/1.png" alt="" />
+								</div>
+							</div>
+							<div class="works-content">
+								<h4>We clean Your clothes</h4>
+								<div class="works-img">
+									<img src="img/works/2.png" alt="" />
+								</div>
+							</div>
+							<div class="works-content">
+								<h4>Relax and Enjoy Clean Clothes</h4>
+								<div class="works-img">
+									<img src="img/works/3.png" alt="" />
+								</div>
+							</div>
+							<div class="works-content">
+								<h4>Manage Everything online</h4>
+								<div class="works-img">
+									<img src="img/works/4.png" alt="" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="slider-wrapper bg-opacity pt-50 pb-50" style="background-image:url(img/slider/slider2.jpg)">
+					<div class="container">
+						<div class="works-title mb-60">
+							<span>What we offer </span>
+							<h3>How It Works</h3>
+							<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born.</p>
+						</div>
+						<div class="works-wrapper" style="background-image:url(img/works/circle.png)">
+							<div class="works-content">
+								<h4>Choose Any Time for Delivery</h4>
+								<div class="works-img">
+									<img src="img/works/1.png" alt="" />
+								</div>
+							</div>
+							<div class="works-content">
+								<h4>We clean Your clothes</h4>
+								<div class="works-img">
+									<img src="img/works/2.png" alt="" />
+								</div>
+							</div>
+							<div class="works-content">
+								<h4>Relax and Enjoy Clean Clothes</h4>
+								<div class="works-img">
+									<img src="img/works/3.png" alt="" />
+								</div>
+							</div>
+							<div class="works-content">
+								<h4>Manage Everything online</h4>
+								<div class="works-img">
+									<img src="img/works/4.png" alt="" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="slider-wrapper bg-opacity pt-50 pb-50" style="background-image:url(img/slider/slider3.jpg)">
+					<div class="container">
+						<div class="works-title mb-60">
+							<span>What we offer </span>
+							<h3>How It Works</h3>
+							<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born.</p>
+						</div>
+						<div class="works-wrapper" style="background-image:url(img/works/circle.png)">
+							<div class="works-content">
+								<h4>Choose Any Time for Delivery</h4>
+								<div class="works-img">
+									<img src="img/works/1.png" alt="" />
+								</div>
+							</div>
+							<div class="works-content">
+								<h4>We clean Your clothes</h4>
+								<div class="works-img">
+									<img src="img/works/2.png" alt="" />
+								</div>
+							</div>
+							<div class="works-content">
+								<h4>Relax and Enjoy Clean Clothes</h4>
+								<div class="works-img">
+									<img src="img/works/3.png" alt="" />
+								</div>
+							</div>
+							<div class="works-content">
+								<h4>Manage Everything online</h4>
+								<div class="works-img">
+									<img src="img/works/4.png" alt="" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- slider-area-end -->
+		<!-- why-choose-area-start -->
+		<!-- <div class="why-choose-area pt-120 pb-90">
+			<div class="container">
+				<div class="section-title text-center mb-70">
+					<span>Best Service</span>
+					<h3>Why Choose Us?</h3>
+					<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the.</p>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-sm-6">
+						<div class="why-choose-wrapper text-center mb-30">
+							<div class="why-choose-icon" style="background-image: url(img/why-choose/1.png)">
+								<span>01</span>
+							</div>
+							<div class="why-choose-text">
+								<h4>Floor Cleaning</h4>
+								<p>But I must explainsssss to you how en idea of denouncing pleanpraising pain was born and I will </p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="why-choose-wrapper text-center mb-30">
+							<div class="why-choose-icon" style="background-image: url(img/why-choose/2.png)">
+								<span>02</span>
+							</div>
+							<div class="why-choose-text">
+								<h4>Trash treatment</h4>
+								<p>But I must explainsssss to you how en idea of denouncing pleanpraising pain was born and I will </p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="why-choose-wrapper text-center mb-30">
+							<div class="why-choose-icon" style="background-image: url(img/why-choose/3.png)">
+								<span>03</span>
+							</div>
+							<div class="why-choose-text">
+								<h4>Extra shiny</h4>
+								<p>But I must explainsssss to you how en idea of denouncing pleanpraising pain was born and I will </p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="why-choose-wrapper text-center mb-30">
+							<div class="why-choose-icon" style="background-image: url(img/why-choose/4.png)">
+								<span>04</span>
+							</div>
+							<div class="why-choose-text">
+								<h4>Cloth ironing</h4>
+								<p>But I must explainsssss to you how en idea of denouncing pleanpraising pain was born and I will </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+		<!-- why-choose-area-end -->
+		<!-- featured-services-area-start -->
+		<!-- <div class="featured-services-area pt-120 pb-90 gray-bg">
+			<div class="container">
+				<div class="section-title text-center mb-70">
+					<span>What we offer </span>
+					<h3>Featured Services</h3>
+					<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the.</p>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-sm-6">
+						<div class="featured-services-wrapper mb-30 white-bg text-center">
+							<div class="featured-services-img">
+								<img src="img/service/service1.jpg" alt="" />
+							</div>
+							<div class="featured-services-text text-center">
+								<h3><a href="single-service.html">Helpful & Friendly Attendants</a></h3>
+								<p>But I must explain to you how all tmistaken idea of denouncing pleasure and praisi pain was born and I will give you</p>
+								<a href="single-service.html">Read More</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 hidden-sm">
+						<div class="featured-services-wrapper mb-30 white-bg text-center">
+							<div class="featured-services-img">
+								<img src="img/service/service2.jpg" alt="" />
+							</div>
+							<div class="featured-services-text text-center">
+								<h3><a href="single-service.html">Parsi Pain was Boran will give you</a></h3>
+								<p>But I must explain to you how all tmistaken idea of denouncing pleasure and praisi pain was born and I will give you</p>
+								<a href="single-service.html">Read More</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="featured-services-wrapper mb-30 white-bg text-center">
+							<div class="featured-services-img">
+								<img src="img/service/service3.jpg" alt="" />
+							</div>
+							<div class="featured-services-text text-center">
+								<h3><a href="single-service.html">Helpful & Friendly Attendants</a></h3>
+								<p>But I must explain to you how all tmistaken idea of denouncing pleasure and praisi pain was born and I will give you</p>
+								<a href="single-service.html">Read More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+		<!-- featured-services-area-end -->
+		<!-- works-area-start -->
+		<!-- <div class="works-area ptb-120" style="background-image:url(img/bg/bg1.jpg)">
+			<div class="container">
+				<div class="works-title mb-60">
+					<span>What we offer </span>
+					<h3>How It Works</h3>
+					<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born.</p>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="works-wrapper" style="background-image:url(img/works/circle.png)">
+							<div class="works-content">
+								<h4>Choose Any Time for Delivery</h4>
+								<div class="works-img">
+									<img src="img/works/1.png" alt="" />
+								</div>
+							</div>
+							<div class="works-content">
+								<h4>We clean Your clothes</h4>
+								<div class="works-img">
+									<img src="img/works/2.png" alt="" />
+								</div>
+							</div>
+							<div class="works-content">
+								<h4>Relax and Enjoy Clean Clothes</h4>
+								<div class="works-img">
+									<img src="img/works/3.png" alt="" />
+								</div>
+							</div>
+							<div class="works-content">
+								<h4>Manage Everything online</h4>
+								<div class="works-img">
+									<img src="img/works/4.png" alt="" />
+								</div>
+							</div>
+						</div>					
+					</div>
+				</div>
+			</div>
+		</div> -->
+		<!-- works-area-end -->
+		<!-- service-booking-area-start -->
+		
+		<!--
+		<div class="service-booking-area" style="background-image:url(img/bg/1.png);">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-offset-6 col-md-6">
+						<div class="works-title title mt-80 mb-50">
+							<span>Service Booking</span>
+							<h3>How It Works</h3>
+							<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born.</p>
+						</div>
+						<div class="row">
+						<form action="#" id="service-booking">
+							<div class="col-sm-6">
+								<input name="text" placeholder="name" type="text">
+							</div>
+							<div class="col-sm-6">
+								<input name="email" placeholder="email" type="email">
+							</div>
+							<div class="col-sm-6">
+								<input name="text" placeholder="phone" type="email">
+							</div>
+							<div class="col-sm-6">
+								<input name="text" placeholder="address" type="email">
+							</div>
+							<div class="col-sm-12">
+								<textarea name="message" cols="30" rows="10" placeholder="message" id="message"></textarea>
+							</div>								
+							<button type="submit">Request a Callback</button>
+						</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+		<!-- service-booking-area-end -->
+		<!-- pricing-area-start -->
+		<div class="pricing-area gray-bg pt-120 pb-120">
+			<div class="container">				
+				<div class="section-title text-center mb-110">
+					<span>What we offer </span>
+					<h3>Pricing Plans</h3>
+					<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the.</p>
+				</div>
+				<div class="row m-0 pricing-inner">	
+					<div class="col-md-4 col-sm-4">
+						<div class="pricing-wrapper text-center white-bg mb-30">
+							<div class="pricing-icon">
+								<img src="img/pricing/1.png" alt="" />
+							</div>
+							<div class="pricing-head">
+								<h3>Basic Clean</h3>
+							</div>
+							<div class="price">
+								<span>$</span>29
+							</div>
+							<ul class="pricing-menu">
+								<li>Carpet Cleaning</li>
+								<li>Upholstery Cleaning</li>
+								<li>House Cleaning</li>
+								<li>Apartment Cleaning</li>
+								<li>Building Cleaning</li>
+							</ul>
+							<div class="pricing-btn">
+								<a href="#">Choose Plan</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="pricing-wrapper text-center active white-bg mb-30">
+							<div class="pricing-icon">
+								<img src="img/pricing/2.png" alt="" />
+							</div>
+							<div class="pricing-head">
+								<h3>Standart Clean</h3>
+							</div>
+							<div class="price">
+								<span>$</span>39
+							</div>
+							<ul class="pricing-menu">
+								<li>Carpet Cleaning</li>
+								<li>Upholstery Cleaning</li>
+								<li>House Cleaning</li>
+								<li>Apartment Cleaning</li>
+								<li>Building Cleaning</li>
+							</ul>
+							<div class="pricing-btn active">
+								<a href="#">Choose Plan</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="pricing-wrapper text-center white-bg mb-30">
+							<div class="pricing-icon">
+								<img src="img/pricing/3.png" alt="" />
+							</div>
+							<div class="pricing-head">
+								<h3>Basic Clean</h3>
+							</div>
+							<div class="price">
+								<span>$</span>29
+							</div>
+							<ul class="pricing-menu">
+								<li>Carpet Cleaning</li>
+								<li>Upholstery Cleaning</li>
+								<li>House Cleaning</li>
+								<li>Apartment Cleaning</li>
+								<li>Building Cleaning</li>
+							</ul>
+							<div class="pricing-btn">
+								<a href="#">Choose Plan</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- pricing-area-end -->
+		<!-- testimonial-area-start -->
+		<div class="testimonial-area ptb-120">
+			<div class="container">
+				<div class="section-title text-center">
+					<span>Testimonials</span>
+					<h3>What Clients Say</h3>
+					<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the.</p>
+				</div>
+				<div class="row">
+					<div class="testimonial-active owl-carousel">
+						<div class="col-md-12">
+							<div class="testimonial-wrapper mt-70">
+								<div class="testimonial-content">
+									<p>All the Lorem Ipsum generators Internet tend to repeat predefinechunks cessary, making this the figenerator on tInternet. It uses a dictionary</p>
+								</div>
+								<div class="testimonial-information">
+									<div class="testimonial-img">
+										<img src="img/testimonial/1.png" alt="">
+									</div>
+									<div class="testimonial-name">
+										<h3>Mark Reid</h3>
+										<span>Creative Director</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="testimonial-wrapper mt-70">
+								<div class="testimonial-content">
+									<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,</p>
+								</div>
+								<div class="testimonial-information">
+									<div class="testimonial-img">
+										<img src="img/testimonial/2.png" alt="">
+									</div>
+									<div class="testimonial-name">
+										<h3>Nathan Lopez</h3>
+										<span>Creative Director</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="testimonial-wrapper mt-70">
+								<div class="testimonial-content">
+									<p>Sed ut perspiciatis unde omnis istenatus error sit voluptatem accusantiumemque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+								</div>
+								<div class="testimonial-information">
+									<div class="testimonial-img">
+										<img src="img/testimonial/3.png" alt="">
+									</div>
+									<div class="testimonial-name">
+										<h3>Jeremy Dunn</h3>
+										<span>Creative Director</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- testimonial-area-end -->
+		<!-- latest-news-area-start -->
+		<!-- <div class="latest-news-area gray-bg pt-120 pb-90">
+			<div class="container">
+				<div class="section-title text-center mb-70">
+					<span>Company News</span>
+					<h3>Latest News</h3>
+					<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the.</p>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-sm-6">
+						<div class="latest-news-wrapper mb-30">
+							<div class="latest-news-img">
+								<a href="blog-details.html"><img src="img/news/1.jpg" alt="" /></a>
+							</div>
+							<div class="news-content">
+								<h3><a href="blog-details.html">The standard Lorem Ipsum passag GIve you</a></h3>
+								<p>But I must explain to you how all tmistaken idea of denouncing pleasure and praisi pain was born I will give you</p>
+								<div class="news-meta">
+									<span class="date"><i class="zmdi zmdi-time"></i>June 7, 2017</span>
+									<span class="comment"><i class="zmdi zmdi-comment-outline"></i>2 Comment</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 hidden-sm">
+						<div class="latest-news-wrapper mb-30">
+							<div class="latest-news-img">
+								<a href="blog-details.html"><img src="img/news/2.jpg" alt="" /></a>
+							</div>
+							<div class="news-content">
+								<h3><a href="blog-details.html">But I must explain to you how all mistaken</a></h3>
+								<p>But I must explain to you how all tmistaken idea of denouncing pleasure and praisi pain was born I will give you</p>
+								<div class="news-meta">
+									<span class="date"><i class="zmdi zmdi-time"></i>June 7, 2017</span>
+									<span class="comment"><i class="zmdi zmdi-comment-outline"></i>2 Comment</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="latest-news-wrapper mb-30">
+							<div class="latest-news-img">
+								<a href="blog-details.html"><img src="img/news/3.jpg" alt="" /></a>
+							</div>
+							<div class="news-content">
+								<h3><a href="blog-details.html">The standard Lorem Ipsum passag GIve you</a></h3>
+								<p>But I must explain to you how all tmistaken idea of denouncing pleasure and praisi pain was born I will give you</p>
+								<div class="news-meta">
+									<span class="date"><i class="zmdi zmdi-time"></i>June 7, 2017</span>
+									<span class="comment"><i class="zmdi zmdi-comment-outline"></i>2 Comment</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+		<!-- latest-news-area-end -->
+		<!-- action-area-start -->
+		<!-- <div class="action-area green-bg pt-100 pb-65">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="action-wrapper mb-30">
+							<div class="action-text">
+								<h1>Don’t Miss any Action!</h1>
+								<p>But I must explain to you how alltmistaken idea of denouncing</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="action-right-wrapper mb-30">
+							<div class="action-form">
+								<form action="#">
+									<input placeholder="Your email address" type="email">
+									<button>subscribe</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+		<!-- counter-area-start -->
+		<div class="counter-area pt-120 pb-90">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-6">
+						<div class="counter-wrapper mb-30 text-center">
+							<div class="counter-img" style="background-image:url(img/counter/counter1.png)">
+								<div class="counter-content text-center">
+									<h2 class="counter">340</h2>
+									<span>Project Done</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="counter-wrapper mb-30 text-center">
+							<div class="counter-img" style="background-image:url(img/counter/counter2.png)">
+								<div class="counter-content text-center">
+									<h2 class="counter">55</h2>
+									<span>Employees</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="counter-wrapper mb-30 text-center">
+							<div class="counter-img" style="background-image:url(img/counter/counter3.png)">
+								<div class="counter-content text-center">
+									<h2 class="counter">120</h2>
+									<span>Happy Clients</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="counter-wrapper mb-30 text-center">
+							<div class="counter-img" style="background-image:url(img/counter/counter4.png)">
+								<div class="counter-content text-center">
+									<h2 class="counter">100</h2>
+									<span>Quality </span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- counter-area-end -->
+		<!-- action-area-end -->
+		<footer>
+			<!-- footer-top-area-start -->
+			<div class="footer-top-area pt-100 pb-70">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 col-sm-6">
+							<div class="footer-wrapper mb-30">
+								<div class="footer-logo">
+									<a href="#"><img src="img/logo/logo.png" alt="" /></a>
+								</div>
+								<div class="footer-text">
+									<p>But I must explain to you how at mistakidea of denouncing pleasure and praisi pain was born and I will give you</p>
+								</div>
+								<div class="footer-icon">
+									<a href="#"><i class="fa fa-facebook"></i></a>
+									<a href="#"><i class="fa fa-twitter"></i></a>
+									<a href="#"><i class="fa fa-instagram"></i></a>
+									<a href="#"><i class="fa fa-pinterest-p"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2 col-sm-6">
+							<div class="footer-wrapper mb-30">
+								<h4 class="footer-title">Information</h4>
+								<ul class="footer-menu">
+									<li><a href="#">About Company</a></li>
+									<li><a href="#">Our Services</a></li>
+									<li><a href="#">Our Feature</a></li>
+									<li><a href="#">Latest News</a></li>
+									<li><a href="#">Cleaning Tips</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="footer-wrapper mb-30">
+								<h4 class="footer-title">Services</h4>
+								<ul class="footer-menu">
+									<li><a href="#">Dry Clean Your Winter Coat</a></li>
+									<li><a href="#">Dry Clean</a></li>
+									<li><a href="#">Ironing Services</a></li>
+									<li><a href="#">Laundry</a></li>
+									<li><a href="#">Wash & Fold</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="footer-wrapper mb-30">
+								<h4 class="footer-title">Our Projects</h4>
+								<ul class="footer-img">
+									<li><a href="#"><img alt="" src="img/footer/1.jpg"></a></li>
+									<li><a href="#"><img alt="" src="img/footer/2.jpg"></a></li>
+									<li><a href="#"><img alt="" src="img/footer/3.jpg"></a></li>
+									<li><a href="#"><img alt="" src="img/footer/4.jpg"></a></li>
+									<li><a href="#"><img alt="" src="img/footer/5.jpg"></a></li>
+									<li><a href="#"><img alt="" src="img/footer/6.jpg"></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- footer-bottom-area-start -->
+			<div class="footer-bottom-area ptb-20">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="copyright text-center">
+								<p>Powered by <a href="#">HasTech.</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- footer-bottom-area-end -->
+			<!-- footer-top-area-end -->
+		</footer>
+		
+		<script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script>
+		<script>
+		  // Initialize Firebase
+		  var config = {
+		    apiKey: "AIzaSyDIlCA-Lydkcv9xQTUQAfP_ZhXSDtGR83c",
+		    authDomain: "domper-c6ded.firebaseapp.com",
+		    databaseURL: "https://domper-c6ded.firebaseio.com",
+		    projectId: "domper-c6ded",
+		    storageBucket: "domper-c6ded.appspot.com",
+		    messagingSenderId: "1098406345864"
+		  };
+		  firebase.initializeApp(config);
+		</script>
+		<!-- all js here -->
+      <script src="js/vendor/jquery-1.12.0.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/headline.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/jquery.scrollUp.min.js"></script>
+        <script src="js/isotope.pkgd.min.js"></script>
+        <script src="js/imagesloaded.pkgd.min.js"></script>
+        <script src="js/jquery.counterup.min.js"></script>
+        <script src="js/waypoints.min.js"></script>
+        <script src="js/jquery.parallax-1.1.3.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.meanmenu.js"></script>
+        <script src="js/ajax-mail.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/login.js"></script>
+    </body>
 </html>
+<jsp:include page="loginView.jsp" />

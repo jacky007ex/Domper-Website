@@ -23,4 +23,20 @@ public class MainViewController {
 		}
 		return "projects";
 	}
+	
+	@RequestMapping(value={"/uploadMaids"})
+	public String uploadMaids(Model model, @RequestParam(value = "lang", required = false) String language) {
+		if(language!=null && !language.isEmpty()){
+			model.addAttribute("lang", language);
+		}
+		return "uploadMaids";
+	}
+	
+	@RequestMapping(value={"/editCompany"})
+	public String editCompany(Model model, @RequestParam(value = "lang", required = false) String language) {
+		if(language!=null && !language.isEmpty()){
+			model.addAttribute("lang", language);
+		}
+		return "editCompany";
+	}
 }
