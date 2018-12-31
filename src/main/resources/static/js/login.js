@@ -25,6 +25,30 @@ function showLoginPage(){
 	$('#login-modal').modal('show');
 }
 
+function showSignup(){
+	$('#signinForm').hide();
+	$('#signupForm').show();
+}
+
+function showLogin(){
+	$('#signinForm').show();
+	$('#signupForm').hide();
+}
+
+function register(){
+	var registerObj = {};
+	registerObj.companyName = $('#companyName').val();
+	registerObj.userName = $('#userName').val();
+	registerObj.address = $('#address').val();
+	registerObj.phone = $('#phone').val();
+	registerObj.email = $('#email').val();
+	firebase.database().ref().child("application/").push(registerObj).then(function () {
+		  console.log("Update Success");
+		  $('#login-modal').modal('hide');
+		  alert("We will contact you by Email after account approval. The process will require 1-2 working days.");
+	  });
+}
+
 function signup(){
 	createUser = true;
 	firebase.auth().createUserWithEmailAndPassword($("#userName").val(), $("#userPw").val())
@@ -46,7 +70,7 @@ function signup(){
 
 function signin(){
 	createUser = false;
-	firebase.auth().signInWithEmailAndPassword($("#userName").val(), $("#userPw").val())
+	firebase.auth().signInWithEmailAndPassword($("#loginName").val(), $("#userPw").val())
 	.then(
 		function() {
 			$('#login-modal').modal('hide');

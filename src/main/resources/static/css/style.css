@@ -231,14 +231,14 @@
   color: #ffffff;
   display: inline-block;
   font-family: montserrat;
-  font-size: 60px;
+  font-size: 52px;
   font-weight: 900;
   line-height: 60px;
   margin-bottom: 13px;
 }
 .slider-content h1 {
   color: #ffffff;
-  font-size: 80px;
+  font-size: 40px;
   font-weight: 900;
   line-height: 83px;
   margin-bottom: 40px;
@@ -625,7 +625,7 @@ span.cd-words-wrapper  b{
 #service-booking input {
   border: 1px solid #d9d9d9;
   border-radius: 30px;
-  color: #630000;
+  color: #c3c3c3;
   font-size: 14px;
   font-weight: 400;
   height: 40px;
@@ -639,7 +639,7 @@ span.cd-words-wrapper  b{
 #service-booking textarea {
   border: 1px solid #d9d9d9;
   border-radius: 15px;
-  color: #630000;
+  color: #c3c3c3;
   font-size: 14px;
   font-weight: 400;
   height: 120px;
@@ -650,6 +650,20 @@ span.cd-words-wrapper  b{
 }
 #service-booking textarea:hover{color:#52b6bc;border-color:#52b6bc}
 #service-booking > button {
+  background: #52b6bc none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 30px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  margin-left: 15px;
+  margin-top: 25px;
+  padding: 16px 41px;
+  transition: all 0.3s ease 0s;
+}
+
+#service-booking > div > button {
   background: #52b6bc none repeat scroll 0 0;
   border: medium none;
   border-radius: 30px;
@@ -1360,7 +1374,7 @@ margin-right:10px;
 }
 .panel-heading h4 a::after {
   color: #52b6bc;
-  content: "";
+  content: "ï‹¼";
   float: left;
   font-family: "Material-Design-Iconic-Font";
   font-size: 20px;
@@ -1368,7 +1382,7 @@ margin-right:10px;
   padding: 0 10px 0 0;
 }
 .panel-heading h4 a.collapsed::after {
-  content: "";
+  content: "ï‹¹";
 }
 .panel-default > .panel-heading {
   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
@@ -1774,7 +1788,7 @@ margin-right:10px;
 }
 .blog-quote{position:relative;background: #f4feff none repeat scroll 0 0;}
 .blog-quote::before {
-  content: "";
+  content: "ï„�";
   display: block;
   font-family: "FontAwesome";
   font-size: 29px;

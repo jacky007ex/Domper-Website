@@ -169,9 +169,10 @@
 						</div>
 						<div class="col-sm-6">
 							&nbsp;&nbsp;Language
-							<select class="form-control" multiple>
-							  <option value="eng">English</option>
+							<select class="form-control"  ng-model="itemObj.language" multiple>
+							  <option value="english">English</option>
 							  <option value="cantonese">Cantonese</option>
+							  <option value="mandarin">Mandarin</option>
 							</select>
 						</div>
 						<div class="col-sm-6">
@@ -238,12 +239,12 @@
 						<div class="col-sm-12">
 						Skills 
 						<br/>
-							<select multiple="multiple" id="my-select" name="my-select[]">
-						      <option value='elem_1'>elem 1</option>
-						      <option value='elem_2'>elem 2</option>
-						      <option value='elem_3'>elem 3</option>
-						      <option value='elem_4'>elem 4</option>
-						      <option value='elem_100'>elem 100</option>
+							<select multiple="multiple" id="skill-select" name="skill-select[]">
+						      <option value='takeCareBaby'>Take Care Baby</option>
+						      <option value='takeCareKid'>Take Care Kid</option>
+						      <option value='houseCleaning'>House Cleaning</option>
+						      <option value='ironing'>Ironing</option>
+						      <option value='swimming'>Swimming</option>
 						    </select>
 						</div>
 						<!-- <div class="col-sm-6">
@@ -256,7 +257,7 @@
 								<button ng-click="createItem()">Create</button>
 							</div>
 							<div ng-If="editingId!=null">
-								<button ng-click="editItem()">Edit</button>
+								<button ng-click="editItem()">Save</button>
 							</div>
 						</div>
 						<div class="col-sm-12">

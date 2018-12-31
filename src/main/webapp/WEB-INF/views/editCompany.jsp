@@ -116,14 +116,21 @@
 		</header>
 			
 			<div class="container">
-				<div class="col-md-12" ng-controller="CompanyCtrl">
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-10" ng-controller="CompanyCtrl">
 					<div class="works-title title mt-10 mb-10">
 						<h3>Edit your Company Information</h3>
 					</div>
 					<div class="row">
+					<br />
+					<img class="company-image" ng-src="{{company.imgUrl}}">
+					<br />
+					<br />
 					<form action="#" id="service-booking">
 						<!--  Personal Information -->
 						<div class="col-sm-12">
+							&nbsp;&nbsp;Update Company Image
 							<input id="companyBanner" type="file">
 						</div>
 						<div class="col-sm-6">
@@ -131,29 +138,114 @@
 							<input type="text" ng-model="company.name">
 						</div>
 						<div class="col-sm-6">
-							&nbsp;&nbsp;Company Address
-							<input name="text" placeholder="" type="text">
-						</div>
-						<div class="col-sm-6">
-							&nbsp;&nbsp;Phone Number
-							<input name="text" placeholder="" type="text">
-						</div>
-						<div class="col-sm-6">
-							&nbsp;&nbsp;Email
-							<input id="age" name="text" placeholder="" type="text" >
 						</div>
 						<div class="col-sm-12">
-							<textarea name="message" cols="30" rows="10" placeholder="Introduction" id="message"></textarea>
+							&nbsp;&nbsp;Company Address
+							<input name="text" placeholder="" ng-model="company.address" type="text">
 						</div>
-														
-						<button ng-click="updateCompany()">Update</button>
+						<div class="col-sm-4">
+							&nbsp;&nbsp;Email
+							<input id="age" name="text" placeholder="" type="text" ng-model="company.email">
+						</div>
+						<div class="col-sm-4">
+							&nbsp;&nbsp;Company Phone
+							<input name="text" placeholder="" ng-model="company.tele_1" type="text">
+						</div>
+						<div class="col-sm-4">
+							&nbsp;&nbsp;Mobile Phone
+							<input name="text" placeholder="" ng-model="company.tele_2" type="text">
+						</div>
+						
+						<div class="col-sm-12">
+							&nbsp;&nbsp;Introduction
+							<textarea name="message" cols="30" rows="10" placeholder="Description" ng-model="company.desc"></textarea>
+						</div>
+						<div class="col-sm-6">					
+							<button ng-click="updateCompany()">Update</button>
+						</div>
 					</form>
 					</div>
+				</div>
+				<div class="col-md-1">
 				</div>
 			</div>
 		
 		<!-- service-booking-area-end -->
-		
+		<footer>
+			<!-- footer-top-area-start -->
+			<div class="footer-top-area pt-100 pb-70">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 col-sm-6">
+							<div class="footer-wrapper mb-30">
+								<div class="footer-logo">
+									<a href="#"><img width="180px" src="img/logo/domper_logo.png" alt="" /></a>
+								</div>
+								<div class="footer-text">
+									<p>Our platform is going to gather domestic helpers from all Hong Kong's Domestic Helper Agency.
+									So that people can match their target domestic helpers easily.</p>
+								</div>
+								<div class="footer-icon">
+									<a href="#"><i class="fa fa-facebook"></i></a>
+									<a href="#"><i class="fa fa-twitter"></i></a>
+									<a href="#"><i class="fa fa-instagram"></i></a>
+									<a href="#"><i class="fa fa-pinterest-p"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2 col-sm-6">
+							<div class="footer-wrapper mb-30">
+								<h4 class="footer-title">Information</h4>
+								<ul class="footer-menu">
+									<li><a href="#">About Us</a></li>
+									<li><a href="#">Our Services</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="footer-wrapper mb-30">
+								<h4 class="footer-title">Services</h4>
+								<ul class="footer-menu">
+									<li><a href="#">Contact Us</a></li>
+									<!--<li><a href="#">Dry Clean</a></li>
+									<li><a href="#">Ironing Services</a></li>
+									<li><a href="#">Laundry</a></li>
+									<li><a href="#">Wash & Fold</a></li> -->
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="footer-wrapper mb-30">
+								<h4 class="footer-title">Other Projects</h4>
+								Coming Soon
+								<!-- <ul class="footer-img">
+									<li><a href="#"><img alt="" src="img/footer/1.jpg"></a></li>
+									<li><a href="#"><img alt="" src="img/footer/2.jpg"></a></li>
+									<li><a href="#"><img alt="" src="img/footer/3.jpg"></a></li>
+									<li><a href="#"><img alt="" src="img/footer/4.jpg"></a></li>
+									<li><a href="#"><img alt="" src="img/footer/5.jpg"></a></li>
+									<li><a href="#"><img alt="" src="img/footer/6.jpg"></a></li>
+								</ul> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- footer-bottom-area-start -->
+			<div class="footer-bottom-area ptb-20">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="copyright text-center">
+								<p>Powered by <a href="#">HasTech.</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- footer-bottom-area-end -->
+			<!-- footer-top-area-end -->
+		</footer>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script>
 		<script>

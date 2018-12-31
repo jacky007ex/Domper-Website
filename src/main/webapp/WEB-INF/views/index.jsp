@@ -65,7 +65,7 @@
 					<div class="row">
 						<div class="col-md-2">
 							<div class="logo">
-								<a href="index.html"><img width="350px" src="img/logo/domper_logo.png" alt="" /></a>
+								<a href="index.html"><img width="150px" src="img/logo/domper_logo.png" alt="" /></a>
 							</div>
 						</div>
 						<div class="col-md-10">
@@ -84,7 +84,7 @@
 												<li><a href="index-box.html">Home Box</a></li>
 											</ul> -->
 										</li>
-										<li><a href="">service</a>
+										<li><a href="#">service</a>
 											<ul class="sub-menu">
 												<li><a href="editCompany">Edit Company</a></li>
 												<li><a href="uploadMaids">Upload Maids</a></li>
@@ -120,171 +120,65 @@
 		</header>
 		<!-- slider-area-start -->
 		<div class="slider-area">
-			<div class="slider-active owl-carousel">
-				<div class="slider-wrapper bg-opacity pt-50 pb-50" style="background-image:url(img/slider/slider1.jpg)">
-					<div class="container">
-						<div class="works-title mb-60">
-							<span>What we offer </span>
-							<h3>How It Works</h3>
-							<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born.</p>
-						</div>
-						<div class="works-wrapper" style="background-image:url(img/works/circle.png)">
-							<div class="works-content">
-								<h4>Choose Any Time for Delivery</h4>
-								<div class="works-img">
-									<img src="img/works/1.png" alt="" />
-								</div>
-							</div>
-							<div class="works-content">
-								<h4>We clean Your clothes</h4>
-								<div class="works-img">
-									<img src="img/works/2.png" alt="" />
-								</div>
-							</div>
-							<div class="works-content">
-								<h4>Relax and Enjoy Clean Clothes</h4>
-								<div class="works-img">
-									<img src="img/works/3.png" alt="" />
-								</div>
-							</div>
-							<div class="works-content">
-								<h4>Manage Everything online</h4>
-								<div class="works-img">
-									<img src="img/works/4.png" alt="" />
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="slider-wrapper bg-opacity pt-50 pb-50" style="background-image:url(img/slider/slider2.jpg)">
-					<div class="container">
-						<div class="works-title mb-60">
-							<span>What we offer </span>
-							<h3>How It Works</h3>
-							<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born.</p>
-						</div>
-						<div class="works-wrapper" style="background-image:url(img/works/circle.png)">
-							<div class="works-content">
-								<h4>Choose Any Time for Delivery</h4>
-								<div class="works-img">
-									<img src="img/works/1.png" alt="" />
-								</div>
-							</div>
-							<div class="works-content">
-								<h4>We clean Your clothes</h4>
-								<div class="works-img">
-									<img src="img/works/2.png" alt="" />
-								</div>
-							</div>
-							<div class="works-content">
-								<h4>Relax and Enjoy Clean Clothes</h4>
-								<div class="works-img">
-									<img src="img/works/3.png" alt="" />
-								</div>
-							</div>
-							<div class="works-content">
-								<h4>Manage Everything online</h4>
-								<div class="works-img">
-									<img src="img/works/4.png" alt="" />
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="slider-wrapper bg-opacity pt-50 pb-50" style="background-image:url(img/slider/slider3.jpg)">
-					<div class="container">
-						<div class="works-title mb-60">
-							<span>What we offer </span>
-							<h3>How It Works</h3>
-							<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born.</p>
-						</div>
-						<div class="works-wrapper" style="background-image:url(img/works/circle.png)">
-							<div class="works-content">
-								<h4>Choose Any Time for Delivery</h4>
-								<div class="works-img">
-									<img src="img/works/1.png" alt="" />
-								</div>
-							</div>
-							<div class="works-content">
-								<h4>We clean Your clothes</h4>
-								<div class="works-img">
-									<img src="img/works/2.png" alt="" />
-								</div>
-							</div>
-							<div class="works-content">
-								<h4>Relax and Enjoy Clean Clothes</h4>
-								<div class="works-img">
-									<img src="img/works/3.png" alt="" />
-								</div>
-							</div>
-							<div class="works-content">
-								<h4>Manage Everything online</h4>
-								<div class="works-img">
-									<img src="img/works/4.png" alt="" />
-								</div>
-							</div>
-						</div>
-					</div>
+			<div class="slider-wrapper bg-opacity pt-140 pb-140" style="background-image:url(img/slider/slider4.jpg)">
+				<div class="container">
+					<div class="slider-content">
+						<span>Find your Domestic Helper</span>
+						<h1 class="cd-headline clip is-full-width">Help you in
+							<span class="cd-words-wrapper">
+								<b class="is-visible">Baby Care</b>
+								<b>Home Cleaning</b>
+								<b>Cooking</b>
+							</span>
+						</h1>
+						<a href="#">contact us</a>									
+					</div>	
 				</div>
 			</div>
 		</div>
 		<!-- slider-area-end -->
-		<!-- why-choose-area-start -->
-		<!-- <div class="why-choose-area pt-120 pb-90">
-			<div class="container">
-				<div class="section-title text-center mb-70">
-					<span>Best Service</span>
-					<h3>Why Choose Us?</h3>
-					<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the.</p>
-				</div>
-				<div class="row">
-					<div class="col-md-3 col-sm-6">
-						<div class="why-choose-wrapper text-center mb-30">
-							<div class="why-choose-icon" style="background-image: url(img/why-choose/1.png)">
-								<span>01</span>
-							</div>
-							<div class="why-choose-text">
-								<h4>Floor Cleaning</h4>
-								<p>But I must explainsssss to you how en idea of denouncing pleanpraising pain was born and I will </p>
-							</div>
+		<!-- slider-area-start -->
+		<!-- <div class="slider-area">
+			<div class="slider-active owl-carousel">
+				<div class="slider-wrapper bg-opacity pt-50 pb-50" style="background-image:url(img/slider/slider4.jpg)">
+					<div class="container">
+						<div class="works-title mb-40">
+							<span>What we offer </span>  
+							<h3>How It Works</h3>
+							<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born.</p>
 						</div>
-					</div>
-					<div class="col-md-3 col-sm-6">
-						<div class="why-choose-wrapper text-center mb-30">
-							<div class="why-choose-icon" style="background-image: url(img/why-choose/2.png)">
-								<span>02</span>
+						<div class="works-wrapper" style="background-image:url(img/works/circle.png)">
+							<div class="works-content">
+								<h4>Choose Any Time for Delivery</h4>
+								<div class="works-img">
+									<img src="img/works/1.png" alt="" />
+								</div>
 							</div>
-							<div class="why-choose-text">
-								<h4>Trash treatment</h4>
-								<p>But I must explainsssss to you how en idea of denouncing pleanpraising pain was born and I will </p>
+							<div class="works-content">
+								<h4>We clean Your clothes</h4>
+								<div class="works-img">
+									<img src="img/works/2.png" alt="" />
+								</div>
 							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-6">
-						<div class="why-choose-wrapper text-center mb-30">
-							<div class="why-choose-icon" style="background-image: url(img/why-choose/3.png)">
-								<span>03</span>
+							<div class="works-content">
+								<h4>Relax and Enjoy Clean Clothes</h4>
+								<div class="works-img">
+									<img src="img/works/3.png" alt="" />
+								</div>
 							</div>
-							<div class="why-choose-text">
-								<h4>Extra shiny</h4>
-								<p>But I must explainsssss to you how en idea of denouncing pleanpraising pain was born and I will </p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-6">
-						<div class="why-choose-wrapper text-center mb-30">
-							<div class="why-choose-icon" style="background-image: url(img/why-choose/4.png)">
-								<span>04</span>
-							</div>
-							<div class="why-choose-text">
-								<h4>Cloth ironing</h4>
-								<p>But I must explainsssss to you how en idea of denouncing pleanpraising pain was born and I will </p>
+							<div class="works-content">
+								<h4>Manage Everything online</h4>
+								<div class="works-img">
+									<img src="img/works/4.png" alt="" />
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+				
 			</div>
 		</div> -->
+		
 		<!-- why-choose-area-end -->
 		<!-- featured-services-area-start -->
 		<!-- <div class="featured-services-area pt-120 pb-90 gray-bg">
@@ -414,12 +308,12 @@
 		</div> -->
 		<!-- service-booking-area-end -->
 		<!-- pricing-area-start -->
-		<div class="pricing-area gray-bg pt-120 pb-120">
+		<div class="pricing-area gray-bg pt-30 pb-60">
 			<div class="container">				
 				<div class="section-title text-center mb-110">
 					<span>What we offer </span>
 					<h3>Pricing Plans</h3>
-					<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the.</p>
+					<p>You can promote your domestic helpers by joining our plan.</p>
 				</div>
 				<div class="row m-0 pricing-inner">	
 					<div class="col-md-4 col-sm-4">
@@ -431,14 +325,12 @@
 								<h3>Basic Clean</h3>
 							</div>
 							<div class="price">
-								<span>$</span>29
+								Free
 							</div>
 							<ul class="pricing-menu">
-								<li>Carpet Cleaning</li>
-								<li>Upholstery Cleaning</li>
-								<li>House Cleaning</li>
-								<li>Apartment Cleaning</li>
-								<li>Building Cleaning</li>
+								<li>Upload Maid 5</li>
+								<li></li>
+								<li></li>
 							</ul>
 							<div class="pricing-btn">
 								<a href="#">Choose Plan</a>
@@ -451,17 +343,15 @@
 								<img src="img/pricing/2.png" alt="" />
 							</div>
 							<div class="pricing-head">
-								<h3>Standart Clean</h3>
+								<h3>VIP</h3>
 							</div>
 							<div class="price">
-								<span>$</span>39
+								<span>$</span>399
 							</div>
 							<ul class="pricing-menu">
-								<li>Carpet Cleaning</li>
-								<li>Upholstery Cleaning</li>
-								<li>House Cleaning</li>
-								<li>Apartment Cleaning</li>
-								<li>Building Cleaning</li>
+								<li>Upload Maid 100</li>
+								<li>Promote Maid</li>
+								<li>Promote Company</li>
 							</ul>
 							<div class="pricing-btn active">
 								<a href="#">Choose Plan</a>
@@ -477,14 +367,12 @@
 								<h3>Basic Clean</h3>
 							</div>
 							<div class="price">
-								<span>$</span>29
+								<span>$</span>249
 							</div>
 							<ul class="pricing-menu">
-								<li>Carpet Cleaning</li>
-								<li>Upholstery Cleaning</li>
-								<li>House Cleaning</li>
-								<li>Apartment Cleaning</li>
-								<li>Building Cleaning</li>
+								<li>Upload Maid 50</li>
+								<li>Promote Maid</li>
+								<li>Promote Company</li>
 							</ul>
 							<div class="pricing-btn">
 								<a href="#">Choose Plan</a>
@@ -495,8 +383,100 @@
 			</div>
 		</div>
 		<!-- pricing-area-end -->
+		<!-- why-choose-area-start -->
+		<div class="why-choose-area pt-120 pb-90">
+			<div class="container">
+				<div class="section-title text-center mb-70">
+					<span>Best Service</span>
+					<h3>Why Choose Us?</h3>
+					<p></p>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-sm-6">
+						<div class="why-choose-wrapper text-center mb-30">
+							<div class="why-choose-icon" style="background-image: url(img/why-choose/1.png)">
+								<span>01</span>
+							</div>
+							<div class="why-choose-text">
+								<h4>Easy To Use</h4>
+								<p>Friendly user interface allows user to find their Domestic Helper easily</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="why-choose-wrapper text-center mb-30">
+							<div class="why-choose-icon" style="background-image: url(img/why-choose/2.png)">
+								<span>02</span>
+							</div>
+							<div class="why-choose-text">
+								<h4>Functionality</h4>
+								<p>Filter and search functions help you allocate target domestic helper quickly</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="why-choose-wrapper text-center mb-30">
+							<div class="why-choose-icon" style="background-image: url(img/why-choose/3.png)">
+								<span>03</span>
+							</div>
+							<div class="why-choose-text">
+								<h4>Real Time Update</h4>
+								<p>Agency can upload their domestic helpers in real time.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="why-choose-wrapper text-center mb-30">
+							<div class="why-choose-icon" style="background-image: url(img/why-choose/4.png)">
+								<span>04</span>
+							</div>
+							<div class="why-choose-text">
+								<h4>Quick Response</h4>
+								<p>We do our development in agile practice which react fast to customers' request</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- contact-area-start -->
+		<div class="contact-area pt-30 pb-30">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+					</div>
+					<div class="col-md-6 contact-1">
+						<div class="contact-left-wrapper">
+							<div class="contact-text">
+								<h4>Contact Info</h4>
+								<br/>
+								<p>You are welcome to contact us by Email, phone or Wtsapp</p>
+								<br/>
+								<span>Address:  Hong Kong</span>
+								<span>Email:  koala@email.com</span>
+								<span>Phone:  +99 854 785 65</span>
+							</div>
+							<div class="contact-icon">
+								<a href="#"><i class="fa fa-facebook"></i></a>
+								<a href="#"><i class="fa fa-twitter"></i></a>
+								<a href="#"><i class="fa fa-instagram"></i></a>
+								<a href="#"><i class="fa fa-pinterest-p"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<!-- <div class="contact-right-wrapper mb-30">
+								<h4>You are welcome to send us your feedback by below Email:</h4>
+								<h1>koala@email.com</h1>
+						</div> -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- contact-area-end -->
+		<!-- why-choose-area-end -->
 		<!-- testimonial-area-start -->
-		<div class="testimonial-area ptb-120">
+		<!-- <div class="testimonial-area ptb-120">
 			<div class="container">
 				<div class="section-title text-center">
 					<span>Testimonials</span>
@@ -556,7 +536,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<!-- testimonial-area-end -->
 		<!-- latest-news-area-start -->
 		<!-- <div class="latest-news-area gray-bg pt-120 pb-90">
@@ -642,7 +622,7 @@
 			</div>
 		</div> -->
 		<!-- counter-area-start -->
-		<div class="counter-area pt-120 pb-90">
+		<!-- <div class="counter-area pt-120 pb-90">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-3 col-sm-6">
@@ -687,7 +667,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<!-- counter-area-end -->
 		<!-- action-area-end -->
 		<footer>
@@ -698,10 +678,11 @@
 						<div class="col-md-4 col-sm-6">
 							<div class="footer-wrapper mb-30">
 								<div class="footer-logo">
-									<a href="#"><img src="img/logo/logo.png" alt="" /></a>
+									<a href="#"><img width="180px" src="img/logo/domper_logo.png" alt="" /></a>
 								</div>
 								<div class="footer-text">
-									<p>But I must explain to you how at mistakidea of denouncing pleasure and praisi pain was born and I will give you</p>
+									<p>Our platform is going to gather domestic helpers from all Hong Kong's Domestic Helper Agency.
+									So that people can match their target domestic helpers easily.</p>
 								</div>
 								<div class="footer-icon">
 									<a href="#"><i class="fa fa-facebook"></i></a>
@@ -715,11 +696,8 @@
 							<div class="footer-wrapper mb-30">
 								<h4 class="footer-title">Information</h4>
 								<ul class="footer-menu">
-									<li><a href="#">About Company</a></li>
+									<li><a href="#">About Us</a></li>
 									<li><a href="#">Our Services</a></li>
-									<li><a href="#">Our Feature</a></li>
-									<li><a href="#">Latest News</a></li>
-									<li><a href="#">Cleaning Tips</a></li>
 								</ul>
 							</div>
 						</div>
@@ -727,25 +705,26 @@
 							<div class="footer-wrapper mb-30">
 								<h4 class="footer-title">Services</h4>
 								<ul class="footer-menu">
-									<li><a href="#">Dry Clean Your Winter Coat</a></li>
-									<li><a href="#">Dry Clean</a></li>
+									<li><a href="#">Contact Us</a></li>
+									<!--<li><a href="#">Dry Clean</a></li>
 									<li><a href="#">Ironing Services</a></li>
 									<li><a href="#">Laundry</a></li>
-									<li><a href="#">Wash & Fold</a></li>
+									<li><a href="#">Wash & Fold</a></li> -->
 								</ul>
 							</div>
 						</div>
 						<div class="col-md-3 col-sm-6">
 							<div class="footer-wrapper mb-30">
-								<h4 class="footer-title">Our Projects</h4>
-								<ul class="footer-img">
+								<h4 class="footer-title">Other Projects</h4>
+								Coming Soon
+								<!-- <ul class="footer-img">
 									<li><a href="#"><img alt="" src="img/footer/1.jpg"></a></li>
 									<li><a href="#"><img alt="" src="img/footer/2.jpg"></a></li>
 									<li><a href="#"><img alt="" src="img/footer/3.jpg"></a></li>
 									<li><a href="#"><img alt="" src="img/footer/4.jpg"></a></li>
 									<li><a href="#"><img alt="" src="img/footer/5.jpg"></a></li>
 									<li><a href="#"><img alt="" src="img/footer/6.jpg"></a></li>
-								</ul>
+								</ul> -->
 							</div>
 						</div>
 					</div>
@@ -781,7 +760,7 @@
 		  firebase.initializeApp(config);
 		</script>
 		<!-- all js here -->
-      <script src="js/vendor/jquery-1.12.0.min.js"></script>
+        <script src="js/vendor/jquery-1.12.0.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/headline.js"></script>
         <script src="js/jquery.magnific-popup.min.js"></script>

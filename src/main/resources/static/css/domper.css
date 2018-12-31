@@ -1,5 +1,5 @@
  .form-items {
-    padding: 35px 30px;
+    padding: 25px 25px;
     border-radius: 10px;
     background-color: #fff;
     -webkit-box-shadow: 0 6px 15px rgba(0, 0, 0, 0.16);
@@ -36,4 +36,10 @@
 	border-radius: 10px;
 	margin: 10px 10px 10px 10px;
 	
+}
+
+.company-image{
+	position: relative;
+	border-radius: 10px;
+	margin: 10px 10px 10px 10px;
 }
