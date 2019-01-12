@@ -127,7 +127,7 @@
 					<img class="company-image" ng-src="{{company.imgUrl}}">
 					<br />
 					<br />
-					<form action="#" id="service-booking">
+					<form id="service-booking">
 						<!--  Personal Information -->
 						<div class="col-sm-12">
 							&nbsp;&nbsp;Update Company Image
@@ -138,6 +138,8 @@
 							<input type="text" ng-model="company.name">
 						</div>
 						<div class="col-sm-6">
+							&nbsp;&nbsp;Web Site
+							<input type="text" ng-model="company.webSite">
 						</div>
 						<div class="col-sm-12">
 							&nbsp;&nbsp;Company Address
@@ -156,6 +158,11 @@
 							<input name="text" placeholder="" ng-model="company.tele_2" type="text">
 						</div>
 						
+						<div class="col-sm-6">					
+							<button style="margin-top:5px; margin-bottom:20px;" ng-click="showBranch()">Manage Branch</button>
+						</div>
+						<div class="col-sm-6">
+						</div>
 						<div class="col-sm-12">
 							&nbsp;&nbsp;Introduction
 							<textarea name="message" cols="30" rows="10" placeholder="Description" ng-model="company.desc"></textarea>

@@ -166,6 +166,10 @@
 						<div class="col-sm-6">
 							&nbsp;&nbsp;Current Location
 							<input ng-model="itemObj.now_at" placeholder="" type="text">
+							<select class="form-control"  ng-model="itemObj.now_at">
+							  <option value="Hong Kong">Hong Kong</option>
+							  <option value="Oversea">Oversea</option>
+							</select>
 						</div>
 						<div class="col-sm-6">
 							&nbsp;&nbsp;Language
@@ -191,11 +195,23 @@
 						</div>
 						<div class="col-sm-6">
 							&nbsp;&nbsp;Nationality
-							<input ng-model="itemObj.nationality" placeholder="" type="text" >
+							<select class="form-control"  ng-model="itemObj.nationality">
+							    <option value="philippines">Philippines</option>
+							    <option value="indonesia">Indonesia</option>
+			                    <option value="Thai"> Thailand </option>
+			                    <option value="Myanmar"> Myanmar </option>
+			                     <option value="Bangla"> Bangla </option>
+			                    <option value="Sri Lanka"> Sri Lanka </option>
+			                    <option value="Nepalese"> Nepalese </option>
+			                    <option value="Madagascan"> Madagascan </option>
+							</select>
 						</div>
 						<div class="col-sm-6">
 							&nbsp;&nbsp;Gender
-							<input ng-model="itemObj.sex" placeholder="" type="text">
+							<select class="form-control"  ng-model="itemObj.sex">
+							  <option value="female">Female</option>
+							  <option value="male">Male</option>
+							</select>
 						</div>
 						<div class="col-sm-6">
 							&nbsp;&nbsp;Age
@@ -217,8 +233,10 @@
 							&nbsp;&nbsp;Religion
 							<input ng-model="itemObj.religion" placeholder="" type="text">
 						</div>
-						<div class="col-sm-6">
-						</div>
+						<!-- <div class="col-sm-6">
+							&nbsp;&nbsp;Prefer Work
+							<input ng-model="itemObj.preferJob:" placeholder="" type="text">
+						</div> -->
 						<div class="col-sm-12">
 							<hr style="margin:5px;">
 						</div>

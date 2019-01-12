@@ -32,6 +32,7 @@ app.controller("SampleCtrl", function($scope, $firebaseArray) {
 		  $scope.itemObj.now_at = "";
 		  $scope.itemObj.working_exp_yr = "";
 		  $scope.itemObj.nationality = "";
+		  $scope.itemObj.country = "";
 		  $scope.itemObj.sex = "";
 		  $scope.itemObj.age = "";
 		  $scope.itemObj.birthday = "";
@@ -40,6 +41,9 @@ app.controller("SampleCtrl", function($scope, $firebaseArray) {
 		  $scope.itemObj.religion = "";
 		  $scope.itemObj.marital_status = "single";
 		  $scope.itemObj.no_of_children = "";
+		  $scope.itemObj.isPromoted = "N";
+		  $scope.itemObj.isEmployed = "N";
+		  $scope.itemObj.preferJob = "";
 		  $('#skill-select').val("");
 		  $('#skill-select').multiSelect();
 		  $scope.itemObj.intro = "";
@@ -63,6 +67,7 @@ app.controller("SampleCtrl", function($scope, $firebaseArray) {
 		  $scope.itemObj.now_at = a.now_at;
 		  $scope.itemObj.working_exp_yr = a.working_exp_yr;
 		  $scope.itemObj.nationality = a.nationality;
+		  $scope.itemObj.country = a.nationality;
 		  $scope.itemObj.sex = a.sex;
 		  $scope.itemObj.age = a.age;
 		  $scope.itemObj.birthday = a.birthday;
@@ -71,6 +76,9 @@ app.controller("SampleCtrl", function($scope, $firebaseArray) {
 		  $scope.itemObj.religion = a.religion;
 		  $scope.itemObj.marital_status = a.marital_status;
 		  $scope.itemObj.no_of_children = a.no_of_children;
+		  $scope.itemObj.isPromoted = a.isPromoted;
+		  $scope.itemObj.isEmployed = a.isEmployed;
+		  $scope.itemObj.preferJob = a.preferJob;
 		  if(a.skills!=null && a.skills!=""){
 			  $('#skill-select').val(a.skills.split(','));
 			  $('#skill-select').multiSelect();

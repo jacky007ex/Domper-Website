@@ -1,4 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<%@ taglib prefix="spring"  uri="http://www.springframework.org/tags"%>
+<%@ taglib prefix="form"    uri="http://www.springframework.org/tags/form" %>
 <!doctype html>
 <html class="no-js" lang="zxx">
     <head>
@@ -76,7 +78,7 @@
 							<div class="main-menu floatright">
 								<nav>
 									<ul>
-										<li class="active"><a href="home">home</a>
+										<li class="active"><a href="home"><spring:message code="label.home" /></a>
 											<!-- <ul class="sub-menu">
 												<li><a href="index.html">Home 01</a></li>
 												<li><a href="index-2.html">Home 02</a></li>
@@ -84,13 +86,13 @@
 												<li><a href="index-box.html">Home Box</a></li>
 											</ul> -->
 										</li>
-										<li><a href="#">service</a>
+										<li><a href="#"><spring:message code="label.service" /></a>
 											<ul class="sub-menu">
-												<li><a href="editCompany">Edit Company</a></li>
-												<li><a href="uploadMaids">Upload Maids</a></li>
+												<li><a href="editCompany"><spring:message code="label.edit_company" /></a></li>
+												<li><a href="uploadMaids"><spring:message code="label.upload_maids" /></a></li>
 											</ul>
 										</li>
-										<li><a href="about.html">About Us</a></li>
+										<li><a href="about.html"><spring:message code="label.about_us" /></a></li>
 										<!-- <li><a href="#">pages</a>
 											<ul class="sub-menu">
 												<li><a href="gallery.html">gallery</a></li>
@@ -107,7 +109,7 @@
 												<li><a href="blog-details-no-sideber.html">blog-details-no-sideber</a></li>
 											</ul>
 										</li> -->
-										<li><a href="contact.html">contact</a></li>
+										<li><a href="contact.html"><spring:message code="label.contact" /></a></li>
 									</ul>
 								</nav>
 							</div>						
@@ -123,15 +125,15 @@
 			<div class="slider-wrapper bg-opacity pt-140 pb-140" style="background-image:url(img/slider/slider4.jpg)">
 				<div class="container">
 					<div class="slider-content">
-						<span>Find your Domestic Helper</span>
-						<h1 class="cd-headline clip is-full-width">Help you in
+						<span><spring:message code="label.banner_slogan1" /></span>
+						<h1 class="cd-headline clip is-full-width"><spring:message code="label.banner_slogan2" />
 							<span class="cd-words-wrapper">
-								<b class="is-visible">Baby Care</b>
-								<b>Home Cleaning</b>
-								<b>Cooking</b>
+								<b class="is-visible"><spring:message code="label.banner_slogan2_1" /></b>
+								<b><spring:message code="label.banner_slogan2_2" /></b>
+								<b><spring:message code="label.banner_slogan2_3" /></b>
 							</span>
 						</h1>
-						<a href="#">contact us</a>									
+						<a href="#"><spring:message code="label.contact_us_btn" /></a>									
 					</div>	
 				</div>
 			</div>
@@ -311,9 +313,9 @@
 		<div class="pricing-area gray-bg pt-30 pb-60">
 			<div class="container">				
 				<div class="section-title text-center mb-110">
-					<span>What we offer </span>
-					<h3>Pricing Plans</h3>
-					<p>You can promote your domestic helpers by joining our plan.</p>
+					<span><spring:message code="label.price_title1" /></span>
+					<h3><spring:message code="label.price_title2" /></h3>
+					<p><spring:message code="label.price_title3" /></p>
 				</div>
 				<div class="row m-0 pricing-inner">	
 					<div class="col-md-4 col-sm-4">
@@ -387,8 +389,8 @@
 		<div class="why-choose-area pt-120 pb-90">
 			<div class="container">
 				<div class="section-title text-center mb-70">
-					<span>Best Service</span>
-					<h3>Why Choose Us?</h3>
+					<span><spring:message code="label.promote_title1" /></span>
+					<h3><spring:message code="label.promote_title2" /></h3>
 					<p></p>
 				</div>
 				<div class="row">
@@ -398,8 +400,8 @@
 								<span>01</span>
 							</div>
 							<div class="why-choose-text">
-								<h4>Easy To Use</h4>
-								<p>Friendly user interface allows user to find their Domestic Helper easily</p>
+								<h4><spring:message code="label.promote_subtitle1" /></h4>
+								<p><spring:message code="label.promote_subtitle1_content" /></p>
 							</div>
 						</div>
 					</div>
@@ -409,8 +411,8 @@
 								<span>02</span>
 							</div>
 							<div class="why-choose-text">
-								<h4>Functionality</h4>
-								<p>Filter and search functions help you allocate target domestic helper quickly</p>
+								<h4><spring:message code="label.promote_subtitle2" /></h4>
+								<p><spring:message code="label.promote_subtitle2_content" /></p>
 							</div>
 						</div>
 					</div>
@@ -420,8 +422,8 @@
 								<span>03</span>
 							</div>
 							<div class="why-choose-text">
-								<h4>Real Time Update</h4>
-								<p>Agency can upload their domestic helpers in real time.</p>
+								<h4><spring:message code="label.promote_subtitle3" /></h4>
+								<p><spring:message code="label.promote_subtitle3_content" /></p>
 							</div>
 						</div>
 					</div>
@@ -431,8 +433,8 @@
 								<span>04</span>
 							</div>
 							<div class="why-choose-text">
-								<h4>Quick Response</h4>
-								<p>We do our development in agile practice which react fast to customers' request</p>
+								<h4><spring:message code="label.promote_subtitle4" /></h4>
+								<p><spring:message code="label.promote_subtitle4_content" /></p>
 							</div>
 						</div>
 					</div>
@@ -448,7 +450,7 @@
 					<div class="col-md-6 contact-1">
 						<div class="contact-left-wrapper">
 							<div class="contact-text">
-								<h4>Contact Info</h4>
+								<h4><spring:message code="label.contact_info_title" /></h4>
 								<br/>
 								<p>You are welcome to contact us by Email, phone or Wtsapp</p>
 								<br/>
