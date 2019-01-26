@@ -39,4 +39,20 @@ public class MainViewController {
 		}
 		return "editCompany";
 	}
+	
+	@RequestMapping(value={"/aboutUs"})
+	public String aboutUs(Model model, @RequestParam(value = "lang", required = false) String language) {
+		if(language!=null && !language.isEmpty()){
+			model.addAttribute("lang", language);
+		}
+		return "aboutUs";
+	}
+	
+	@RequestMapping(value={"/contactUs"})
+	public String contactUs(Model model, @RequestParam(value = "lang", required = false) String language) {
+		if(language!=null && !language.isEmpty()){
+			model.addAttribute("lang", language);
+		}
+		return "contactUs";
+	}
 }

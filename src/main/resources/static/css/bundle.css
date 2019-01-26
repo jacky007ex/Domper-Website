@@ -201,6 +201,7 @@ select,
 /*colored background*/
  .white-bg { background: #FFFFFF; }
  .gray-bg { background: #edf0f2; }
+ .dim-bg { background: #f9f9f9; }
  .blue-bg { background: #213047; }
  .green-bg { background: #52b6bc; }
  .black-bg { background: #000; }

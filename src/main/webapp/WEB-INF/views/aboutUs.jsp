@@ -45,7 +45,7 @@
 									<li id="welcome"></li>
 								</ul>
 								<ul class="header-left-text">
-									<li>Contact Us : info@skylartech.net</li>  
+									<li>Contact Us : info@skylartech.net</li> 
 								</ul>
 							</div>
 						</div>
@@ -66,22 +66,18 @@
 						<div class="col-md-2">
 						</div>
 						<div class="col-md-10">
-						<div class="get-a-quote floatright hidden-sm hidden-xs">
-								<a id="login-link" style="display:none;" href="javascript:showLoginPage()"><spring:message code="label.log_in" /></a>
-								<a id="logout-link" style="display:none;" href="javascript:logout()"><spring:message code="label.log_out" /></a>
-							</div>
 							<div class="main-menu floatright">
 								<nav>
 									<ul>
 										<li><a href="home"><spring:message code="label.home" /></a>
 										</li>
-										<li class="active"><a href=""><spring:message code="label.service" /></a>
+										<li><a href=""><spring:message code="label.service" /></a>
 											<ul class="sub-menu">
 												<li><a href="editCompany"><spring:message code="label.edit_company" /></a></li>
 												<li><a href="uploadMaids"><spring:message code="label.upload_maids" /></a></li>
 											</ul>
 										</li>
-										<li><a href="aboutUs"><spring:message code="label.about_us" /></a></li>
+										<li class="active"><a href="about.html"><spring:message code="label.about_us" /></a></li>
 										<li><a href="contactUs"><spring:message code="label.contact" /></a></li>
 									</ul>
 								</nav>
@@ -93,89 +89,26 @@
 		</div>
 		<!-- main-menu-area-end -->
 		</header>
-			<!-- latest-news-area-start -->
-			<div class="latest-news-area gray-bg pt-120 pb-90" style="display:none;" id="pleaseLoginDiv">
-				<div class="container">
-					<div class="section-title text-center mb-70">
-						<span><spring:message code="label.join_domper" /></span>
-						<h3><spring:message code="label.domper_platform" /></h3>
-						<p><spring:message code="label.login_first_instruction" /></p>
+		<!-- Cleaning-area-start -->
+		<div class="cleaning-area" style="background-image:url(img/slider/service6.jpg);">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-offset-6 col-md-6">
+						<div class="Cleaning-wrapper">
+							<div class="cleaning-text">
+								<h2><spring:message code="purpose_title" /><span>Domper</span></h2>
+								<p><spring:message code="purpose2" /></p>
+								<ul>
+									<li><spring:message code="purpose3" /></li>
+									<li><spring:message code="purpose4" /></li>
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-			<!-- latest-news-area-end -->
-			<div class="container" id="editCompanyDiv" style="display:none;">
-				<div class="col-md-1">
-				</div>
-				<div class="col-md-10" ng-controller="CompanyCtrl">
-					<div class="works-title title mt-10 mb-10">
-						<h3><spring:message code="label.edit_company.title" /></h3>
-					</div>
-					<div class="row">
-					<br />
-					<img class="company-image" ng-src="{{company.imgUrl}}">
-					<br />
-					<br />
-					<form id="service-booking">
-						<!--  Personal Information -->
-						<div class="col-sm-12">
-							&nbsp;&nbsp;<spring:message code="label.edit_company.uploadImage" />
-							<input id="companyBanner" type="file">
-						</div>
-						<div class="col-sm-6">
-							&nbsp;&nbsp;<spring:message code="label.edit_company.name" />
-							<input type="text" ng-model="company.name">
-						</div>
-						<div class="col-sm-6">
-							&nbsp;&nbsp;<spring:message code="label.edit_company.website" />
-							<input type="text" ng-model="company.webSite">
-						</div>
-						<div class="col-sm-2">
-							&nbsp;&nbsp;<spring:message code="label.edit_company.district" />
-							<select id="main_district"  class='form-control' >
-							</select>
-						</div>
-						<div class="col-sm-10">
-							&nbsp;&nbsp;<spring:message code="label.edit_company.address" />
-							<input name="text" placeholder="" ng-model="company.address" type="text">
-						</div>
-						<div class="col-sm-4">
-							&nbsp;&nbsp;<spring:message code="label.edit_company.email" />
-							<input id="age" name="text" placeholder="" type="text" ng-model="company.email">
-						</div>
-						<div class="col-sm-4">
-							&nbsp;&nbsp;<spring:message code="label.edit_company.companyPhone" />
-							<input name="text" placeholder="" ng-model="company.tele_1" type="text">
-						</div>
-						<div class="col-sm-4">
-							&nbsp;&nbsp;<spring:message code="label.edit_company.mobilePhone" />
-							<input name="text" placeholder="" ng-model="company.tele_2" type="text">
-						</div>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<spring:message code="label.edit_company.branch" />&nbsp;&nbsp;&nbsp;<button id='addStep' class='btn_style' onclick="addBranch()"><spring:message code="label.edit_company.add" /></button>
-						<br />
-						<br />
-						<div id="branchListDiv">
-						
-						</div>
-						
-						<!-- <div class="col-sm-6">					
-							<button style="margin-top:5px; margin-bottom:20px;" ng-click="showBranch()">Manage Branch</button>
-						</div>
-						<div class="col-sm-6">
-						</div> -->
-						<div class="col-sm-12">
-							&nbsp;&nbsp;<spring:message code="label.edit_company.intro" />
-							<textarea name="message" cols="30" rows="10" placeholder="Description" ng-model="company.desc"></textarea>
-						</div>
-						<div class="col-sm-6">					
-							<button ng-click="updateCompany()"><spring:message code="label.edit_company.update" /></button>
-						</div>
-					</form>
-					</div>
-				</div>
-				<div class="col-md-1">
-				</div>
-			</div>
+		</div>
+		<!-- Cleaning-area-end -->	
 		
 		<!-- service-booking-area-end -->
 		<footer>
@@ -216,8 +149,5 @@
         <script src="js/wow.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-        <script src="js/login.js"></script>
-        <script src="js/editCompany.js"></script>
     </body>
 </html>
-<jsp:include page="loginView.jsp" />

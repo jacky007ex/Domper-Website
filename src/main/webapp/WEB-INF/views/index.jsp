@@ -45,16 +45,14 @@
 									<li id="welcome"></li>
 								</ul>
 								<ul class="header-left-text">
-									<li><a href="#">Contact Us</a> : 0 (500) 123-782</li> 
+									<li>Contact Us : info@skylartech.net</li> 
 								</ul>
 							</div>
 						</div>
 						<div class="col-md-6 col-sm-12 col-xs-12">
 							<div class="header-icon">
 								<a href="#"><i class="fa fa-facebook"></i></a>
-								<a href="#"><i class="fa fa-twitter"></i></a>
 								<a href="#"><i class="fa fa-instagram"></i></a>
-								<a href="#"><i class="fa fa-pinterest-p"></i></a>
 							</div>
 						</div>
 					</div>
@@ -72,19 +70,13 @@
 						</div>
 						<div class="col-md-10">
 						<div class="get-a-quote floatright hidden-sm hidden-xs">
-								<a id="login-link" style="display:none;" href="javascript:showLoginPage()">Log In</a>
-								<a id="logout-link" style="display:none;" href="javascript:logout()">Log Out</a>
+								<a id="login-link" style="display:none;" href="javascript:showLoginPage()"><spring:message code="label.log_in" /></a>
+								<a id="logout-link" style="display:none;" href="javascript:logout()"><spring:message code="label.log_out" /></a>
 							</div>
 							<div class="main-menu floatright">
 								<nav>
 									<ul>
 										<li class="active"><a href="home"><spring:message code="label.home" /></a>
-											<!-- <ul class="sub-menu">
-												<li><a href="index.html">Home 01</a></li>
-												<li><a href="index-2.html">Home 02</a></li>
-												<li><a href="index-3.html">Home 03</a></li>
-												<li><a href="index-box.html">Home Box</a></li>
-											</ul> -->
 										</li>
 										<li><a href="#"><spring:message code="label.service" /></a>
 											<ul class="sub-menu">
@@ -92,24 +84,8 @@
 												<li><a href="uploadMaids"><spring:message code="label.upload_maids" /></a></li>
 											</ul>
 										</li>
-										<li><a href="about.html"><spring:message code="label.about_us" /></a></li>
-										<!-- <li><a href="#">pages</a>
-											<ul class="sub-menu">
-												<li><a href="gallery.html">gallery</a></li>
-												<li><a href="testimonial.html">testimonial</a></li>
-											</ul>
-										</li> -->
-										<!-- <li><a href="blog-3-column.html">blog</a>
-											<ul class="sub-menu">
-												<li><a href="blog-3-column.html">blog-3-column</a></li>
-												<li><a href="blog-left-sidebar.html">blog-left-sidebar</a></li>
-												<li><a href="blog-right-sidebar.html">blog-right-sidebar</a></li>
-												<li><a href="blog-no-sidebar.html">blog-no-sidebar</a></li>
-												<li><a href="blog-details.html">blog-details</a></li>
-												<li><a href="blog-details-no-sideber.html">blog-details-no-sideber</a></li>
-											</ul>
-										</li> -->
-										<li><a href="contact.html"><spring:message code="label.contact" /></a></li>
+										<li><a href="aboutUs"><spring:message code="label.about_us" /></a></li>
+										<li><a href="contactUs"><spring:message code="label.contact" /></a></li>
 									</ul>
 								</nav>
 							</div>						
@@ -386,7 +362,7 @@
 		</div>
 		<!-- pricing-area-end -->
 		<!-- why-choose-area-start -->
-		<div class="why-choose-area pt-120 pb-90">
+		<div class="why-choose-area pt-120 pb-90 dim-bg">
 			<div class="container">
 				<div class="section-title text-center mb-70">
 					<span><spring:message code="label.promote_title1" /></span>
@@ -441,309 +417,10 @@
 				</div>
 			</div>
 		</div>
-		<!-- contact-area-start -->
-		<div class="contact-area pt-30 pb-30">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-3">
-					</div>
-					<div class="col-md-6 contact-1">
-						<div class="contact-left-wrapper">
-							<div class="contact-text">
-								<h4><spring:message code="label.contact_info_title" /></h4>
-								<br/>
-								<p>You are welcome to contact us by Email, phone or Wtsapp</p>
-								<br/>
-								<span>Address:  Hong Kong</span>
-								<span>Email:  koala@email.com</span>
-								<span>Phone:  +99 854 785 65</span>
-							</div>
-							<div class="contact-icon">
-								<a href="#"><i class="fa fa-facebook"></i></a>
-								<a href="#"><i class="fa fa-twitter"></i></a>
-								<a href="#"><i class="fa fa-instagram"></i></a>
-								<a href="#"><i class="fa fa-pinterest-p"></i></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<!-- <div class="contact-right-wrapper mb-30">
-								<h4>You are welcome to send us your feedback by below Email:</h4>
-								<h1>koala@email.com</h1>
-						</div> -->
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- contact-area-end -->
-		<!-- why-choose-area-end -->
-		<!-- testimonial-area-start -->
-		<!-- <div class="testimonial-area ptb-120">
-			<div class="container">
-				<div class="section-title text-center">
-					<span>Testimonials</span>
-					<h3>What Clients Say</h3>
-					<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the.</p>
-				</div>
-				<div class="row">
-					<div class="testimonial-active owl-carousel">
-						<div class="col-md-12">
-							<div class="testimonial-wrapper mt-70">
-								<div class="testimonial-content">
-									<p>All the Lorem Ipsum generators Internet tend to repeat predefinechunks cessary, making this the figenerator on tInternet. It uses a dictionary</p>
-								</div>
-								<div class="testimonial-information">
-									<div class="testimonial-img">
-										<img src="img/testimonial/1.png" alt="">
-									</div>
-									<div class="testimonial-name">
-										<h3>Mark Reid</h3>
-										<span>Creative Director</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-12">
-							<div class="testimonial-wrapper mt-70">
-								<div class="testimonial-content">
-									<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,</p>
-								</div>
-								<div class="testimonial-information">
-									<div class="testimonial-img">
-										<img src="img/testimonial/2.png" alt="">
-									</div>
-									<div class="testimonial-name">
-										<h3>Nathan Lopez</h3>
-										<span>Creative Director</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-12">
-							<div class="testimonial-wrapper mt-70">
-								<div class="testimonial-content">
-									<p>Sed ut perspiciatis unde omnis istenatus error sit voluptatem accusantiumemque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
-								</div>
-								<div class="testimonial-information">
-									<div class="testimonial-img">
-										<img src="img/testimonial/3.png" alt="">
-									</div>
-									<div class="testimonial-name">
-										<h3>Jeremy Dunn</h3>
-										<span>Creative Director</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div> -->
-		<!-- testimonial-area-end -->
-		<!-- latest-news-area-start -->
-		<!-- <div class="latest-news-area gray-bg pt-120 pb-90">
-			<div class="container">
-				<div class="section-title text-center mb-70">
-					<span>Company News</span>
-					<h3>Latest News</h3>
-					<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the.</p>
-				</div>
-				<div class="row">
-					<div class="col-md-4 col-sm-6">
-						<div class="latest-news-wrapper mb-30">
-							<div class="latest-news-img">
-								<a href="blog-details.html"><img src="img/news/1.jpg" alt="" /></a>
-							</div>
-							<div class="news-content">
-								<h3><a href="blog-details.html">The standard Lorem Ipsum passag GIve you</a></h3>
-								<p>But I must explain to you how all tmistaken idea of denouncing pleasure and praisi pain was born I will give you</p>
-								<div class="news-meta">
-									<span class="date"><i class="zmdi zmdi-time"></i>June 7, 2017</span>
-									<span class="comment"><i class="zmdi zmdi-comment-outline"></i>2 Comment</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 hidden-sm">
-						<div class="latest-news-wrapper mb-30">
-							<div class="latest-news-img">
-								<a href="blog-details.html"><img src="img/news/2.jpg" alt="" /></a>
-							</div>
-							<div class="news-content">
-								<h3><a href="blog-details.html">But I must explain to you how all mistaken</a></h3>
-								<p>But I must explain to you how all tmistaken idea of denouncing pleasure and praisi pain was born I will give you</p>
-								<div class="news-meta">
-									<span class="date"><i class="zmdi zmdi-time"></i>June 7, 2017</span>
-									<span class="comment"><i class="zmdi zmdi-comment-outline"></i>2 Comment</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="latest-news-wrapper mb-30">
-							<div class="latest-news-img">
-								<a href="blog-details.html"><img src="img/news/3.jpg" alt="" /></a>
-							</div>
-							<div class="news-content">
-								<h3><a href="blog-details.html">The standard Lorem Ipsum passag GIve you</a></h3>
-								<p>But I must explain to you how all tmistaken idea of denouncing pleasure and praisi pain was born I will give you</p>
-								<div class="news-meta">
-									<span class="date"><i class="zmdi zmdi-time"></i>June 7, 2017</span>
-									<span class="comment"><i class="zmdi zmdi-comment-outline"></i>2 Comment</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div> -->
-		<!-- latest-news-area-end -->
-		<!-- action-area-start -->
-		<!-- <div class="action-area green-bg pt-100 pb-65">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6">
-						<div class="action-wrapper mb-30">
-							<div class="action-text">
-								<h1>Don’t Miss any Action!</h1>
-								<p>But I must explain to you how alltmistaken idea of denouncing</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="action-right-wrapper mb-30">
-							<div class="action-form">
-								<form action="#">
-									<input placeholder="Your email address" type="email">
-									<button>subscribe</button>
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div> -->
-		<!-- counter-area-start -->
-		<!-- <div class="counter-area pt-120 pb-90">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-3 col-sm-6">
-						<div class="counter-wrapper mb-30 text-center">
-							<div class="counter-img" style="background-image:url(img/counter/counter1.png)">
-								<div class="counter-content text-center">
-									<h2 class="counter">340</h2>
-									<span>Project Done</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-6">
-						<div class="counter-wrapper mb-30 text-center">
-							<div class="counter-img" style="background-image:url(img/counter/counter2.png)">
-								<div class="counter-content text-center">
-									<h2 class="counter">55</h2>
-									<span>Employees</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-6">
-						<div class="counter-wrapper mb-30 text-center">
-							<div class="counter-img" style="background-image:url(img/counter/counter3.png)">
-								<div class="counter-content text-center">
-									<h2 class="counter">120</h2>
-									<span>Happy Clients</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-6">
-						<div class="counter-wrapper mb-30 text-center">
-							<div class="counter-img" style="background-image:url(img/counter/counter4.png)">
-								<div class="counter-content text-center">
-									<h2 class="counter">100</h2>
-									<span>Quality </span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div> -->
-		<!-- counter-area-end -->
 		<!-- action-area-end -->
 		<footer>
-			<!-- footer-top-area-start -->
-			<div class="footer-top-area pt-100 pb-70">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-4 col-sm-6">
-							<div class="footer-wrapper mb-30">
-								<div class="footer-logo">
-									<a href="#"><img width="180px" src="img/logo/domper_logo.png" alt="" /></a>
-								</div>
-								<div class="footer-text">
-									<p>Our platform is going to gather domestic helpers from all Hong Kong's Domestic Helper Agency.
-									So that people can match their target domestic helpers easily.</p>
-								</div>
-								<div class="footer-icon">
-									<a href="#"><i class="fa fa-facebook"></i></a>
-									<a href="#"><i class="fa fa-twitter"></i></a>
-									<a href="#"><i class="fa fa-instagram"></i></a>
-									<a href="#"><i class="fa fa-pinterest-p"></i></a>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-2 col-sm-6">
-							<div class="footer-wrapper mb-30">
-								<h4 class="footer-title">Information</h4>
-								<ul class="footer-menu">
-									<li><a href="#">About Us</a></li>
-									<li><a href="#">Our Services</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6">
-							<div class="footer-wrapper mb-30">
-								<h4 class="footer-title">Services</h4>
-								<ul class="footer-menu">
-									<li><a href="#">Contact Us</a></li>
-									<!--<li><a href="#">Dry Clean</a></li>
-									<li><a href="#">Ironing Services</a></li>
-									<li><a href="#">Laundry</a></li>
-									<li><a href="#">Wash & Fold</a></li> -->
-								</ul>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6">
-							<div class="footer-wrapper mb-30">
-								<h4 class="footer-title">Other Projects</h4>
-								Coming Soon
-								<!-- <ul class="footer-img">
-									<li><a href="#"><img alt="" src="img/footer/1.jpg"></a></li>
-									<li><a href="#"><img alt="" src="img/footer/2.jpg"></a></li>
-									<li><a href="#"><img alt="" src="img/footer/3.jpg"></a></li>
-									<li><a href="#"><img alt="" src="img/footer/4.jpg"></a></li>
-									<li><a href="#"><img alt="" src="img/footer/5.jpg"></a></li>
-									<li><a href="#"><img alt="" src="img/footer/6.jpg"></a></li>
-								</ul> -->
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- footer-bottom-area-start -->
-			<div class="footer-bottom-area ptb-20">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="copyright text-center">
-								<p>Powered by <a href="#">HasTech.</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+			<jsp:include page="footer.jsp" />
+			
 			<!-- footer-bottom-area-end -->
 			<!-- footer-top-area-end -->
 		</footer>
