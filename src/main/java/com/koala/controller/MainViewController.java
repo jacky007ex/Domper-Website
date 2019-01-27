@@ -8,12 +8,20 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class MainViewController {
 
-	@RequestMapping(value={"/", "/home"})
+	@RequestMapping(value={"/"})
 	public String index(Model model, @RequestParam(value = "lang", required = false) String language) {
 		if(language!=null && !language.isEmpty()){
 			model.addAttribute("lang", language);
 		}
 		return "index";
+	}
+	
+	@RequestMapping(value={"/home" , "/domper"})
+	public String domper(Model model, @RequestParam(value = "lang", required = false) String language) {
+		if(language!=null && !language.isEmpty()){
+			model.addAttribute("lang", language);
+		}
+		return "domper";
 	}
 	
 	@RequestMapping(value={"/projects"})
