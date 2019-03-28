@@ -17,6 +17,7 @@
 		
 		<!-- all css here -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-datetimepicker.css">
         <link rel="stylesheet" href="css/magnific-popup.css">
         <link rel="stylesheet" href="css/owl.carousel.min.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -118,7 +119,8 @@
 				    
 				    <div class='md-padding' layout="row" flex>
 				     <div layout="row" flex>
-				        <div class="card" layout="column" ng-repeat="maid in maids" flex >
+				        <div class="card" layout="column" ng-repeat="maid in maids | filter:{ companyId: userId } " flex >
+				            <i ng-if="maid.isPromoted.slice(-1)=='Y'" class="fa fa-star" style="color:orange;"></i>
 				            <img class="card-image" ng-style="{'border': changeScreen(maid)}" 
 				            ng-click="selectEditItem(maid)" ng-src="{{maid.imgUrl}}">
 				            <h5>{{maid.name}}</h5>
@@ -130,33 +132,78 @@
 				</div>
 				<div class="col-md-6" style="padding-right:0px;">
 					<div class="works-title title mt-10 mb-10">
-						<span>Upload Your Maids</span>
+						<!-- <span>Upload Your Maids</span> -->
 						<div ng-If="editingId==null">
-							<h3>Create Mode</h3>
+							<h3><spring:message code="label.create_mode" /></h3>
 						</div>
 						<div ng-If="editingId!=null">
-							<h3>Edit Mode</h3>
-							<button ng-click="switchToCreate()"> Switch to Create Mode </button>
+							<h3><spring:message code="label.edit_mode" /></h3>
+							<button ng-click="switchToCreate()"><spring:message code="label.switch_to_create" /> </button>
 						</div>
-						<p>Fill in information for your maid and click Upload</p>
 					</div>
 					<div class="row">
 					<form id="service-booking">
 						<div class="col-sm-12">
-							<spring:message code="label.upload_maid.uploadImage" />
+							&nbsp;&nbsp;<spring:message code="label.upload_maid.uploadImage" />
 							<input id="uploadImageFile" type="file">
+						</div>
+						<div class="col-sm-12">
+							&nbsp;<spring:message code="label.promote.notice" 
+									arguments="{{company.promote_maid_quota}}" />
+							<div class="checkbox">
+							  &nbsp;&nbsp;<label><input ng-disabled="promoteChecker()" id="isPromote" type="checkbox" value="">&nbsp;&nbsp;
+							  <spring:message code="label.promote" /></label>
+							</div>
+						<br/>
 						</div>
 						<div class="col-sm-6">
 							&nbsp;&nbsp;<spring:message code="label.upload_maid.name" />
-							<input type="text" ng-model="itemObj.name" placeholder="">
+							<input type="text" ng-model="itemObj.name" placeholder="" required="">
 						</div>
 						<div class="col-sm-6">
-							&nbsp;&nbsp;<spring:message code="label.upload_maid.current_loc" />
-							<!-- <input ng-model="itemObj.now_at" placeholder="" type="text"> -->
-							<select class="form-control"  ng-model="itemObj.now_at">
-							  <option value="Hong Kong"><spring:message code="label.upload_maid.hongkong" /></option>
-							  <option value="Oversea"><spring:message code="label.upload_maid.oversea" /></option>
+							&nbsp;&nbsp;<spring:message code="label.upload_maid.nationality" />
+							<select class="form-control"  ng-model="itemObj.country">
+							    <option value="philippines"><spring:message code="philippines" /></option>
+							    <option value="indonesia"><spring:message code="indonesia" /></option>
+			                     <option value="thailand"><spring:message code="thailand" /></option>
+			                    <option value="myanmar"><spring:message code="myanmar" /></option>
+			                     <option value="bangladesh"><spring:message code="bangladesh" /></option>
+			                    <option value="sri_lanka"><spring:message code="sri_lanka" /></option>
+			                    <option value="nepal"><spring:message code="nepal" /></option>
+			                    <option value="madagascar"><spring:message code="madagascar" /></option>
+			                    <option value="others"><spring:message code="label.other" /></option>
 							</select>
+						</div>
+						<div class="col-sm-12">
+						</div>
+						<div class="col-sm-6">
+						&nbsp;&nbsp;<spring:message code="label.upload_maid.preferJob" />
+							<select class="form-control" ng-model="itemObj.preferJob" >
+								<option value="takeCareBaby"><spring:message code="label.skill.takeCareBaby" /></option>
+							 	<option value="takeCareKid"><spring:message code="label.skill.takeCareKid" /></option>
+							 	<option value="takeCareElderly"><spring:message code="label.skill.takeCareElderly" /></option>
+							 	<option value="takeCarePets"><spring:message code="label.skill.takeCarePets" /></option>
+							 	<option value="takeCareDisable"><spring:message code="label.skill.takeCareDisable" /></option>
+							 	<option value="medicalNursing"><spring:message code="label.skill.medicalNursing" /></option>
+							 	<option value="useMedicine"><spring:message code="label.skill.useMedicine" /></option>
+							 	<option value="washCar"><spring:message code="label.skill.washCar" /></option>
+							 	<option value="drive"><spring:message code="label.skill.drive" /></option>
+							 	<option value="houseCleaning"><spring:message code="label.skill.houseCleaning" /></option>
+							 	<option value="Ironing"><spring:message code="label.skill.Ironing" /></option>
+							 	<option value="applianceUsage"><spring:message code="label.skill.applianceUsage" /></option>
+							 	<option value="groceryShopping"><spring:message code="label.skill.groceryShopping" /></option>
+							 	<option value="mealPreparation"><spring:message code="label.skill.mealPreparation" /></option>
+							 	<option value="chineseFood"><spring:message code="label.skill.chineseFood" /></option>
+							 	<option value="westernFood"><spring:message code="label.skill.westernFood" /></option>
+							 	<option value="japaneseFood"><spring:message code="label.skill.japaneseFood" /></option>
+							 	<option value="taiwanFood"><spring:message code="label.skill.taiwanFood" /></option>
+							 	<option value="indianFood"><spring:message code="label.skill.indianFood" /></option>
+							 	<option value="homeFood"><spring:message code="label.skill.homeFood" /></option>
+							</select>
+						</div>
+						<div class="col-sm-6">
+							&nbsp;&nbsp;<spring:message code="label.upload_maid.work_date" />
+							<input id="work_date" type="text" ng-model="itemObj.available_work_date" placeholder="">
 						</div>
 						<div class="col-sm-12">
 							<hr style="margin:5px;">
@@ -206,22 +253,16 @@
 						</div>
 						<div class="col-sm-12">
 							&nbsp;&nbsp;<spring:message code="label.upload_maid.intro" />
-							<textarea cols="30" rows="10" placeholder="Introduction" ng-model="itemObj.intro"></textarea>
+							<textarea cols="30" rows="10" placeholder="" ng-model="itemObj.intro"></textarea>
 						</div>
 						<div class="col-sm-12">
 							<hr style="margin:5px;">
 						</div>
 						<div class="col-sm-6">
-							&nbsp;&nbsp;<spring:message code="label.upload_maid.nationality" />
-							<select class="form-control"  ng-model="itemObj.nationality">
-							    <option value="philippines"><spring:message code="philippines" /></option>
-							    <option value="indonesia"><spring:message code="indonesia" /></option>
-			                    <option value="thailand"><spring:message code="thailand" /></option>
-			                    <option value="myanmar"><spring:message code="myanmar" /></option>
-			                     <option value="bangladesh"><spring:message code="bangladesh" /></option>
-			                    <option value="sri_lanka"><spring:message code="sri_lanka" /></option>
-			                    <option value="nepal"><spring:message code="nepal" /></option>
-			                    <option value="madagascar"><spring:message code="madagascar" /></option>
+							&nbsp;&nbsp;<spring:message code="label.upload_maid.current_loc" />
+							<select class="form-control"  ng-model="itemObj.now_at">
+							  <option value="hongkong"><spring:message code="label.upload_maid.hongkong" /></option>
+							  <option value="oversea"><spring:message code="label.upload_maid.oversea" /></option>
 							</select>
 						</div>
 						<div class="col-sm-6">
@@ -231,13 +272,15 @@
 							  <option value="male"><spring:message code="male" /></option>
 							</select>
 						</div>
+						<div class="col-sm-12"><br>
+						</div>
 						<div class="col-sm-6">
 							&nbsp;&nbsp;<spring:message code="label.upload_maid.age" />
 							<input ng-model="itemObj.age" placeholder="" type="text">
 						</div>
 						<div class="col-sm-6">
 							&nbsp;&nbsp;<spring:message code="label.upload_maid.birthday" />
-							<input ng-model="itemObj.birthday" placeholder="" type="text">
+							<input id="birthday" ng-model="itemObj.birthday" placeholder="" type="text">
 						</div>
 						<div class="col-sm-6">
 							&nbsp;&nbsp;<spring:message code="label.upload_maid.height" />
@@ -249,7 +292,14 @@
 						</div>
 						<div class="col-sm-6">
 							&nbsp;&nbsp;<spring:message code="label.upload_maid.religion" />
-							<input ng-model="itemObj.religion" placeholder="" type="text">
+							<select class="form-control" ng-model="itemObj.religion">
+							   <option value=""><spring:message code="label.religion.none" /></option>
+							   <option value="christian"><spring:message code="label.religion.christian" /></option>
+							   <option value="catholic"><spring:message code="label.religion.catholic" /></option>
+							   <option value="islam"><spring:message code="label.religion.islam" /></option>
+			                   <option value="buddhism"><spring:message code="label.religion.buddhism" /></option>
+			                   <option value="other"><spring:message code="label.other" /></option>
+							</select>
 						</div>
 						<!-- <div class="col-sm-6">
 							&nbsp;&nbsp;Prefer Work
@@ -263,6 +313,8 @@
 							<select class="form-control" ng-model="itemObj.marital_status">
 							  <option value="single"><spring:message code="label.upload_maid.single" /></option>
 							  <option value="married"><spring:message code="label.upload_maid.married" /></option>
+							   <option value="divorce"><spring:message code="label.upload_maid.divorce" /></option>
+							    <option value="widowed"><spring:message code="label.upload_maid.widowed" /></option>
 							</select>
 						</div>
 						<div class="col-sm-6">
@@ -276,6 +328,26 @@
 						<spring:message code="label.upload_maid.skills" /> 
 						<br/>
 							<select multiple="multiple" id="skill-select" name="skill-select[]">
+							 	<option value="takeCareBaby"><spring:message code="label.skill.takeCareBaby" /></option>
+							 	<option value="takeCareKid"><spring:message code="label.skill.takeCareKid" /></option>
+							 	<option value="takeCareElderly"><spring:message code="label.skill.takeCareElderly" /></option>
+							 	<option value="takeCarePets"><spring:message code="label.skill.takeCarePets" /></option>
+							 	<option value="takeCareDisable"><spring:message code="label.skill.takeCareDisable" /></option>
+							 	<option value="medicalNursing"><spring:message code="label.skill.medicalNursing" /></option>
+							 	<option value="useMedicine"><spring:message code="label.skill.useMedicine" /></option>
+							 	<option value="washCar"><spring:message code="label.skill.washCar" /></option>
+							 	<option value="drive"><spring:message code="label.skill.drive" /></option>
+							 	<option value="houseCleaning"><spring:message code="label.skill.houseCleaning" /></option>
+							 	<option value="Ironing"><spring:message code="label.skill.Ironing" /></option>
+							 	<option value="applianceUsage"><spring:message code="label.skill.applianceUsage" /></option>
+							 	<option value="groceryShopping"><spring:message code="label.skill.groceryShopping" /></option>
+							 	<option value="mealPreparation"><spring:message code="label.skill.mealPreparation" /></option>
+							 	<option value="chineseFood"><spring:message code="label.skill.chineseFood" /></option>
+							 	<option value="westernFood"><spring:message code="label.skill.westernFood" /></option>
+							 	<option value="japaneseFood"><spring:message code="label.skill.japaneseFood" /></option>
+							 	<option value="taiwanFood"><spring:message code="label.skill.taiwanFood" /></option>
+							 	<option value="indianFood"><spring:message code="label.skill.indianFood" /></option>
+							 	<option value="homeFood"><spring:message code="label.skill.homeFood" /></option>
 						    </select>
 						</div>
 						<!-- <div class="col-sm-6">
@@ -334,6 +406,8 @@
         <script src="js/jquery.parallax-1.1.3.js"></script>
         <script src="js/owl.carousel.min.js"></script>
         <script src="js/jquery.meanmenu.js"></script>
+        <script src="js/moment.min.js"></script>
+        <script src="js/bootstrap-datetimepicker.min.js"></script>        
         <script src="js/ajax-mail.js"></script>
         <script src="js/wow.min.js"></script>
         <script src="js/plugins.js"></script>

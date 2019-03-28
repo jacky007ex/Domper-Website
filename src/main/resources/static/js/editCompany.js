@@ -17,6 +17,7 @@ app.controller("CompanyCtrl", function($scope, $firebaseArray) {
     	  $scope.company = snapshot.val();
     	  $scope.$apply();
     	  appendDistrictList("main_district", $scope.company.district);
+    	  initSer($scope.company.ser_content, $scope.company.special_ser);
 	    });
 	    db.ref('/branches/').orderByChild("companyId").equalTo(companyUser.uid).once('value').then(function(snapshot) {
 	    	currentBranchList=snapshot.val();
@@ -92,18 +93,32 @@ app.controller("CompanyCtrl", function($scope, $firebaseArray) {
 	};
 	
 	$scope.updateCompanyInfo = function(downloadUrl){
+		var passObj;
+		passObj = JSON.parse(JSON.stringify( $scope.company ));
+		passObj.name = $scope.company.name;
+		passObj.address = $scope.company.address;
+		passObj.district =  $("#main_district").val();
+		passObj.email = $scope.company.email;
+		passObj.website =  $scope.company.website==null?"":$scope.company.website;
+		passObj.tele_1 = $scope.company.tele_1;
+		passObj.tele_2 = $scope.company.tele_2==null?"":$scope.company.tele_2;
+		passObj.desc =  $scope.company.desc==null?"":$scope.company.desc;
+		passObj.ph_fee = $scope.company.ph_fee==null?"":$scope.company.ph_fee;
+		passObj.idon_fee =  $scope.company.idon_fee==null?"":$scope.company.idon_fee;
+		passObj.other_fee = $scope.company.other_fee==null?"":$scope.company.other_fee;
+		passObj.id = $scope.companyId;
+		passObj.licenceNo = $scope.company.licenceNo;
+		passObj.ser_content = getSerList();
+		passObj.special_ser = getSpecSerList();
+		//To init Field
+		passObj.special_highlight = $scope.company.special_highlight==null?"N":$scope.company.special_highlight;
+		passObj.upload_quota = $scope.company.upload_quota==null?5:$scope.company.upload_quota;
+		passObj.vip_expired = $scope.company.vip_expired==null?"Y":$scope.company.vip_expired;
+		passObj.vip_level = $scope.company.vip_level==null?"free":$scope.company.vip_level;
+		
 		if(downloadUrl!=null){
-			db.ref('companies/' + $scope.companyId).update({
-			    name : $scope.company.name,
-			    address : $scope.company.address,
-			    district : $("#main_district").val(),
-			    email : $scope.company.email,
-			    website : $scope.company.webSite,
-			    tele_1 : $scope.company.tele_1,
-			    tele_2 : $scope.company.tele_2,
-			    desc : $scope.company.desc,
-			    imgUrl : downloadUrl,
-			  }).then(function () {
+			passObj.imgUrl = downloadUrl;
+			db.ref('companies/' + $scope.companyId).update(passObj).then(function () {
 				  alert("Update Success");
 				  console.log("Update Success");
 				  $scope.company.imgUrl = downloadUrl;
@@ -111,16 +126,7 @@ app.controller("CompanyCtrl", function($scope, $firebaseArray) {
 				  location.reload();
 			  });
 		}else{
-			db.ref('companies/' + $scope.companyId).update({
-			    name : $scope.company.name,
-			    address : $scope.company.address,
-			    district : $("#main_district").val(),
-			    email : $scope.company.email,
-			    website : $scope.company.webSite,
-			    tele_1 : $scope.company.tele_1,
-			    tele_2 : $scope.company.tele_2,
-			    desc : $scope.company.desc
-			  }).then(function () {
+			db.ref('companies/' + $scope.companyId).update(passObj).then(function () {
 				  alert("Update Success");
 				  console.log("Update Success");
 				  location.reload();
@@ -131,16 +137,18 @@ app.controller("CompanyCtrl", function($scope, $firebaseArray) {
 		}
 		var branchList = getBranchList();
 		var mainBranch = new Object();
-		mainBranch.address = $scope.company.address
-		mainBranch.district = $scope.company.district
-		mainBranch.email = $scope.company.email
-		mainBranch.tele_1 = $scope.company.tele_1
-		mainBranch.tele_2 = $scope.company.tele_2
+		mainBranch.address = $scope.company.address;
+		mainBranch.district = $scope.company.district;
+		mainBranch.email = $scope.company.email;
+		mainBranch.tele_1 = $scope.company.tele_1;
+		mainBranch.tele_2 = $scope.company.tele_2;
+		mainBranch.imgUrl = $scope.company.imgUrl;
 		mainBranch.isMain = true;
 		branchList.push(mainBranch);
 		
 		for(var i in branchList){
 			branchList[i].companyId = $scope.companyId;
+			branchList[i].imgUrl = $scope.company.imgUrl;
 			db.ref('branches/').push(branchList[i]).then(function () {
 				  console.log("Update Success");
 			});
@@ -153,14 +161,14 @@ function addBranch(){
 	$('#branchListDiv').append("<div class='col-sm-12'></div>" +
 			"<div class='col-sm-2'><select id='district"+ branch_counter +"' class='form-control' name='branch_district' placeholder='Location' value='' required='' ></select></div>"
 			+ "<div class='col-sm-10'><input id='address"+ branch_counter +"' type='text' name='branch_address' placeholder='Location' value='' required='' /></div>"
-			+ "<div class='col-sm-3'>"
-			+"<input id='email"+ branch_counter +"' type='text' name='branch_email' placeholder='Email' value='' required='' />"
+			+ "<div class='col-sm-5'>"
+			+"<input id='email"+ branch_counter +"' type='text' name='branch_email' placeholder='Email' value='' />"
 			+ "</div>"
-			+ "<div class='col-sm-3'>"
-			+"<input id='tele_1"+ branch_counter +"' type='text' name='branch_tele_1' placeholder='Company Phone' value='' required='' />"
+			+ "<div class='col-sm-2'>"
+			+"<input id='tele_1"+ branch_counter +"' type='text' name='branch_tele_1' placeholder='Company Phone' value='' />"
 			+ "</div>"
-			+ "<div class='col-sm-3'>"
-			+"<input id='tele_2"+ branch_counter +"' type='text' name='branch_tele_2' placeholder='Mobile Phone' value='' required='' /></div>"
+			+ "<div class='col-sm-2'>"
+			+"<input id='tele_2"+ branch_counter +"' type='text' name='branch_tele_2' placeholder='Mobile Phone' value='' /></div>"
 			+ "</div>"
 			+ "<div class='col-sm-3'><button id='deleteBtn"+ branch_counter +"' class='btn_style' onclick='deleteBranch("+ branch_counter +")'>Delete</button></div>"
 			//+"<div class='col-sm-1' id='deleteBtn"+ counter +"'><a class='domper-form-btn' href='javascript:deleteWorkExp("+ counter +")'>Delete</a></div"
@@ -183,18 +191,17 @@ function initBranch(list){
 	$('#branchListDiv').html("");
 	for(var i in list){
 		if(list[i].isMain!=true){
-			var initHtml = $('#branchListDiv').html();
-			$('#branchListDiv').html( initHtml + "<div class='col-sm-12'></div>" +	
+			$('#branchListDiv').append("<div class='col-sm-12'></div>" +	
 					"<div class='col-sm-2'><select id='district"+ counter +"' class='form-control' name='branch_district' placeholder='Location' value='" + list[i].district + "' required='' ></select></div>"
 					+ "<div class='col-sm-10'><input id='address"+ counter +"' type='text' name='branch_address' placeholder='Location' value='" + list[i].address + "' required='' /></div>"
-					+ "<div class='col-sm-3'>"
-					+"<input id='email"+ counter +"' type='text' name='branch_email' placeholder='Email' value='" + list[i].email + "' required='' />"
+					+ "<div class='col-sm-5'>"
+					+"<input id='email"+ counter +"' type='text' name='branch_email' placeholder='Email' value='" + list[i].email + "'  />"
 					+ "</div>"
-					+ "<div class='col-sm-3'>"
-					+"<input id='tele_1"+ counter +"' type='text' name='branch_tele_1' placeholder='Company Phone' value='" + list[i].tele_1 + "' required='' />"
+					+ "<div class='col-sm-2'>"
+					+"<input id='tele_1"+ counter +"' type='text' name='branch_tele_1' placeholder='Company Phone' value='" + list[i].tele_1 + "' />"
 					+ "</div>"
-					+ "<div class='col-sm-3'>"
-					+"<input id='tele_2"+ counter +"' type='text' name='branch_tele_2' placeholder='Mobile Phone' value='" + list[i].tele_2 + "' required='' /></div>"
+					+ "<div class='col-sm-2'>"
+					+"<input id='tele_2"+ counter +"' type='text' name='branch_tele_2' placeholder='Mobile Phone' value='" + list[i].tele_2 + "' /></div>"
 					+ "</div>"
 					+ "<div class='col-sm-3'><button id='deleteBtn"+ counter +"' class='btn_style' onclick='deleteBranch("+ counter +")'>Delete</button></div>"
 					//+"<div class='col-sm-1' id='deleteBtn"+ counter +"'><a class='domper-form-btn' href='javascript:deleteWorkExp("+ counter +")'>Delete</a></div"
@@ -208,19 +215,16 @@ function initBranch(list){
 }
 
 function appendDistrictList(element_id, selectedVal){
-	var districtValues = {
-			"hongKongIsland":"港島",
+	var districtValues_cn = {
 			"centralWestern":"中西區",
 			"wanchai":"灣仔",
 			"eastern":"東區",
 			"southern":"南區",
-			"kowloon":"九龍",
 			"kowloonCity":"九龍城",
 			"wongTaiSin":"黃大仙",
 			"kuwnTong":"觀塘",
 			"yauTsimMong":"油尖旺",
 			"shamShuiPo":"深水埗",
-			"newTerritories":"新界",
 			"tsuenWan":"荃灣",
 			"kwaiTsing":"葵青",
 			"saiKung":"西貢",
@@ -233,18 +237,15 @@ function appendDistrictList(element_id, selectedVal){
 	};
 	
 	var districtValues_en = {
-			"hongKongIsland":"Hong Kong Island",
 			"centralWestern":"Central & Western District",
 			"wanchai":"Wan Chai",
 			"eastern":"Eastern District",
 			"southern":"Southern District",
-			"kowloon":"Kowloon",
 			"kowloonCity":"Kowloon City",
 			"wongTaiSin":"Wong Tai Sin",
 			"kuwnTong":"Kuwn Tong",
 			"yauTsimMong":"Yau Tsim Mong",
 			"shamShuiPo":"Sham Shui Po",
-			"newTerritories":"NewTerritories",
 			"tsuenWan":"Tsuen Wan",
 			"kwaiTsing":"Kwai Tsing",
 			"saiKung":"Sai Kung",
@@ -255,6 +256,15 @@ function appendDistrictList(element_id, selectedVal){
 			"yuenLong":"Yuen Long",
 			"islands":"Islands"
 	};
+	
+	var districtValues;
+	var userLang = navigator.language || navigator.userLanguage; 
+	if(userLang.includes("en")){
+		districtValues = districtValues_en;
+	}else{
+		districtValues = districtValues_cn;
+	}
+	
 	$.each(districtValues, function(key, value) {   
 	     $('#'+element_id)
 	         .append($("<option></option>")
@@ -283,6 +293,50 @@ function getBranchList(){
 	}
 
 	return branchList;
+}
+
+function initSer(serList , specSerList){
+	for(var i in serList){
+		$("#"+ serList[i]).prop('checked', true);
+	}
+	for(var i in specSerList){
+		$("#"+ specSerList[i]).prop('checked', true);
+	}
+}
+
+function getSerList(){
+	var serList = [];
+	for(var i=1; i<=13;i++){
+		if($("#ser"+i).is(":checked"))
+			serList.push("ser"+i);
+	}
+	return serList;
+}
+
+function getSpecSerList(){
+	var specSerList = [];
+	for(var i=1; i<=3;i++){
+		if($("#specSer"+i).is(":checked"))
+			specSerList.push("specSer"+i);
+	}
+	return specSerList;
+}
+
+function getWorkExpList(){
+	var workExpList = [];
+	var locationList =  $('[name=wrkExp_location]');
+	var dutyList =  $('[name=wrkExp_duty]');
+	var fromList =  $('[name=wrkExp_from]');
+	var toList =  $('[name=wrkExp_to]');
+	for(var i=0; i<locationList.length;i++){
+		var obj = new Object();
+		obj.location = locationList[i].value;
+		obj.majorJob = dutyList[i].value;
+		obj.from = fromList[i].value;
+		obj.to = toList[i].value;
+		workExpList.push(obj);
+	}
+	return workExpList;
 }
 
 function uploadImage(){

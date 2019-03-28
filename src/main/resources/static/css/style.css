@@ -622,29 +622,38 @@ span.cd-words-wrapper  b{
 .service-booking-img > img {
   width: 100%;
 }
-#service-booking input {
+#service-booking input:not([type="checkbox"]) {
   border: 1px solid #d9d9d9;
   border-radius: 30px;
-  color: #c3c3c3;
+  color: #420303;
   font-size: 14px;
   font-weight: 400;
   height: 40px;
   margin-bottom: 25px;
   padding-left: 17px;
-  text-transform: capitalize;
   width: 100%;
   transition:.3s;
+}
+
+#service-booking input[type=checkbox]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(1.5); /* IE */
+  -moz-transform: scale(1.5); /* FF */
+  -webkit-transform: scale(1.5); /* Safari and Chrome */
+  -o-transform: scale(1.5); /* Opera */
+  padding: 10px;
+  cursor: pointer;
 }
 #service-booking input:hover{color:#52b6bc;border-color:#52b6bc}
 #service-booking textarea {
   border: 1px solid #d9d9d9;
   border-radius: 15px;
-  color: #c3c3c3;
+  color: #420303;
   font-size: 14px;
   font-weight: 400;
   height: 120px;
   padding: 17px;
-  text-transform: capitalize;
   width: 100%;
   transition: .3s;
 }

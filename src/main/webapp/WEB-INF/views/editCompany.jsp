@@ -113,7 +113,9 @@
 					</div>
 					<div class="row">
 					<br />
-					<img class="company-image" ng-src="{{company.imgUrl}}">
+					<img class="company-image" width="600px" height="150px" ng-src="{{company.imgUrl}}">
+					<br />
+					(p.s. Size will be adjusted in Moblie App)
 					<br />
 					<br />
 					<form id="service-booking">
@@ -124,12 +126,21 @@
 						</div>
 						<div class="col-sm-6">
 							&nbsp;&nbsp;<spring:message code="label.edit_company.name" />
-							<input type="text" ng-model="company.name">
+							<input required type="text" ng-model="company.name">
 						</div>
-						<div class="col-sm-6">
+						<div class="col-sm-4">
 							&nbsp;&nbsp;<spring:message code="label.edit_company.website" />
-							<input type="text" ng-model="company.webSite">
+							<input type="text" ng-model="company.website">
 						</div>
+						<div class="col-sm-2">
+							&nbsp;&nbsp;<spring:message code="label.edit_company.licenceNo" />
+							<input required type="text" ng-model="company.licenceNo">
+						</div>
+						<div class="col-sm-12">
+							&nbsp;&nbsp;<spring:message code="label.edit_company.intro" />
+							<textarea name="message" cols="30" rows="10" placeholder="Description" ng-model="company.desc"></textarea>
+						</div>
+						<div class="col-sm-12"><br/></div>
 						<div class="col-sm-2">
 							&nbsp;&nbsp;<spring:message code="label.edit_company.district" />
 							<select id="main_district"  class='form-control' >
@@ -137,36 +148,109 @@
 						</div>
 						<div class="col-sm-10">
 							&nbsp;&nbsp;<spring:message code="label.edit_company.address" />
-							<input name="text" placeholder="" ng-model="company.address" type="text">
+							<input required name="text" placeholder="" ng-model="company.address" type="text">
 						</div>
 						<div class="col-sm-4">
 							&nbsp;&nbsp;<spring:message code="label.edit_company.email" />
-							<input id="age" name="text" placeholder="" type="text" ng-model="company.email">
+							<input required id="age" name="text" placeholder="" type="text" ng-model="company.email">
 						</div>
 						<div class="col-sm-4">
 							&nbsp;&nbsp;<spring:message code="label.edit_company.companyPhone" />
-							<input name="text" placeholder="" ng-model="company.tele_1" type="text">
+							<input required name="text" placeholder="" ng-model="company.tele_1" type="text">
 						</div>
 						<div class="col-sm-4">
 							&nbsp;&nbsp;<spring:message code="label.edit_company.mobilePhone" />
 							<input name="text" placeholder="" ng-model="company.tele_2" type="text">
 						</div>
+						<div class="col-sm-4">
+							&nbsp;&nbsp;<spring:message code="label.edit_company.ph_fee" />
+							<input name="text" placeholder="" ng-model="company.ph_fee" type="text" >
+						</div>
+						<div class="col-sm-4">
+							&nbsp;&nbsp;<spring:message code="label.edit_company.idon_fee" />
+							<input name="text" placeholder="" ng-model="company.idon_fee" type="text">
+						</div>
+						<div class="col-sm-4">
+							&nbsp;&nbsp;<spring:message code="label.edit_company.other_fee" />
+							<input name="text" placeholder="" ng-model="company.other_fee" type="text">
+						</div>
+						<div class="col-sm-12">
+							<hr style="margin:5px;">
+						</div>
+						<br /><br />
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<spring:message code="label.edit_company.branch" />&nbsp;&nbsp;&nbsp;<button id='addStep' class='btn_style' onclick="addBranch()"><spring:message code="label.edit_company.add" /></button>
 						<br />
 						<br />
 						<div id="branchListDiv">
 						
 						</div>
-						
+						<div class="col-sm-12">
+							<hr style="margin:5px;">
+						</div>
+						<br />
+						<div class="col-sm-12">
+							&nbsp;&nbsp;<spring:message code="label.edit_company.feeInclude" />
+							<div class="checkbox">
+							  <label><input id="ser1" type="checkbox" value="">&nbsp;&nbsp;<spring:message code="label.ser1" /></label>
+							</div>
+							<div class="checkbox">
+							  <label><input id="ser2" type="checkbox" value="">&nbsp;&nbsp;<spring:message code="label.ser2" /></label>
+							</div>
+							<div class="checkbox">
+							  <label><input id="ser3" type="checkbox" value="">&nbsp;&nbsp;<spring:message code="label.ser3" /></label>
+							</div>
+							<div class="checkbox">
+							  <label><input id="ser4" type="checkbox" value="">&nbsp;&nbsp;<spring:message code="label.ser4" /></label>
+							</div>
+							<div class="checkbox">
+							  <label><input id="ser5" type="checkbox" value="">&nbsp;&nbsp;<spring:message code="label.ser5" /></label>
+							</div>
+							<div class="checkbox">
+							  <label><input id="ser6" type="checkbox" value="">&nbsp;&nbsp;<spring:message code="label.ser6" /></label>
+							</div>
+							<div class="checkbox">
+							  <label><input id="ser7" type="checkbox" value="">&nbsp;&nbsp;<spring:message code="label.ser7" /></label>
+							</div>
+							<div class="checkbox">
+							  <label><input id="ser8" type="checkbox" value="">&nbsp;&nbsp;<spring:message code="label.ser8" /></label>
+							</div>
+							<div class="checkbox">
+							  <label><input id="ser9" type="checkbox" value="">&nbsp;&nbsp;<spring:message code="label.ser9" /></label>
+							</div>
+							<div class="checkbox">
+							  <label><input id="ser10" type="checkbox" value="">&nbsp;&nbsp;<spring:message code="label.ser10" /></label>
+							</div>
+							<div class="checkbox">
+							  <label><input id="ser11" type="checkbox" value="">&nbsp;&nbsp;<spring:message code="label.ser11" /></label>
+							</div>
+							<div class="checkbox">
+							  <label><input id="ser12" type="checkbox" value="">&nbsp;&nbsp;<spring:message code="label.ser12" /></label>
+							</div>
+							<div class="checkbox">
+							  <label><input id="ser13" type="checkbox" value="">&nbsp;&nbsp;<spring:message code="label.ser13" /></label>
+							</div>
+						</div>
+						<div class="col-sm-12">
+							&nbsp;&nbsp;<spring:message code="label.edit_company.starInclude" />
+							<div class="checkbox">
+							  <label><input id="specSer1" type="checkbox" value="">&nbsp;&nbsp;<spring:message code="label.specSer1" /></label>
+							</div>
+							<div class="checkbox">
+							  <label><input id="specSer2" type="checkbox" value="">&nbsp;&nbsp;<spring:message code="label.specSer2" /></label>
+							</div>
+							<div class="checkbox">
+							  <label><input id="specSer3" type="checkbox" value="">&nbsp;&nbsp;<spring:message code="label.specSer3" /></label>
+							</div>
+						</div>
+						<div class="col-sm-12">
+							<hr style="margin:5px;">
+						</div>
+						<br />
 						<!-- <div class="col-sm-6">					
 							<button style="margin-top:5px; margin-bottom:20px;" ng-click="showBranch()">Manage Branch</button>
 						</div>
 						<div class="col-sm-6">
 						</div> -->
-						<div class="col-sm-12">
-							&nbsp;&nbsp;<spring:message code="label.edit_company.intro" />
-							<textarea name="message" cols="30" rows="10" placeholder="Description" ng-model="company.desc"></textarea>
-						</div>
 						<div class="col-sm-6">					
 							<button ng-click="updateCompany()"><spring:message code="label.edit_company.update" /></button>
 						</div>

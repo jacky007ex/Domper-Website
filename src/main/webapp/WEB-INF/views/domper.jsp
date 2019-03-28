@@ -300,13 +300,14 @@
 								<img src="img/pricing/1.png" alt="" />
 							</div>
 							<div class="pricing-head">
-								<h3>Basic Clean</h3>
+								<h3>Welcome Plan</h3>
 							</div>
 							<div class="price">
 								Free
 							</div>
 							<ul class="pricing-menu">
-								<li>Upload Maid 5</li>
+								<li><spring:message code="label.upload_no_maid" 
+									arguments="8" /></li>
 								<li></li>
 								<li></li>
 							</ul>
@@ -324,12 +325,14 @@
 								<h3>VIP</h3>
 							</div>
 							<div class="price">
-								<span>$</span>399
+								<span>$</span>299
 							</div>
 							<ul class="pricing-menu">
-								<li>Upload Maid 100</li>
-								<li>Promote Maid</li>
-								<li>Promote Company</li>
+								<li><spring:message code="label.upload_no_maid" 
+									arguments="100" /></li>
+								<li><spring:message code="label.promote_no_maid" 
+									arguments="3" /></li>
+								<li><spring:message code="label.promote_company"/></li>
 							</ul>
 							<div class="pricing-btn active">
 								<a href="#">Choose Plan</a>
@@ -342,15 +345,16 @@
 								<img src="img/pricing/3.png" alt="" />
 							</div>
 							<div class="pricing-head">
-								<h3>Basic Clean</h3>
+								<h3>Silver Plan</h3>
 							</div>
 							<div class="price">
-								<span>$</span>249
+								<span>$</span>149
 							</div>
 							<ul class="pricing-menu">
-								<li>Upload Maid 50</li>
-								<li>Promote Maid</li>
-								<li>Promote Company</li>
+								<li><spring:message code="label.upload_no_maid" 
+									arguments="50" /></li>
+								<li><spring:message code="label.promote_no_maid" 
+									arguments="1" /></li>
 							</ul>
 							<div class="pricing-btn">
 								<a href="#">Choose Plan</a>
