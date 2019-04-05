@@ -7,7 +7,7 @@ var work_exp_list_counter = 0;
 $(document).ready(function() {
 	//appendSkillList('skill-select');
 	$('#skill-select').multiSelect();
-	constructDateTimePicker("birthday","DD-MM-YYYY", "months");
+	constructDateTimePicker("birthday","YYYY", "years");
 	constructDateTimePicker("work_date","DD-MM-YYYY", "months");
 	
 });
@@ -66,6 +66,8 @@ app.controller("SampleCtrl", function($scope, $firebaseArray) {
 		  $scope.itemObj.isPromoted = "N";
 		  $scope.itemObj.isEmployed = "N";
 		  $scope.itemObj.preferJob = "";
+		  $scope.itemObj.pdfUrl = "";
+		  $scope.itemObj.videoUrl = "";
 		  $('#uploadImageFile').val("");
 		  $('#skill-select').val("");
 		  $('#skill-select').multiSelect();
@@ -111,6 +113,8 @@ app.controller("SampleCtrl", function($scope, $firebaseArray) {
 		  $scope.itemObj.isPromoted = a.isPromoted;
 		  $scope.itemObj.isEmployed = a.isEmployed;
 		  $scope.itemObj.preferJob = a.preferJob;
+		  $scope.itemObj.pdfUrl = a.pdfUrl;
+		  $scope.itemObj.videoUrl = a.videoUrl;
 		  if($scope.company!=null)
 			  $scope.company.promote_maid_quota = $scope.before_quota;
 		  $('#uploadImageFile').val("");
@@ -201,6 +205,12 @@ app.controller("SampleCtrl", function($scope, $firebaseArray) {
 			const metadata = {
 			  contentType: file.type
 			};
+			if(file.type!="jpg" && file.type!="png"
+				&& file.type!="JPG" && file.type!="PNG"
+					&& file.type!="jpeg" && file.type!="JPEG"){
+				alert("Only Image File(.jpg/.jpeg/.png) is allowed");
+				return;
+			}
 	
 			// File or Blob named mountains.jpg
 	

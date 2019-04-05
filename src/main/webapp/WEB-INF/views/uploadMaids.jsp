@@ -110,7 +110,7 @@
 			<div class="container" id="uploadMaidsDiv" style="display:none;">
 				<div class="col-md-6 gray-bg">
 				  	<div class="col-md-12">
-						<input ng-model="search" id="searchVal" name="text" placeholder="Search" type="text" 
+						<input ng-model="search" id="searchVal" name="text" placeholder="Search By Name" type="text" 
 											ng-change="searchByName(search)">
 					</div>
 				    <!-- <ul>
@@ -144,21 +144,29 @@
 					<div class="row">
 					<form id="service-booking">
 						<div class="col-sm-12">
+							<div class="checkbox">
+							  &nbsp;&nbsp;<label><input ng-disabled="promoteChecker()" id="isPromote" type="checkbox" value="">&nbsp;&nbsp;
+							  <spring:message code="label.promote" />
+							  (<spring:message code="label.promote.notice" 
+									arguments="{{company.promote_maid_quota}}" />)</label>
+							</div>
+							<br />
+						</div>
+						<div class="col-sm-12">
 							&nbsp;&nbsp;<spring:message code="label.upload_maid.uploadImage" />
 							<input id="uploadImageFile" type="file">
 						</div>
 						<div class="col-sm-12">
-							&nbsp;<spring:message code="label.promote.notice" 
-									arguments="{{company.promote_maid_quota}}" />
-							<div class="checkbox">
-							  &nbsp;&nbsp;<label><input ng-disabled="promoteChecker()" id="isPromote" type="checkbox" value="">&nbsp;&nbsp;
-							  <spring:message code="label.promote" /></label>
-							</div>
-						<br/>
+							&nbsp;&nbsp;<spring:message code="label.upload_maid.pdf" />
+							<input type="text" ng-model="itemObj.pdfUrl" placeholder="">
+						</div>
+						<div class="col-sm-12">
+							&nbsp;&nbsp;<spring:message code="label.upload_maid.video" />
+							<input type="text" ng-model="itemObj.videoUrl" placeholder="">
 						</div>
 						<div class="col-sm-6">
 							&nbsp;&nbsp;<spring:message code="label.upload_maid.name" />
-							<input type="text" ng-model="itemObj.name" placeholder="" required="">
+							<input type="text" ng-model="itemObj.name" placeholder="">
 						</div>
 						<div class="col-sm-6">
 							&nbsp;&nbsp;<spring:message code="label.upload_maid.nationality" />
