@@ -8,6 +8,7 @@ var branch_counter = 0;
 app.controller("CompanyCtrl", function($scope, $firebaseArray) {
 	$scope.company;
 	$scope.companyId;
+	$scope.previousObj;
 	
 	auth.onAuthStateChanged(function(companyUser) {
 	  if (companyUser) {
@@ -15,6 +16,7 @@ app.controller("CompanyCtrl", function($scope, $firebaseArray) {
 	    db.ref('/companies/' + companyUser.uid).once('value').then(function(snapshot) {
     	  console.log(snapshot.val());
     	  $scope.company = snapshot.val();
+    	  $scope.previousObj = JSON.parse(JSON.stringify($scope.company));
     	  $scope.$apply();
     	  appendDistrictList("main_district", $scope.company.district);
     	  initSer($scope.company.ser_content, $scope.company.special_ser);
@@ -115,6 +117,7 @@ app.controller("CompanyCtrl", function($scope, $firebaseArray) {
 		passObj.upload_quota = $scope.company.upload_quota==null?5:$scope.company.upload_quota;
 		passObj.vip_expired = $scope.company.vip_expired==null?"Y":$scope.company.vip_expired;
 		passObj.vip_level = $scope.company.vip_level==null?"free":$scope.company.vip_level;
+		passObj.promote_maid_quota = $scope.company.promote_maid_quota==null?0:$scope.company.promote_maid_quota;
 		
 		if(downloadUrl!=null){
 			passObj.imgUrl = downloadUrl;
@@ -153,6 +156,35 @@ app.controller("CompanyCtrl", function($scope, $firebaseArray) {
 				  console.log("Update Success");
 			});
 		}
+		
+		//If there is changes on Maid fee, need to batch update
+		if($scope.previousObj.ph_fee!=$scope.company.ph_fee || 
+				$scope.previousObj.idon_fee!=$scope.company.idon_fee ||
+					$scope.previousObj.other_fee!=$scope.company.other_fee){
+			var ref = firebase.database().ref().child("maids").orderByChild("companyId").equalTo($scope.companyId);
+			var myMaids = $firebaseArray(ref);
+			myMaids.$loaded()
+		    .then(function(){
+		        angular.forEach(myMaids, function(maid) {
+		        	var feeObj;
+		        	if(maid.country=="philippines"){
+		        		feeObj = {
+								"fee": $scope.company.ph_fee
+							}
+		        	}else if(maid.country=="indonesia"){
+		        		feeObj = {
+								"fee": $scope.company.idon_fee
+							}
+		        	}else{
+		        		feeObj = {
+								"fee": $scope.company.other_fee
+							}
+		        	}
+		        	db.ref('maids/' + maid.$id).update(feeObj);
+		        })
+		    });
+		}
+		
 	}
 });
 
@@ -345,6 +377,12 @@ function uploadImage(){
 	const metadata = {
 	  contentType: file.type
 	};
+	if(file.type!="jpg" && file.type!="png"
+		&& file.type!="JPG" && file.type!="PNG"
+			&& file.type!="jpeg" && file.type!="JPEG"){
+		alert("Only Image File(.jpg/.jpeg/.png) is allowed");
+		return;
+	}
 
 	// File or Blob named mountains.jpg
 
